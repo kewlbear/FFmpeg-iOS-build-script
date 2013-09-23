@@ -13,7 +13,7 @@ Usage
 
 * To build everything:
 
-	./build-ffmpeg.sh
+        ./build-ffmpeg.sh
 
 * To build arm64 libraries:
 
