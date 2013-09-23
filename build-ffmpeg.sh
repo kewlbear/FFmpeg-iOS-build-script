@@ -8,7 +8,7 @@ CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-ffmpeg \
 LIBS="libavcodec libavformat libavutil libswscale libavdevice libavfilter \
       libswresample"
 
-ARCHS="armv7 armv7s i386"
+ARCHS="armv7 armv7s i386 arm64 x86_64"
 
 # directories
 SOURCE="ffmpeg"
@@ -46,22 +46,32 @@ then
 		mkdir -p "$SCRATCH/$ARCH"
 		cd "$SCRATCH/$ARCH"
 
-		if [ "$ARCH" = "i386" ]
+		if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
 		then
 		    PLATFORM="iPhoneSimulator"
+		    CPU=
+		    if [ "$ARCH" = "x86_64" ]
+		    then
+		    	SIMULATOR="-mios-simulator-version-min=7.0"
+		    else
+		    	SIMULATOR="-mios-simulator-version-min=5.0"
+		    fi
 		else
 		    PLATFORM="iPhoneOS"
 		    if [ $ARCH = "armv7s" ]
 		    then
 		    	CPU="--cpu=swift"
+		    else
+		    	CPU=
 		    fi
+		    SIMULATOR=
 		fi
 
 		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
 		CC="xcrun -sdk $XCRUN_SDK clang"
-		CFLAGS="-arch $ARCH"
-		CXXFLAGS="-arch $ARCH"
-		LDFLAGS="-arch $ARCH"
+		CFLAGS="-arch $ARCH $SIMULATOR"
+		CXXFLAGS="$CFLAGS"
+		LDFLAGS="$CFLAGS"
 
 		$CWD/$SOURCE/configure \
 		    --target-os=darwin \
