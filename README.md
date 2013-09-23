@@ -5,7 +5,7 @@ This is a shell script to build FFmpeg libraries for iOS apps.
 
 Tested with:
 
-* FFmpeg git commit f18ccb529fb7231f9d40814fbf843d10d9434b43
+* FFmpeg N-56578-g3cfd4df
 * Xcode 5
 
 Usage
