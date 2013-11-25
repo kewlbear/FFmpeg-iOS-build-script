@@ -27,4 +27,4 @@ Tested with:
 
 ## Influences
 
-* bbcallen@fc70895c64cbbd20f32f1d81d2d48609ed13f597
+* bbcallen/ijkplayer@fc70895c64cbbd20f32f1d81d2d48609ed13f597
