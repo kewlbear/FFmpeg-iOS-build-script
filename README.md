@@ -27,4 +27,4 @@ Tested with:
 
 ## Influences
 
-* bbcallen/ijkplayer@fc70895c64cbbd20f32f1d81d2d48609ed13f597
+* https://github.com/bbcallen/ijkplayer/blob/fc70895c64cbbd20f32f1d81d2d48609ed13f597/ios/tools/do-compile-ffmpeg.sh#L7
