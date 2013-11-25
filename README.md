@@ -1,5 +1,4 @@
-FFmpeg iOS build script
-=======================
+# FFmpeg iOS build script
 
 This is a shell script to build FFmpeg libraries for iOS apps.
 
@@ -8,8 +7,7 @@ Tested with:
 * FFmpeg N-56578-g3cfd4df
 * Xcode 5
 
-Usage
------
+## Usage
 
 * To build everything:
 
@@ -26,3 +24,7 @@ Usage
 * To build fat libraries from separately built thin libraries:
 
         ./build-ffmpeg.sh lipo
+
+## Influences
+
+* bbcallen@fc70895c64cbbd20f32f1d81d2d48609ed13f597
