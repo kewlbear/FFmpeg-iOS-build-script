@@ -4,8 +4,9 @@ This is a shell script to build FFmpeg libraries for iOS apps.
 
 Tested with:
 
-* FFmpeg N-56578-g3cfd4df
-* Xcode 5
+* FFmpeg http://git.videolan.org/?p=ffmpeg.git;a=commit;h=f29cdbe1b59a0d997733b507041e15ec68cef00c
+* Xcode 5.0.2
+* https://github.com/libav/gas-preprocessor (support arm64)
 
 ## Usage
 
