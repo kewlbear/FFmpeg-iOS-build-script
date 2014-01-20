@@ -1,15 +1,5 @@
 #!/bin/sh
 
-CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-ffmpeg \
-                 --disable-ffplay --disable-ffprobe --disable-ffserver \
-                 --disable-doc --disable-encoders --disable-muxers \
-                 --disable-bsfs --disable-devices --disable-filters --enable-pic"
-
-LIBS="libavcodec libavformat libavutil libswscale libavdevice libavfilter \
-      libswresample"
-
-ARCHS="armv7 armv7s i386 arm64 x86_64"
-
 # directories
 SOURCE="ffmpeg"
 FAT="fat"
@@ -18,8 +8,28 @@ SCRATCH="scratch"
 # must be an absolute path
 THIN=`pwd`/"thin"
 
+# absolute path to x264 library
+#X264=`pwd`/fat_x264
+
+CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-ffmpeg \
+                 --disable-ffplay --disable-ffprobe --disable-ffserver \
+                 --disable-doc --disable-encoders --disable-muxers \
+                 --disable-bsfs --disable-devices --disable-filters --enable-pic"
+
+if [ "$X264" ]
+then
+	CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-gpl --enable-libx264"
+fi
+
+# avresample
+#CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
+
+ARCHS="arm64 armv7s x86_64 i386 armv7"
+
 COMPILE="y"
 LIPO="y"
+
+DEPLOYMENT_TARGET="6.0"
 
 if [ "$*" ]
 then
@@ -46,32 +56,29 @@ then
 		mkdir -p "$SCRATCH/$ARCH"
 		cd "$SCRATCH/$ARCH"
 
+		CFLAGS="-arch $ARCH"
 		if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
 		then
 		    PLATFORM="iPhoneSimulator"
-		    CPU=
-		    if [ "$ARCH" = "x86_64" ]
-		    then
-		    	SIMULATOR="-mios-simulator-version-min=7.0"
-		    else
-		    	SIMULATOR="-mios-simulator-version-min=5.0"
-		    fi
+		    CFLAGS="$CFLAGS -mios-simulator-version-min=$DEPLOYMENT_TARGET"
 		else
 		    PLATFORM="iPhoneOS"
-		    if [ $ARCH = "armv7s" ]
+		    CFLAGS="$CFLAGS -mios-version-min=$DEPLOYMENT_TARGET"
+		    if [ "$ARCH" = "arm64" ]
 		    then
-		    	CPU="--cpu=swift"
-		    else
-		    	CPU=
+		        EXPORT="GASPP_FIX_XCODE5=1"
 		    fi
-		    SIMULATOR=
 		fi
 
 		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
 		CC="xcrun -sdk $XCRUN_SDK clang"
-		CFLAGS="-arch $ARCH $SIMULATOR"
 		CXXFLAGS="$CFLAGS"
 		LDFLAGS="$CFLAGS"
+		if [ "$X264" ]
+		then
+			CFLAGS="$CFLAGS -I$X264/include"
+			LDFLAGS="$LDFLAGS -L$X264/lib"
+		fi
 
 		$CWD/$SOURCE/configure \
 		    --target-os=darwin \
@@ -81,10 +88,9 @@ then
 		    --extra-cflags="$CFLAGS" \
 		    --extra-cxxflags="$CXXFLAGS" \
 		    --extra-ldflags="$LDFLAGS" \
-		    $CPU \
 		    --prefix="$THIN/$ARCH"
 
-		make -j3 install
+		make -j3 install $EXPORT
 		cd $CWD
 	done
 fi
