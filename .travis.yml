@@ -9,5 +9,5 @@ before_script:
     - wget -nv http://www.ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
     - tar xjf ffmpeg-snapshot.tar.bz2
 script:
-    - ./build-ffmpeg.sh 2>&1 >log
+    - ./.travis
     - ls -lR fat
