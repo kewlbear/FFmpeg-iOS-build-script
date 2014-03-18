@@ -1,2 +1,6 @@
 language: objective-c
+before_install:
+    - wget http://www.ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
+    - tar xjf ffmpeg-snapshot.tar.bz2
+    - ls
 script: ./build-ffmpeg.sh
