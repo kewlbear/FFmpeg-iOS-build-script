@@ -1,3 +1,0 @@
-#!/bin/sh
-
-./build-ffmpeg.sh 2>.travis.log
