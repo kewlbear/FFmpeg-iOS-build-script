@@ -1,11 +1,15 @@
 language: objective-c
+
 before_install:
     - wget -nv https://github.com/libav/gas-preprocessor/archive/master.zip && unzip master.zip
+
 install:
     - sudo cp gas-preprocessor-master/gas-preprocessor.pl /usr/local/bin
     - brew install yasm
+
 before_script:
     - curl http://www.ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 | tar xj
+
 script:
-    - sh .travis
+    - ./build-ffmpeg.sh 2>.stderr
     - ls -lR fat
