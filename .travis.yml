@@ -16,7 +16,7 @@ env:
         secure: "POoeB0wNaIPKORu8solBfDwSbgk6bsxSJpVWqVawledYiZHnYLXUDzDawoKOXzjJ1oQQiluZWCmv+RXDA9gthTNrH08fuUEvsUHBr7sgHqaOskEbKN/s2962FLy4FRZdQyZFkrrzNcqnc3xaxgF5ZyjRewtB0JioaOSAPEH8ALc="
 
 after_success:
-    - tar cjf ffmpeg-ios.tar.bz2 FFmpeg-iOS .stderr
+    - tar cjf ffmpeg-ios.tar.bz2 FFmpeg-iOS .stderr scratch/*/config.log
     - openssl aes-256-cbc -k "$secret" -in .sf -d -a -out id_sf
     - chmod 600 id_sf
     - scp -i id_sf -o 'StrictHostKeyChecking no' ffmpeg-ios.tar.bz2 koolbear@frs.sourceforge.net:/home/frs/project/ffmpeg-ios
