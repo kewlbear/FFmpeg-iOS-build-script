@@ -2,7 +2,7 @@
 
 # directories
 SOURCE="ffmpeg"
-FAT="fat"
+FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
 # must be an absolute path
@@ -24,7 +24,8 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
-ARCHS="arm64 armv7s x86_64 i386 armv7"
+#ARCHS="arm64 armv7s x86_64 i386 armv7"
+ARCHS="i386 armv7"
 
 COMPILE="y"
 LIPO="y"
@@ -105,6 +106,7 @@ then
 	for LIB in *.a
 	do
 		cd $CWD
+		echo lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB 1>&2
 		lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB
 	done
 
