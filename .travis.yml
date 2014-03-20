@@ -12,7 +12,7 @@ before_script:
 
 script:
     - #./build-ffmpeg.sh 2>.stderr
-    - ls -lR fat
+    - ls #-lR fat
 
 env:
     global:
