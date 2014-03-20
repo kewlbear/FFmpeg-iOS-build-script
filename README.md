@@ -28,6 +28,12 @@ Tested with:
 
         ./build-ffmpeg.sh lipo
 
+## Download
+
+https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios.tar.bz2
+
+Currently, arm64 architecture is not included in the download.
+
 ## Influences
 
 * https://github.com/bbcallen/ijkplayer/blob/fc70895c64cbbd20f32f1d81d2d48609ed13f597/ios/tools/do-compile-ffmpeg.sh#L7
