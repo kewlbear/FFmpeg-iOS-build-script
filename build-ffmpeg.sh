@@ -2,7 +2,7 @@
 
 # directories
 SOURCE="ffmpeg"
-FAT="fat"
+FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
 # must be an absolute path
@@ -11,10 +11,8 @@ THIN=`pwd`/"thin"
 # absolute path to x264 library
 #X264=`pwd`/fat_x264
 
-CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-ffmpeg \
-                 --disable-ffplay --disable-ffprobe --disable-ffserver \
-                 --disable-doc --disable-encoders --disable-muxers \
-                 --disable-bsfs --disable-devices --disable-filters --enable-pic"
+CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
+                 --disable-doc --enable-pic"
 
 if [ "$X264" ]
 then
@@ -24,7 +22,7 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
-ARCHS="arm64 armv7s x86_64 i386 armv7"
+ARCHS="armv7s armv7 x86_64 i386" # fixme add arm64
 
 COMPILE="y"
 LIPO="y"
@@ -105,6 +103,7 @@ then
 	for LIB in *.a
 	do
 		cd $CWD
+		echo lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB 1>&2
 		lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB
 	done
 
