@@ -19,4 +19,4 @@ after_success:
     - tar cjf ffmpeg-ios.tar.bz2 fat
     - openssl aes-256-cbc -k "$secret" -in .sf -d -a -out id_sf
     - chmod 600 id_sf
-    - scp -i id_sf -o 'StrictHostKeyChecking no' ffmpeg-ios.tar.bz2 koolbear@frs.sourceforge.net:/home/frs/project/ffmpeg-ios
+    - scp -i id_sf -o 'StrictHostKeyChecking no' .stderr ffmpeg-ios.tar.bz2 koolbear@frs.sourceforge.net:/home/frs/project/ffmpeg-ios
