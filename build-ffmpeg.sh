@@ -22,7 +22,7 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
-ARCHS="armv7s armv7 x86_64 i386" # fixme add arm64
+ARCHS="arm64 armv7s armv7 x86_64 i386"
 
 COMPILE="y"
 LIPO="y"
