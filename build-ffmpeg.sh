@@ -62,7 +62,7 @@ then
 	if [ ! `which gas-preprocessor.pl` ]
 	then
 		echo 'gas-preprocessor.pl not found. Trying to install...'
-		(curl -L https://github.com/libav/gas-preprocessor/raw/master/gas-preprocessor.pl \
+		(curl -3L https://github.com/libav/gas-preprocessor/raw/master/gas-preprocessor.pl \
 			-o /usr/local/bin/gas-preprocessor.pl \
 			&& chmod +x /usr/local/bin/gas-preprocessor.pl) \
 			|| exit 1
