@@ -54,10 +54,10 @@ then
 		then
 			echo 'Homebrew not found. Trying to install...'
 			ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" \
-				|| (echo 'Failed to install Homebrew'; exit 1)
+				|| exit 1
 		fi
 		echo 'Trying to install Yasm...'
-		brew install yasm || (echo 'Failed to install Yasm'; exit 1)
+		brew install yasm || exit 1
 	fi
 	if [ ! `which gas-preprocessor.pl` ]
 	then
@@ -65,14 +65,14 @@ then
 		(curl -L https://github.com/libav/gas-preprocessor/raw/master/gas-preprocessor.pl \
 			-o /usr/local/bin/gas-preprocessor.pl \
 			&& chmod +x /usr/local/bin/gas-preprocessor.pl) \
-			|| (echo 'Failed to install gas-preprocessor.pl'; exit 1)
+			|| exit 1
 	fi
 
 	if [ ! -r $SOURCE ]
 	then
 		echo 'FFmpeg source not found. Trying to download...'
 		curl http://www.ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 | tar xj \
-			|| (echo 'Failed to download FFmpeg source'; exit 1)
+			|| exit 1
 	fi
 
 	CWD=`pwd`
@@ -115,9 +115,9 @@ then
 		    --extra-cxxflags="$CXXFLAGS" \
 		    --extra-ldflags="$LDFLAGS" \
 		    --prefix="$THIN/$ARCH" \
-		|| (echo "Failed to configure $ARCH"; exit 1)
+		|| exit 1
 
-		make -j3 install $EXPORT || (echo "Failed to build $ARCH"; exit 1)
+		make -j3 install $EXPORT || exit 1
 		cd $CWD
 	done
 fi
