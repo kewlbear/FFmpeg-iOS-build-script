@@ -12,3 +12,5 @@ after_success:
     - openssl aes-256-cbc -k "$secret" -in .sf -d -a -out id_sf
     - chmod 600 id_sf
     - scp -i id_sf -o 'StrictHostKeyChecking no' $TARBALL koolbear@frs.sourceforge.net:/home/frs/project/ffmpeg-ios
+
+after_failure: cat .stderr
