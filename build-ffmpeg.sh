@@ -71,7 +71,7 @@ then
 	if [ ! -r $SOURCE ]
 	then
 		echo 'FFmpeg source not found. Trying to download...'
-		curl http://www.ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 | tar xj \
+		curl http://www.ffmpeg.org/releases/ffmpeg-2.2.tar.bz2 | tar xj \
 			|| exit 1
 	fi
 
