@@ -6,9 +6,10 @@ This is a shell script to build FFmpeg libraries for iOS apps.
 
 Tested with:
 
-* FFmpeg http://git.videolan.org/?p=ffmpeg.git;a=commit;h=f29cdbe1b59a0d997733b507041e15ec68cef00c
-* Xcode 5.0.2
-* https://github.com/libav/gas-preprocessor (support arm64)
+* FFmpeg 2.2 release
+* Xcode 5.1
+* https://github.com/libav/gas-preprocessor (for arm64)
+* yasm 1.2.0
 
 ## Usage
 
@@ -30,9 +31,14 @@ Tested with:
 
 ## Download
 
-https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios.tar.bz2
+You can download a binary for FFmpeg 2.2 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-sf.tar.bz2
 
-Currently, arm64 architecture is not included in the download.
+## Linking
+
+You might have to link with
+
+* libbz2.dylib
+* libiconv.dylib
 
 ## Influences
 
