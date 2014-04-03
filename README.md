@@ -33,10 +33,11 @@ Tested with:
 
 You can download a binary for FFmpeg 2.2 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-sf.tar.bz2
 
-## Linking
+## External libraries
 
-You might have to link with
+You should link with
 
+* libz.dylib
 * libbz2.dylib
 * libiconv.dylib
 
