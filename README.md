@@ -31,7 +31,7 @@ Tested with:
 
 ## Download
 
-You can download a binary for FFmpeg 2.2 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-2.2.1.tar.bz2
+You can download a binary for FFmpeg 2.2.1 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-2.2.1.tar.bz2
 
 ## External libraries
 
