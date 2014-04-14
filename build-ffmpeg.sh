@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg"
+SOURCE="ffmpeg-2.2.1"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
@@ -22,7 +22,7 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
-ARCHS="armv7s armv7 x86_64 i386" # fixme add arm64
+ARCHS="arm64 armv7s armv7 x86_64 i386"
 
 COMPILE="y"
 LIPO="y"
@@ -47,6 +47,34 @@ fi
 
 if [ "$COMPILE" ]
 then
+	if [ ! `which yasm` ]
+	then
+		echo 'Yasm not found'
+		if [ ! `which brew` ]
+		then
+			echo 'Homebrew not found. Trying to install...'
+			ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" \
+				|| exit 1
+		fi
+		echo 'Trying to install Yasm...'
+		brew install yasm || exit 1
+	fi
+	if [ ! `which gas-preprocessor.pl` ]
+	then
+		echo 'gas-preprocessor.pl not found. Trying to install...'
+		(curl -3L https://github.com/libav/gas-preprocessor/raw/master/gas-preprocessor.pl \
+			-o /usr/local/bin/gas-preprocessor.pl \
+			&& chmod +x /usr/local/bin/gas-preprocessor.pl) \
+			|| exit 1
+	fi
+
+	if [ ! -r $SOURCE ]
+	then
+		echo 'FFmpeg source not found. Trying to download...'
+		curl http://www.ffmpeg.org/releases/ffmpeg-2.2.1.tar.bz2 | tar xj \
+			|| exit 1
+	fi
+
 	CWD=`pwd`
 	for ARCH in $ARCHS
 	do
@@ -86,9 +114,10 @@ then
 		    --extra-cflags="$CFLAGS" \
 		    --extra-cxxflags="$CXXFLAGS" \
 		    --extra-ldflags="$LDFLAGS" \
-		    --prefix="$THIN/$ARCH"
+		    --prefix="$THIN/$ARCH" \
+		|| exit 1
 
-		make -j3 install $EXPORT
+		make -j3 install $EXPORT || exit 1
 		cd $CWD
 	done
 fi
@@ -104,9 +133,11 @@ then
 	do
 		cd $CWD
 		echo lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB 1>&2
-		lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB
+		lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB || exit 1
 	done
 
 	cd $CWD
 	cp -rf $THIN/$1/include $FAT
 fi
+
+echo Done
