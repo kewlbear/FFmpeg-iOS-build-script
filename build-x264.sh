@@ -65,7 +65,7 @@ then
 		fi
 
 		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
-		CC="xcrun -sdk $XCRUN_SDK clang"
+		CC="xcrun -sdk $XCRUN_SDK clang -Wno-error=unused-command-line-argument-hard-error-in-future"
 		AS="$CWD/$SOURCE/extras/gas-preprocessor.pl $CC"
 		CFLAGS="-arch $ARCH $SIMULATOR"
 		CXXFLAGS="$CFLAGS"
