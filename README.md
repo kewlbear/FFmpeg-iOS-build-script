@@ -1,12 +1,12 @@
 # FFmpeg iOS build script
 
-[![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.svg?branch=2.2.1)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
+[![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.svg?branch=master)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
 
 This is a shell script to build FFmpeg libraries for iOS apps.
 
 Tested with:
 
-* FFmpeg 2.2.2
+* FFmpeg 2.2.3
 * Xcode 5.1.1
 * https://github.com/libav/gas-preprocessor (for arm64)
 * yasm 1.2.0
