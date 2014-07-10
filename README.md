@@ -8,7 +8,10 @@ Tested with:
 
 * FFmpeg 2.2.4
 * Xcode 5.1.1
-* https://github.com/libav/gas-preprocessor (for arm64)
+
+## Requirements
+
+* https://github.com/libav/gas-preprocessor
 * yasm 1.2.0
 
 ## Usage
@@ -35,7 +38,7 @@ You can download a binary for FFmpeg 2.2.4 release at https://downloads.sourcefo
 
 ## External libraries
 
-You should link with
+You should link your app with
 
 * libz.dylib
 * libbz2.dylib
