@@ -11,12 +11,19 @@ THIN=`pwd`/"thin"
 # absolute path to x264 library
 #X264=`pwd`/fat_x264
 
+#FDK_AAC=`pwd`/fdk-aac/fdk-aac-ios
+
 CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
                  --disable-doc --enable-pic"
 
 if [ "$X264" ]
 then
 	CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-gpl --enable-libx264"
+fi
+
+if [ "$FDK_AAC" ]
+then
+	CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-libfdk-aac"
 fi
 
 # avresample
@@ -104,6 +111,11 @@ then
 		then
 			CFLAGS="$CFLAGS -I$X264/include"
 			LDFLAGS="$LDFLAGS -L$X264/lib"
+		fi
+		if [ "$FDK_AAC" ]
+		then
+			CFLAGS="$CFLAGS -I$FDK_AAC/include"
+			LDFLAGS="$LDFLAGS -L$FDK_AAC/lib"
 		fi
 
 		$CWD/$SOURCE/configure \
