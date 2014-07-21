@@ -8,7 +8,7 @@ env:
         - TARBALL=ffmpeg-ios-$TRAVIS_BRANCH.tar.bz2
 
 after_success:
-    - tar cjf $TARBALL FFmpeg-iOS .stderr scratch/*/config.log ffmpeg*/LICENSE ffmpeg*/COPYING.* README.md
+    - tar cjf $TARBALL FFmpeg-iOS .stderr scratch/*/config.log ffmpeg*/LICENSE.md ffmpeg*/COPYING.* README.md
     - openssl aes-256-cbc -k "$secret" -in .sf -d -a -out id_sf
     - chmod 600 id_sf
     - scp -i id_sf -o 'StrictHostKeyChecking no' $TARBALL koolbear@frs.sourceforge.net:/home/frs/project/ffmpeg-ios
