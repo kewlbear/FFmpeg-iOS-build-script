@@ -34,7 +34,7 @@ Tested with:
 
 ## Download
 
-You can download a binary for FFmpeg 2.2.4 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
+You can download a binary for FFmpeg 2.3 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
 
 ## External libraries
 
