@@ -6,7 +6,7 @@ This is a shell script to build FFmpeg libraries for iOS apps.
 
 Tested with:
 
-* FFmpeg 2.2.4
+* FFmpeg 2.3
 * Xcode 5.1.1
 
 ## Requirements
