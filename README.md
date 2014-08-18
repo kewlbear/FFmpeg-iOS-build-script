@@ -6,7 +6,7 @@ This is a shell script to build FFmpeg libraries for iOS apps.
 
 Tested with:
 
-* FFmpeg 2.3.1
+* FFmpeg 2.3.3
 * Xcode 5.1.1
 
 ## Requirements
@@ -34,7 +34,7 @@ Tested with:
 
 ## Download
 
-You can download a binary for FFmpeg 2.3.1 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
+You can download a binary for FFmpeg 2.3.3 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
 
 ## External libraries
 
