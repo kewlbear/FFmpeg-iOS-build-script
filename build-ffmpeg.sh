@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-2.3.3"
+SOURCE="ffmpeg-2.4.1"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
@@ -118,7 +118,7 @@ then
 			LDFLAGS="$LDFLAGS -L$FDK_AAC/lib"
 		fi
 
-		$CWD/$SOURCE/configure \
+		TMPDIR=${TMPDIR/%\/} $CWD/$SOURCE/configure \
 		    --target-os=darwin \
 		    --arch=$ARCH \
 		    --cc="$CC" \
