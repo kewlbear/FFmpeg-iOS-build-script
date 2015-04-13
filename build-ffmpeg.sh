@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-2.6.1"
+SOURCE="ffmpeg-2.6.2"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
@@ -29,7 +29,7 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
-ARCHS="arm64 armv7s armv7 x86_64 i386"
+ARCHS="arm64 armv7 x86_64 i386"
 
 COMPILE="y"
 LIPO="y"
