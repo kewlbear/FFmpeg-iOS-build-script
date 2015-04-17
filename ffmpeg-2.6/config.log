@@ -1,0 +1,7891 @@
+# ./configure  --enable-libopencore-amrnb
+ALL_COMPONENTS='
+    aac_adtstoasc_bsf
+chomp_bsf
+dump_extradata_bsf
+h264_mp4toannexb_bsf
+imx_dump_header_bsf
+mjpeg2jpeg_bsf
+mjpega_dump_header_bsf
+mp3_header_decompress_bsf
+mov2textsub_bsf
+noise_bsf
+remove_extradata_bsf
+text2movsub_bsf
+    aasc_decoder
+aic_decoder
+alias_pix_decoder
+amv_decoder
+anm_decoder
+ansi_decoder
+apng_decoder
+asv1_decoder
+asv2_decoder
+aura_decoder
+aura2_decoder
+avrp_decoder
+avrn_decoder
+avs_decoder
+avui_decoder
+ayuv_decoder
+bethsoftvid_decoder
+bfi_decoder
+bink_decoder
+bmp_decoder
+bmv_video_decoder
+brender_pix_decoder
+c93_decoder
+cavs_decoder
+cdgraphics_decoder
+cdxl_decoder
+cinepak_decoder
+cljr_decoder
+cllc_decoder
+comfortnoise_decoder
+cpia_decoder
+cscd_decoder
+cyuv_decoder
+dfa_decoder
+dirac_decoder
+dnxhd_decoder
+dpx_decoder
+dsicinvideo_decoder
+dvvideo_decoder
+dxa_decoder
+dxtory_decoder
+eacmv_decoder
+eamad_decoder
+eatgq_decoder
+eatgv_decoder
+eatqi_decoder
+eightbps_decoder
+eightsvx_exp_decoder
+eightsvx_fib_decoder
+escape124_decoder
+escape130_decoder
+exr_decoder
+ffv1_decoder
+ffvhuff_decoder
+fic_decoder
+flashsv_decoder
+flashsv2_decoder
+flic_decoder
+flv_decoder
+fourxm_decoder
+fraps_decoder
+frwu_decoder
+g2m_decoder
+gif_decoder
+h261_decoder
+h263_decoder
+h263i_decoder
+h263p_decoder
+h264_decoder
+h264_crystalhd_decoder
+h264_qsv_decoder
+h264_vda_decoder
+h264_vdpau_decoder
+hevc_decoder
+hnm4_video_decoder
+hqx_decoder
+huffyuv_decoder
+idcin_decoder
+iff_byterun1_decoder
+iff_ilbm_decoder
+indeo2_decoder
+indeo3_decoder
+indeo4_decoder
+indeo5_decoder
+interplay_video_decoder
+jpeg2000_decoder
+jpegls_decoder
+jv_decoder
+kgv1_decoder
+kmvc_decoder
+lagarith_decoder
+loco_decoder
+mdec_decoder
+mimic_decoder
+mjpeg_decoder
+mjpegb_decoder
+mmvideo_decoder
+motionpixels_decoder
+mpeg_xvmc_decoder
+mpeg1video_decoder
+mpeg2video_decoder
+mpeg4_decoder
+mpeg4_crystalhd_decoder
+mpeg4_vdpau_decoder
+mpegvideo_decoder
+mpeg_vdpau_decoder
+mpeg1_vdpau_decoder
+mpeg2_crystalhd_decoder
+msa1_decoder
+msmpeg4_crystalhd_decoder
+msmpeg4v1_decoder
+msmpeg4v2_decoder
+msmpeg4v3_decoder
+msrle_decoder
+mss1_decoder
+mss2_decoder
+msvideo1_decoder
+mszh_decoder
+mts2_decoder
+mvc1_decoder
+mvc2_decoder
+mxpeg_decoder
+nuv_decoder
+paf_video_decoder
+pam_decoder
+pbm_decoder
+pcx_decoder
+pgm_decoder
+pgmyuv_decoder
+pictor_decoder
+png_decoder
+ppm_decoder
+prores_decoder
+prores_lgpl_decoder
+ptx_decoder
+qdraw_decoder
+qpeg_decoder
+qtrle_decoder
+r10k_decoder
+r210_decoder
+rawvideo_decoder
+rl2_decoder
+roq_decoder
+rpza_decoder
+rv10_decoder
+rv20_decoder
+rv30_decoder
+rv40_decoder
+s302m_decoder
+sanm_decoder
+sgi_decoder
+sgirle_decoder
+smacker_decoder
+smc_decoder
+smvjpeg_decoder
+snow_decoder
+sp5x_decoder
+sunrast_decoder
+svq1_decoder
+svq3_decoder
+targa_decoder
+targa_y216_decoder
+theora_decoder
+thp_decoder
+tiertexseqvideo_decoder
+tiff_decoder
+tmv_decoder
+truemotion1_decoder
+truemotion2_decoder
+tscc_decoder
+tscc2_decoder
+txd_decoder
+ulti_decoder
+utvideo_decoder
+v210_decoder
+v210x_decoder
+v308_decoder
+v408_decoder
+v410_decoder
+vb_decoder
+vble_decoder
+vc1_decoder
+vc1_crystalhd_decoder
+vc1_vdpau_decoder
+vc1image_decoder
+vcr1_decoder
+vmdvideo_decoder
+vmnc_decoder
+vp3_decoder
+vp5_decoder
+vp6_decoder
+vp6a_decoder
+vp6f_decoder
+vp7_decoder
+vp8_decoder
+vp9_decoder
+vqa_decoder
+webp_decoder
+wmv1_decoder
+wmv2_decoder
+wmv3_decoder
+wmv3_crystalhd_decoder
+wmv3_vdpau_decoder
+wmv3image_decoder
+wnv1_decoder
+xan_wc3_decoder
+xan_wc4_decoder
+xbm_decoder
+xface_decoder
+xl_decoder
+xwd_decoder
+y41p_decoder
+yop_decoder
+yuv4_decoder
+zero12v_decoder
+zerocodec_decoder
+zlib_decoder
+zmbv_decoder
+aac_decoder
+aac_latm_decoder
+ac3_decoder
+ac3_fixed_decoder
+alac_decoder
+als_decoder
+amrnb_decoder
+amrwb_decoder
+ape_decoder
+atrac1_decoder
+atrac3_decoder
+atrac3p_decoder
+binkaudio_dct_decoder
+binkaudio_rdft_decoder
+bmv_audio_decoder
+cook_decoder
+dca_decoder
+dsd_lsbf_decoder
+dsd_msbf_decoder
+dsd_lsbf_planar_decoder
+dsd_msbf_planar_decoder
+dsicinaudio_decoder
+dss_sp_decoder
+eac3_decoder
+evrc_decoder
+ffwavesynth_decoder
+flac_decoder
+g723_1_decoder
+g729_decoder
+gsm_decoder
+gsm_ms_decoder
+iac_decoder
+imc_decoder
+mace3_decoder
+mace6_decoder
+metasound_decoder
+mlp_decoder
+mp1_decoder
+mp1float_decoder
+mp2_decoder
+mp2float_decoder
+mp3_decoder
+mp3float_decoder
+mp3adu_decoder
+mp3adufloat_decoder
+mp3on4_decoder
+mp3on4float_decoder
+mpc7_decoder
+mpc8_decoder
+nellymoser_decoder
+on2avc_decoder
+opus_decoder
+paf_audio_decoder
+qcelp_decoder
+qdm2_decoder
+ra_144_decoder
+ra_288_decoder
+ralf_decoder
+shorten_decoder
+sipr_decoder
+smackaud_decoder
+sonic_decoder
+tak_decoder
+truehd_decoder
+truespeech_decoder
+tta_decoder
+twinvq_decoder
+vmdaudio_decoder
+vorbis_decoder
+wavpack_decoder
+wmalossless_decoder
+wmapro_decoder
+wmav1_decoder
+wmav2_decoder
+wmavoice_decoder
+ws_snd1_decoder
+pcm_alaw_decoder
+pcm_bluray_decoder
+pcm_dvd_decoder
+pcm_f32be_decoder
+pcm_f32le_decoder
+pcm_f64be_decoder
+pcm_f64le_decoder
+pcm_lxf_decoder
+pcm_mulaw_decoder
+pcm_s8_decoder
+pcm_s8_planar_decoder
+pcm_s16be_decoder
+pcm_s16be_planar_decoder
+pcm_s16le_decoder
+pcm_s16le_planar_decoder
+pcm_s24be_decoder
+pcm_s24daud_decoder
+pcm_s24le_decoder
+pcm_s24le_planar_decoder
+pcm_s32be_decoder
+pcm_s32le_decoder
+pcm_s32le_planar_decoder
+pcm_u8_decoder
+pcm_u16be_decoder
+pcm_u16le_decoder
+pcm_u24be_decoder
+pcm_u24le_decoder
+pcm_u32be_decoder
+pcm_u32le_decoder
+pcm_zork_decoder
+interplay_dpcm_decoder
+roq_dpcm_decoder
+sol_dpcm_decoder
+xan_dpcm_decoder
+adpcm_4xm_decoder
+adpcm_adx_decoder
+adpcm_afc_decoder
+adpcm_ct_decoder
+adpcm_dtk_decoder
+adpcm_ea_decoder
+adpcm_ea_maxis_xa_decoder
+adpcm_ea_r1_decoder
+adpcm_ea_r2_decoder
+adpcm_ea_r3_decoder
+adpcm_ea_xas_decoder
+adpcm_g722_decoder
+adpcm_g726_decoder
+adpcm_g726le_decoder
+adpcm_ima_amv_decoder
+adpcm_ima_apc_decoder
+adpcm_ima_dk3_decoder
+adpcm_ima_dk4_decoder
+adpcm_ima_ea_eacs_decoder
+adpcm_ima_ea_sead_decoder
+adpcm_ima_iss_decoder
+adpcm_ima_oki_decoder
+adpcm_ima_qt_decoder
+adpcm_ima_rad_decoder
+adpcm_ima_smjpeg_decoder
+adpcm_ima_wav_decoder
+adpcm_ima_ws_decoder
+adpcm_ms_decoder
+adpcm_sbpro_2_decoder
+adpcm_sbpro_3_decoder
+adpcm_sbpro_4_decoder
+adpcm_swf_decoder
+adpcm_thp_decoder
+adpcm_vima_decoder
+adpcm_xa_decoder
+adpcm_yamaha_decoder
+vima_decoder
+ssa_decoder
+ass_decoder
+ccaption_decoder
+dvbsub_decoder
+dvdsub_decoder
+jacosub_decoder
+microdvd_decoder
+movtext_decoder
+mpl2_decoder
+pgssub_decoder
+pjs_decoder
+realtext_decoder
+sami_decoder
+srt_decoder
+stl_decoder
+subrip_decoder
+subviewer_decoder
+subviewer1_decoder
+text_decoder
+vplayer_decoder
+webvtt_decoder
+xsub_decoder
+libcelt_decoder
+libfdk_aac_decoder
+libgsm_decoder
+libgsm_ms_decoder
+libilbc_decoder
+libopencore_amrnb_decoder
+libopencore_amrwb_decoder
+libopenjpeg_decoder
+libopus_decoder
+libschroedinger_decoder
+libspeex_decoder
+libstagefright_h264_decoder
+libutvideo_decoder
+libvorbis_decoder
+libvpx_vp8_decoder
+libvpx_vp9_decoder
+libzvbi_teletext_decoder
+bintext_decoder
+xbin_decoder
+idf_decoder
+    aac_demuxer
+ac3_demuxer
+act_demuxer
+adf_demuxer
+adp_demuxer
+adx_demuxer
+aea_demuxer
+afc_demuxer
+aiff_demuxer
+amr_demuxer
+anm_demuxer
+apc_demuxer
+ape_demuxer
+apng_demuxer
+aqtitle_demuxer
+asf_demuxer
+ass_demuxer
+ast_demuxer
+au_demuxer
+avi_demuxer
+avisynth_demuxer
+avr_demuxer
+avs_demuxer
+bethsoftvid_demuxer
+bfi_demuxer
+bintext_demuxer
+bink_demuxer
+bit_demuxer
+bmv_demuxer
+brstm_demuxer
+boa_demuxer
+c93_demuxer
+caf_demuxer
+cavsvideo_demuxer
+cdg_demuxer
+cdxl_demuxer
+cine_demuxer
+concat_demuxer
+data_demuxer
+daud_demuxer
+dfa_demuxer
+dirac_demuxer
+dnxhd_demuxer
+dsf_demuxer
+dsicin_demuxer
+dss_demuxer
+dts_demuxer
+dtshd_demuxer
+dv_demuxer
+dvbsub_demuxer
+dxa_demuxer
+ea_demuxer
+ea_cdata_demuxer
+eac3_demuxer
+epaf_demuxer
+ffm_demuxer
+ffmetadata_demuxer
+filmstrip_demuxer
+flac_demuxer
+flic_demuxer
+flv_demuxer
+live_flv_demuxer
+fourxm_demuxer
+frm_demuxer
+g722_demuxer
+g723_1_demuxer
+g729_demuxer
+gif_demuxer
+gsm_demuxer
+gxf_demuxer
+h261_demuxer
+h263_demuxer
+h264_demuxer
+hevc_demuxer
+hls_demuxer
+hnm_demuxer
+ico_demuxer
+idcin_demuxer
+idf_demuxer
+iff_demuxer
+ilbc_demuxer
+image2_demuxer
+image2pipe_demuxer
+image2_alias_pix_demuxer
+image2_brender_pix_demuxer
+ingenient_demuxer
+ipmovie_demuxer
+ircam_demuxer
+iss_demuxer
+iv8_demuxer
+ivf_demuxer
+jacosub_demuxer
+jv_demuxer
+latm_demuxer
+lmlm4_demuxer
+loas_demuxer
+lrc_demuxer
+lvf_demuxer
+lxf_demuxer
+m4v_demuxer
+matroska_demuxer
+mgsts_demuxer
+microdvd_demuxer
+mjpeg_demuxer
+mlp_demuxer
+mlv_demuxer
+mm_demuxer
+mmf_demuxer
+mov_demuxer
+mp3_demuxer
+mpc_demuxer
+mpc8_demuxer
+mpegps_demuxer
+mpegts_demuxer
+mpegtsraw_demuxer
+mpegvideo_demuxer
+mpl2_demuxer
+mpsub_demuxer
+msnwc_tcp_demuxer
+mtv_demuxer
+mv_demuxer
+mvi_demuxer
+mxf_demuxer
+mxg_demuxer
+nc_demuxer
+nistsphere_demuxer
+nsv_demuxer
+nut_demuxer
+nuv_demuxer
+ogg_demuxer
+oma_demuxer
+paf_demuxer
+pcm_alaw_demuxer
+pcm_mulaw_demuxer
+pcm_f64be_demuxer
+pcm_f64le_demuxer
+pcm_f32be_demuxer
+pcm_f32le_demuxer
+pcm_s32be_demuxer
+pcm_s32le_demuxer
+pcm_s24be_demuxer
+pcm_s24le_demuxer
+pcm_s16be_demuxer
+pcm_s16le_demuxer
+pcm_s8_demuxer
+pcm_u32be_demuxer
+pcm_u32le_demuxer
+pcm_u24be_demuxer
+pcm_u24le_demuxer
+pcm_u16be_demuxer
+pcm_u16le_demuxer
+pcm_u8_demuxer
+pjs_demuxer
+pmp_demuxer
+pva_demuxer
+pvf_demuxer
+qcp_demuxer
+r3d_demuxer
+rawvideo_demuxer
+realtext_demuxer
+redspark_demuxer
+rl2_demuxer
+rm_demuxer
+roq_demuxer
+rpl_demuxer
+rsd_demuxer
+rso_demuxer
+rtp_demuxer
+rtsp_demuxer
+sami_demuxer
+sap_demuxer
+sbg_demuxer
+sdp_demuxer
+sdr2_demuxer
+segafilm_demuxer
+shorten_demuxer
+siff_demuxer
+sln_demuxer
+smacker_demuxer
+smjpeg_demuxer
+smush_demuxer
+sol_demuxer
+sox_demuxer
+spdif_demuxer
+srt_demuxer
+str_demuxer
+stl_demuxer
+subviewer1_demuxer
+subviewer_demuxer
+sup_demuxer
+swf_demuxer
+tak_demuxer
+tedcaptions_demuxer
+thp_demuxer
+tiertexseq_demuxer
+tmv_demuxer
+truehd_demuxer
+tta_demuxer
+txd_demuxer
+tty_demuxer
+vc1_demuxer
+vc1t_demuxer
+vivo_demuxer
+vmd_demuxer
+vobsub_demuxer
+voc_demuxer
+vplayer_demuxer
+vqf_demuxer
+w64_demuxer
+wav_demuxer
+wc3_demuxer
+webm_dash_manifest_demuxer
+webvtt_demuxer
+wsaud_demuxer
+wsvqa_demuxer
+wtv_demuxer
+wv_demuxer
+xa_demuxer
+xbin_demuxer
+xmv_demuxer
+xwma_demuxer
+yop_demuxer
+yuv4mpegpipe_demuxer
+image_bmp_pipe_demuxer
+image_dpx_pipe_demuxer
+image_exr_pipe_demuxer
+image_j2k_pipe_demuxer
+image_jpeg_pipe_demuxer
+image_jpegls_pipe_demuxer
+image_pictor_pipe_demuxer
+image_png_pipe_demuxer
+image_sgi_pipe_demuxer
+image_sunrast_pipe_demuxer
+image_tiff_pipe_demuxer
+image_webp_pipe_demuxer
+libgme_demuxer
+libmodplug_demuxer
+libnut_demuxer
+libquvi_demuxer
+    a64multi_encoder
+a64multi5_encoder
+alias_pix_encoder
+amv_encoder
+asv1_encoder
+asv2_encoder
+avrp_encoder
+avui_encoder
+ayuv_encoder
+bmp_encoder
+cinepak_encoder
+cljr_encoder
+comfortnoise_encoder
+dnxhd_encoder
+dpx_encoder
+dvvideo_encoder
+ffv1_encoder
+ffvhuff_encoder
+flashsv_encoder
+flashsv2_encoder
+flv_encoder
+gif_encoder
+h261_encoder
+h263_encoder
+h263p_encoder
+huffyuv_encoder
+jpeg2000_encoder
+jpegls_encoder
+ljpeg_encoder
+mjpeg_encoder
+mpeg1video_encoder
+mpeg2video_encoder
+mpeg4_encoder
+msmpeg4v2_encoder
+msmpeg4v3_encoder
+msvideo1_encoder
+nvenc_encoder
+pam_encoder
+pbm_encoder
+pcx_encoder
+pgm_encoder
+pgmyuv_encoder
+png_encoder
+ppm_encoder
+prores_encoder
+prores_aw_encoder
+prores_ks_encoder
+qtrle_encoder
+r10k_encoder
+r210_encoder
+rawvideo_encoder
+roq_encoder
+rv10_encoder
+rv20_encoder
+s302m_encoder
+sgi_encoder
+snow_encoder
+sunrast_encoder
+svq1_encoder
+targa_encoder
+tiff_encoder
+utvideo_encoder
+v210_encoder
+v308_encoder
+v408_encoder
+v410_encoder
+wmv1_encoder
+wmv2_encoder
+xbm_encoder
+xface_encoder
+xwd_encoder
+y41p_encoder
+yuv4_encoder
+zlib_encoder
+zmbv_encoder
+aac_encoder
+ac3_encoder
+ac3_fixed_encoder
+alac_encoder
+dca_encoder
+eac3_encoder
+flac_encoder
+g723_1_encoder
+mp2_encoder
+mp2fixed_encoder
+nellymoser_encoder
+ra_144_encoder
+sonic_encoder
+sonic_ls_encoder
+tta_encoder
+vorbis_encoder
+wavpack_encoder
+wmav1_encoder
+wmav2_encoder
+pcm_alaw_encoder
+pcm_f32be_encoder
+pcm_f32le_encoder
+pcm_f64be_encoder
+pcm_f64le_encoder
+pcm_mulaw_encoder
+pcm_s8_encoder
+pcm_s8_planar_encoder
+pcm_s16be_encoder
+pcm_s16be_planar_encoder
+pcm_s16le_encoder
+pcm_s16le_planar_encoder
+pcm_s24be_encoder
+pcm_s24daud_encoder
+pcm_s24le_encoder
+pcm_s24le_planar_encoder
+pcm_s32be_encoder
+pcm_s32le_encoder
+pcm_s32le_planar_encoder
+pcm_u8_encoder
+pcm_u16be_encoder
+pcm_u16le_encoder
+pcm_u24be_encoder
+pcm_u24le_encoder
+pcm_u32be_encoder
+pcm_u32le_encoder
+roq_dpcm_encoder
+adpcm_adx_encoder
+adpcm_g722_encoder
+adpcm_g726_encoder
+adpcm_ima_qt_encoder
+adpcm_ima_wav_encoder
+adpcm_ms_encoder
+adpcm_swf_encoder
+adpcm_yamaha_encoder
+ssa_encoder
+ass_encoder
+dvbsub_encoder
+dvdsub_encoder
+movtext_encoder
+srt_encoder
+subrip_encoder
+webvtt_encoder
+xsub_encoder
+libfaac_encoder
+libfdk_aac_encoder
+libgsm_encoder
+libgsm_ms_encoder
+libilbc_encoder
+libmp3lame_encoder
+libopencore_amrnb_encoder
+libopenjpeg_encoder
+libopus_encoder
+libschroedinger_encoder
+libshine_encoder
+libspeex_encoder
+libtheora_encoder
+libtwolame_encoder
+libutvideo_encoder
+libvo_aacenc_encoder
+libvo_amrwbenc_encoder
+libvorbis_encoder
+libvpx_vp8_encoder
+libvpx_vp9_encoder
+libwavpack_encoder
+libwebp_encoder
+libx264_encoder
+libx264rgb_encoder
+libx265_encoder
+libxavs_encoder
+libxvid_encoder
+libaacplus_encoder
+libopenh264_encoder
+    adelay_filter
+aecho_filter
+aeval_filter
+afade_filter
+aformat_filter
+ainterleave_filter
+allpass_filter
+amerge_filter
+amix_filter
+anull_filter
+apad_filter
+aperms_filter
+aphaser_filter
+aresample_filter
+aselect_filter
+asendcmd_filter
+asetnsamples_filter
+asetpts_filter
+asetrate_filter
+asettb_filter
+ashowinfo_filter
+asplit_filter
+astats_filter
+astreamsync_filter
+asyncts_filter
+atempo_filter
+atrim_filter
+azmq_filter
+bandpass_filter
+bandreject_filter
+bass_filter
+biquad_filter
+bs2b_filter
+channelmap_filter
+channelsplit_filter
+compand_filter
+dcshift_filter
+earwax_filter
+ebur128_filter
+equalizer_filter
+flanger_filter
+highpass_filter
+join_filter
+ladspa_filter
+lowpass_filter
+pan_filter
+replaygain_filter
+resample_filter
+silencedetect_filter
+silenceremove_filter
+treble_filter
+volume_filter
+volumedetect_filter
+aevalsrc_filter
+anullsrc_filter
+flite_filter
+sine_filter
+anullsink_filter
+alphaextract_filter
+alphamerge_filter
+ass_filter
+bbox_filter
+blackdetect_filter
+blackframe_filter
+blend_filter
+boxblur_filter
+codecview_filter
+colorbalance_filter
+colorchannelmixer_filter
+colorlevels_filter
+colormatrix_filter
+copy_filter
+crop_filter
+cropdetect_filter
+curves_filter
+dctdnoiz_filter
+decimate_filter
+dejudder_filter
+delogo_filter
+deshake_filter
+drawbox_filter
+drawgrid_filter
+drawtext_filter
+edgedetect_filter
+elbg_filter
+eq_filter
+extractplanes_filter
+fade_filter
+field_filter
+fieldmatch_filter
+fieldorder_filter
+format_filter
+fps_filter
+framepack_filter
+framestep_filter
+frei0r_filter
+fspp_filter
+geq_filter
+gradfun_filter
+haldclut_filter
+hflip_filter
+histeq_filter
+histogram_filter
+hqdn3d_filter
+hqx_filter
+hue_filter
+idet_filter
+il_filter
+interlace_filter
+interleave_filter
+kerndeint_filter
+lenscorrection_filter
+lut3d_filter
+lut_filter
+lutrgb_filter
+lutyuv_filter
+mcdeint_filter
+mergeplanes_filter
+mpdecimate_filter
+negate_filter
+noformat_filter
+noise_filter
+null_filter
+ocv_filter
+overlay_filter
+owdenoise_filter
+pad_filter
+palettegen_filter
+paletteuse_filter
+perms_filter
+perspective_filter
+phase_filter
+pixdesctest_filter
+pp_filter
+pp7_filter
+psnr_filter
+pullup_filter
+qp_filter
+removelogo_filter
+repeatfields_filter
+rotate_filter
+sab_filter
+scale_filter
+select_filter
+sendcmd_filter
+separatefields_filter
+setdar_filter
+setfield_filter
+setpts_filter
+setsar_filter
+settb_filter
+showinfo_filter
+showpalette_filter
+shuffleplanes_filter
+signalstats_filter
+smartblur_filter
+split_filter
+spp_filter
+stereo3d_filter
+subtitles_filter
+super2xsai_filter
+swapuv_filter
+tblend_filter
+telecine_filter
+thumbnail_filter
+tile_filter
+tinterlace_filter
+transpose_filter
+trim_filter
+unsharp_filter
+uspp_filter
+vflip_filter
+vidstabdetect_filter
+vidstabtransform_filter
+vignette_filter
+w3fdif_filter
+xbr_filter
+yadif_filter
+zmq_filter
+zoompan_filter
+cellauto_filter
+color_filter
+frei0r_src_filter
+haldclutsrc_filter
+life_filter
+mandelbrot_filter
+mptestsrc_filter
+nullsrc_filter
+rgbtestsrc_filter
+smptebars_filter
+smptehdbars_filter
+testsrc_filter
+nullsink_filter
+avectorscope_filter
+concat_filter
+showcqt_filter
+showspectrum_filter
+showwaves_filter
+amovie_filter
+movie_filter
+    h263_vaapi_hwaccel
+h263_vdpau_hwaccel
+h264_dxva2_hwaccel
+h264_qsv_hwaccel
+h264_vaapi_hwaccel
+h264_vda_hwaccel
+h264_vda_old_hwaccel
+h264_vdpau_hwaccel
+hevc_dxva2_hwaccel
+mpeg1_xvmc_hwaccel
+mpeg1_vdpau_hwaccel
+mpeg2_xvmc_hwaccel
+mpeg2_dxva2_hwaccel
+mpeg2_vaapi_hwaccel
+mpeg2_vdpau_hwaccel
+mpeg4_vaapi_hwaccel
+mpeg4_vdpau_hwaccel
+vc1_dxva2_hwaccel
+vc1_vaapi_hwaccel
+vc1_vdpau_hwaccel
+wmv3_dxva2_hwaccel
+wmv3_vaapi_hwaccel
+wmv3_vdpau_hwaccel
+    alsa_indev
+avfoundation_indev
+bktr_indev
+decklink_indev
+dshow_indev
+dv1394_indev
+fbdev_indev
+gdigrab_indev
+iec61883_indev
+jack_indev
+lavfi_indev
+openal_indev
+oss_indev
+pulse_indev
+qtkit_indev
+sndio_indev
+v4l2_indev
+vfwcap_indev
+x11grab_indev
+x11grab_xcb_indev
+libcdio_indev
+libdc1394_indev
+    a64_muxer
+ac3_muxer
+adts_muxer
+adx_muxer
+aiff_muxer
+amr_muxer
+asf_muxer
+ass_muxer
+ast_muxer
+asf_stream_muxer
+au_muxer
+avi_muxer
+avm2_muxer
+bit_muxer
+caf_muxer
+cavsvideo_muxer
+crc_muxer
+dash_muxer
+data_muxer
+daud_muxer
+dirac_muxer
+dnxhd_muxer
+dts_muxer
+dv_muxer
+eac3_muxer
+f4v_muxer
+ffm_muxer
+ffmetadata_muxer
+filmstrip_muxer
+flac_muxer
+flv_muxer
+framecrc_muxer
+framemd5_muxer
+g722_muxer
+g723_1_muxer
+gif_muxer
+gxf_muxer
+h261_muxer
+h263_muxer
+h264_muxer
+hds_muxer
+hevc_muxer
+hls_muxer
+ico_muxer
+ilbc_muxer
+image2_muxer
+image2pipe_muxer
+ipod_muxer
+ircam_muxer
+ismv_muxer
+ivf_muxer
+jacosub_muxer
+latm_muxer
+lrc_muxer
+m4v_muxer
+md5_muxer
+matroska_muxer
+matroska_audio_muxer
+microdvd_muxer
+mjpeg_muxer
+mlp_muxer
+mmf_muxer
+mov_muxer
+mp2_muxer
+mp3_muxer
+mp4_muxer
+mpeg1system_muxer
+mpeg1vcd_muxer
+mpeg1video_muxer
+mpeg2dvd_muxer
+mpeg2svcd_muxer
+mpeg2video_muxer
+mpeg2vob_muxer
+mpegts_muxer
+mpjpeg_muxer
+mxf_muxer
+mxf_d10_muxer
+mxf_opatom_muxer
+null_muxer
+nut_muxer
+oga_muxer
+ogg_muxer
+oma_muxer
+opus_muxer
+pcm_alaw_muxer
+pcm_mulaw_muxer
+pcm_f64be_muxer
+pcm_f64le_muxer
+pcm_f32be_muxer
+pcm_f32le_muxer
+pcm_s32be_muxer
+pcm_s32le_muxer
+pcm_s24be_muxer
+pcm_s24le_muxer
+pcm_s16be_muxer
+pcm_s16le_muxer
+pcm_s8_muxer
+pcm_u32be_muxer
+pcm_u32le_muxer
+pcm_u24be_muxer
+pcm_u24le_muxer
+pcm_u16be_muxer
+pcm_u16le_muxer
+pcm_u8_muxer
+psp_muxer
+rawvideo_muxer
+rm_muxer
+roq_muxer
+rso_muxer
+rtp_muxer
+rtp_mpegts_muxer
+rtsp_muxer
+sap_muxer
+segment_muxer
+stream_segment_muxer
+smjpeg_muxer
+smoothstreaming_muxer
+sox_muxer
+spx_muxer
+spdif_muxer
+srt_muxer
+swf_muxer
+tee_muxer
+tg2_muxer
+tgp_muxer
+mkvtimestamp_v2_muxer
+truehd_muxer
+uncodedframecrc_muxer
+vc1_muxer
+vc1t_muxer
+voc_muxer
+w64_muxer
+wav_muxer
+webm_muxer
+webm_dash_manifest_muxer
+webp_muxer
+webvtt_muxer
+wtv_muxer
+wv_muxer
+yuv4mpegpipe_muxer
+libnut_muxer
+    alsa_outdev
+caca_outdev
+decklink_outdev
+fbdev_outdev
+opengl_outdev
+oss_outdev
+pulse_outdev
+sdl_outdev
+sndio_outdev
+v4l2_outdev
+xv_outdev
+    aac_parser
+aac_latm_parser
+ac3_parser
+adx_parser
+bmp_parser
+cavsvideo_parser
+cook_parser
+dca_parser
+dirac_parser
+dnxhd_parser
+dpx_parser
+dvbsub_parser
+dvdsub_parser
+dvd_nav_parser
+flac_parser
+gsm_parser
+h261_parser
+h263_parser
+h264_parser
+hevc_parser
+mjpeg_parser
+mlp_parser
+mpeg4video_parser
+mpegaudio_parser
+mpegvideo_parser
+opus_parser
+png_parser
+pnm_parser
+rv30_parser
+rv40_parser
+tak_parser
+vc1_parser
+vorbis_parser
+vp3_parser
+vp8_parser
+vp9_parser
+    bluray_protocol
+cache_protocol
+concat_protocol
+crypto_protocol
+data_protocol
+ffrtmpcrypt_protocol
+ffrtmphttp_protocol
+file_protocol
+ftp_protocol
+gopher_protocol
+hls_protocol
+http_protocol
+httpproxy_protocol
+https_protocol
+icecast_protocol
+mmsh_protocol
+mmst_protocol
+md5_protocol
+pipe_protocol
+rtmp_protocol
+rtmpe_protocol
+rtmps_protocol
+rtmpt_protocol
+rtmpte_protocol
+rtmpts_protocol
+rtp_protocol
+sctp_protocol
+srtp_protocol
+subfile_protocol
+tcp_protocol
+tls_protocol
+udp_protocol
+udplite_protocol
+unix_protocol
+librtmp_protocol
+librtmpe_protocol
+librtmps_protocol
+librtmpt_protocol
+librtmpte_protocol
+libssh_protocol
+libsmbclient_protocol
+'
+ARCHFLAGS='-arch x86_64'
+ARCH_EXT_LIST='
+    
+    armv5te
+    armv6
+    armv6t2
+    armv8
+    neon
+    vfp
+    vfpv3
+    setend
+
+    
+    altivec
+    dcbzl
+    ldbrx
+    ppc4xx
+    vsx
+
+    
+    
+    amd3dnow
+    amd3dnowext
+    avx
+    avx2
+    fma3
+    fma4
+    mmx
+    mmxext
+    sse
+    sse2
+    sse3
+    sse4
+    sse42
+    ssse3
+    xop
+
+    cpunop
+    i686
+
+    
+    mipsfpu
+    mips32r2
+    mipsdspr1
+    mipsdspr2
+
+    loongson
+'
+ARCH_EXT_LIST_ARM='
+    armv5te
+    armv6
+    armv6t2
+    armv8
+    neon
+    vfp
+    vfpv3
+    setend
+'
+ARCH_EXT_LIST_MIPS='
+    mipsfpu
+    mips32r2
+    mipsdspr1
+    mipsdspr2
+'
+ARCH_EXT_LIST_PPC='
+    altivec
+    dcbzl
+    ldbrx
+    ppc4xx
+    vsx
+'
+ARCH_EXT_LIST_X86='
+    
+    amd3dnow
+    amd3dnowext
+    avx
+    avx2
+    fma3
+    fma4
+    mmx
+    mmxext
+    sse
+    sse2
+    sse3
+    sse4
+    sse42
+    ssse3
+    xop
+
+    cpunop
+    i686
+'
+ARCH_EXT_LIST_X86_SIMD='
+    amd3dnow
+    amd3dnowext
+    avx
+    avx2
+    fma3
+    fma4
+    mmx
+    mmxext
+    sse
+    sse2
+    sse3
+    sse4
+    sse42
+    ssse3
+    xop
+'
+ARCH_FEATURES='
+    aligned_stack
+    fast_64bit
+    fast_clz
+    fast_cmov
+    local_aligned_8
+    local_aligned_16
+    local_aligned_32
+    simd_align_16
+'
+ARCH_LIST='
+    aarch64
+    alpha
+    arm
+    avr32
+    avr32_ap
+    avr32_uc
+    bfin
+    ia64
+    m68k
+    mips
+    mips64
+    parisc
+    ppc
+    ppc64
+    s390
+    sh4
+    sparc
+    sparc64
+    tilegx
+    tilepro
+    tomi
+    x86
+    x86_32
+    x86_64
+'
+AS_C=-c
+AS_O='-o $@'
+ATOMICS_LIST='
+    atomics_gcc
+    atomics_suncc
+    atomics_win32
+'
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.G6qzDdwdCC/Render
+BASH=/bin/sh
+BASH_ARGC=([0]="1")
+BASH_ARGV=([0]="--enable-libopencore-amrnb")
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="./configure")
+BASH_VERSINFO=([0]="3" [1]="2" [2]="57" [3]="1" [4]="release" [5]="x86_64-apple-darwin14")
+BASH_VERSION='3.2.57(1)-release'
+BSF_LIST='aac_adtstoasc_bsf
+chomp_bsf
+dump_extradata_bsf
+h264_mp4toannexb_bsf
+imx_dump_header_bsf
+mjpeg2jpeg_bsf
+mjpega_dump_header_bsf
+mp3_header_decompress_bsf
+mov2textsub_bsf
+noise_bsf
+remove_extradata_bsf
+text2movsub_bsf'
+BUILTIN_LIST='
+    atomic_cas_ptr
+    atomic_compare_exchange
+    machine_rw_barrier
+    MemoryBarrier
+    mm_empty
+    rdtsc
+    sarestart
+    sync_val_compare_and_swap
+'
+CC_C=-c
+CC_E='-E -o $@'
+CC_O='-o $@'
+CMDLINE_APPEND='
+    extra_cflags
+    extra_cxxflags
+    host_cppflags
+'
+CMDLINE_SELECT='
+    
+    
+    armv5te
+    armv6
+    armv6t2
+    armv8
+    neon
+    vfp
+    vfpv3
+    setend
+
+    
+    altivec
+    dcbzl
+    ldbrx
+    ppc4xx
+    vsx
+
+    
+    
+    amd3dnow
+    amd3dnowext
+    avx
+    avx2
+    fma3
+    fma4
+    mmx
+    mmxext
+    sse
+    sse2
+    sse3
+    sse4
+    sse42
+    ssse3
+    xop
+
+    cpunop
+    i686
+
+    
+    mipsfpu
+    mips32r2
+    mipsdspr1
+    mipsdspr2
+
+    loongson
+
+    
+    
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    hwaccels
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+
+    
+    doc
+    htmlpages
+    manpages
+    podpages
+    txtpages
+
+    
+    avio_reading_example
+    decoding_encoding_example
+    demuxing_decoding_example
+    extract_mvs_example
+    filter_audio_example
+    filtering_audio_example
+    filtering_video_example
+    metadata_example
+    muxing_example
+    qsvdec_example
+    remuxing_example
+    resampling_audio_example
+    scaling_video_example
+    transcode_aac_example
+    transcoding_example
+
+    
+    avisynth
+    bzlib
+    crystalhd
+    decklink
+    frei0r
+    gnutls
+    iconv
+    ladspa
+    libaacplus
+    libass
+    libbluray
+    libbs2b
+    libcaca
+    libcdio
+    libcelt
+    libdc1394
+    libfaac
+    libfdk_aac
+    libflite
+    libfontconfig
+    libfreetype
+    libfribidi
+    libgme
+    libgsm
+    libiec61883
+    libilbc
+    libmfx
+    libmodplug
+    libmp3lame
+    libnut
+    libopencore_amrnb
+    libopencore_amrwb
+    libopencv
+    libopenh264
+    libopenjpeg
+    libopus
+    libpulse
+    libquvi
+    librtmp
+    libschroedinger
+    libshine
+    libsmbclient
+    libsoxr
+    libspeex
+    libssh
+    libstagefright_h264
+    libtheora
+    libtwolame
+    libutvideo
+    libv4l2
+    libvidstab
+    libvo_aacenc
+    libvo_amrwbenc
+    libvorbis
+    libvpx
+    libwavpack
+    libwebp
+    libx264
+    libx265
+    libxavs
+    libxcb
+    libxcb_shm
+    libxcb_shape
+    libxcb_xfixes
+    libxvid
+    libzmq
+    libzvbi
+    lzma
+    nvenc
+    openal
+    opencl
+    opengl
+    openssl
+    sdl
+    x11grab
+    xlib
+    zlib
+
+    
+    ftrapv
+    gray
+    hardcoded_tables
+    runtime_cpudetect
+    safe_bitstream_reader
+    shared
+    small
+    static
+    swscale_alpha
+
+    
+    dxva2
+    vaapi
+    vda
+    vdpau
+    xvmc
+
+    
+    gpl
+    nonfree
+    version3
+
+    
+    avcodec
+    avdevice
+    avfilter
+    avformat
+    avresample
+    avutil
+    postproc
+    swresample
+    swscale
+
+    
+    ffplay
+    ffprobe
+    ffserver
+    ffmpeg
+
+    
+    dct
+    dwt
+    error_resilience
+    faan
+    fast_unaligned
+    fft
+    lsp
+    lzo
+    mdct
+    pixelutils
+    network
+    qsv
+    rdft
+
+    fontconfig
+    incompatible_libav_abi
+    memalign_hack
+    memory_poisoning
+    neon_clobber_test
+    pic
+    pod2man
+    raise_major
+    thumb
+    xmm_clobber_test
+
+    
+    inline_asm
+    symver
+    yasm
+
+    
+    pthreads
+    os2threads
+    w32threads
+
+    asm
+    cross_compile
+    debug
+    extra_warnings
+    logging
+    lto
+    optimizations
+    rpath
+    stripping
+'
+CMDLINE_SET='
+    
+    bindir
+    datadir
+    docdir
+    incdir
+    libdir
+    mandir
+    prefix
+    shlibdir
+
+    ar
+    arch
+    as
+    assert_level
+    build_suffix
+    cc
+    cpu
+    cross_prefix
+    cxx
+    dep_cc
+    doxygen
+    extra_version
+    gas
+    host_cc
+    host_cflags
+    host_ld
+    host_ldflags
+    host_libs
+    host_os
+    install
+    ld
+    logfile
+    malloc_prefix
+    nm
+    optflags
+    pkg_config
+    pkg_config_flags
+    progs_suffix
+    random_seed
+    ranlib
+    samples
+    strip
+    sws_max_filter_size
+    sysinclude
+    sysroot
+    target_exec
+    target_os
+    target_path
+    target_samples
+    tempprefix
+    toolchain
+    valgrind
+    yasmexe
+'
+COLORFGBG='7;0'
+COMMAND_MODE=unix2003
+COMPONENT_LIST='
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    hwaccels
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+'
+CONFIG_EXTRA='
+    aandcttables
+    ac3dsp
+    audio_frame_queue
+    audiodsp
+    blockdsp
+    bswapdsp
+    cabac
+    dvprofile
+    exif
+    faandct
+    faanidct
+    fdctdsp
+    fmtconvert
+    frame_thread_encoder
+    gcrypt
+    golomb
+    gplv3
+    h263dsp
+    h264chroma
+    h264dsp
+    h264pred
+    h264qpel
+    hpeldsp
+    huffman
+    huffyuvdsp
+    huffyuvencdsp
+    idctdsp
+    iirfilter
+    imdct15
+    intrax8
+    lgplv3
+    llauddsp
+    llviddsp
+    lpc
+    me_cmp
+    mpeg_er
+    mpegaudio
+    mpegaudiodsp
+    mpegvideo
+    mpegvideoenc
+    nettle
+    pixblockdsp
+    qpeldsp
+    rangecoder
+    riffdec
+    riffenc
+    rtpdec
+    rtpenc_chain
+    sinewin
+    startcode
+    tpeldsp
+    videodsp
+    vp3dsp
+    wma_freqs
+'
+CONFIG_LIST='
+    
+    bsfs
+    decoders
+    demuxers
+    encoders
+    filters
+    hwaccels
+    indevs
+    muxers
+    outdevs
+    parsers
+    protocols
+
+    
+    doc
+    htmlpages
+    manpages
+    podpages
+    txtpages
+
+    
+    avio_reading_example
+    decoding_encoding_example
+    demuxing_decoding_example
+    extract_mvs_example
+    filter_audio_example
+    filtering_audio_example
+    filtering_video_example
+    metadata_example
+    muxing_example
+    qsvdec_example
+    remuxing_example
+    resampling_audio_example
+    scaling_video_example
+    transcode_aac_example
+    transcoding_example
+
+    
+    avisynth
+    bzlib
+    crystalhd
+    decklink
+    frei0r
+    gnutls
+    iconv
+    ladspa
+    libaacplus
+    libass
+    libbluray
+    libbs2b
+    libcaca
+    libcdio
+    libcelt
+    libdc1394
+    libfaac
+    libfdk_aac
+    libflite
+    libfontconfig
+    libfreetype
+    libfribidi
+    libgme
+    libgsm
+    libiec61883
+    libilbc
+    libmfx
+    libmodplug
+    libmp3lame
+    libnut
+    libopencore_amrnb
+    libopencore_amrwb
+    libopencv
+    libopenh264
+    libopenjpeg
+    libopus
+    libpulse
+    libquvi
+    librtmp
+    libschroedinger
+    libshine
+    libsmbclient
+    libsoxr
+    libspeex
+    libssh
+    libstagefright_h264
+    libtheora
+    libtwolame
+    libutvideo
+    libv4l2
+    libvidstab
+    libvo_aacenc
+    libvo_amrwbenc
+    libvorbis
+    libvpx
+    libwavpack
+    libwebp
+    libx264
+    libx265
+    libxavs
+    libxcb
+    libxcb_shm
+    libxcb_shape
+    libxcb_xfixes
+    libxvid
+    libzmq
+    libzvbi
+    lzma
+    nvenc
+    openal
+    opencl
+    opengl
+    openssl
+    sdl
+    x11grab
+    xlib
+    zlib
+
+    
+    ftrapv
+    gray
+    hardcoded_tables
+    runtime_cpudetect
+    safe_bitstream_reader
+    shared
+    small
+    static
+    swscale_alpha
+
+    
+    dxva2
+    vaapi
+    vda
+    vdpau
+    xvmc
+
+    
+    gpl
+    nonfree
+    version3
+
+    
+    avcodec
+    avdevice
+    avfilter
+    avformat
+    avresample
+    avutil
+    postproc
+    swresample
+    swscale
+
+    
+    ffplay
+    ffprobe
+    ffserver
+    ffmpeg
+
+    
+    dct
+    dwt
+    error_resilience
+    faan
+    fast_unaligned
+    fft
+    lsp
+    lzo
+    mdct
+    pixelutils
+    network
+    qsv
+    rdft
+
+    fontconfig
+    incompatible_libav_abi
+    memalign_hack
+    memory_poisoning
+    neon_clobber_test
+    pic
+    pod2man
+    raise_major
+    thumb
+    xmm_clobber_test
+'
+CXX_C=-c
+CXX_O='-o $@'
+DECODER_LIST='aasc_decoder
+aic_decoder
+alias_pix_decoder
+amv_decoder
+anm_decoder
+ansi_decoder
+apng_decoder
+asv1_decoder
+asv2_decoder
+aura_decoder
+aura2_decoder
+avrp_decoder
+avrn_decoder
+avs_decoder
+avui_decoder
+ayuv_decoder
+bethsoftvid_decoder
+bfi_decoder
+bink_decoder
+bmp_decoder
+bmv_video_decoder
+brender_pix_decoder
+c93_decoder
+cavs_decoder
+cdgraphics_decoder
+cdxl_decoder
+cinepak_decoder
+cljr_decoder
+cllc_decoder
+comfortnoise_decoder
+cpia_decoder
+cscd_decoder
+cyuv_decoder
+dfa_decoder
+dirac_decoder
+dnxhd_decoder
+dpx_decoder
+dsicinvideo_decoder
+dvvideo_decoder
+dxa_decoder
+dxtory_decoder
+eacmv_decoder
+eamad_decoder
+eatgq_decoder
+eatgv_decoder
+eatqi_decoder
+eightbps_decoder
+eightsvx_exp_decoder
+eightsvx_fib_decoder
+escape124_decoder
+escape130_decoder
+exr_decoder
+ffv1_decoder
+ffvhuff_decoder
+fic_decoder
+flashsv_decoder
+flashsv2_decoder
+flic_decoder
+flv_decoder
+fourxm_decoder
+fraps_decoder
+frwu_decoder
+g2m_decoder
+gif_decoder
+h261_decoder
+h263_decoder
+h263i_decoder
+h263p_decoder
+h264_decoder
+h264_crystalhd_decoder
+h264_qsv_decoder
+h264_vda_decoder
+h264_vdpau_decoder
+hevc_decoder
+hnm4_video_decoder
+hqx_decoder
+huffyuv_decoder
+idcin_decoder
+iff_byterun1_decoder
+iff_ilbm_decoder
+indeo2_decoder
+indeo3_decoder
+indeo4_decoder
+indeo5_decoder
+interplay_video_decoder
+jpeg2000_decoder
+jpegls_decoder
+jv_decoder
+kgv1_decoder
+kmvc_decoder
+lagarith_decoder
+loco_decoder
+mdec_decoder
+mimic_decoder
+mjpeg_decoder
+mjpegb_decoder
+mmvideo_decoder
+motionpixels_decoder
+mpeg_xvmc_decoder
+mpeg1video_decoder
+mpeg2video_decoder
+mpeg4_decoder
+mpeg4_crystalhd_decoder
+mpeg4_vdpau_decoder
+mpegvideo_decoder
+mpeg_vdpau_decoder
+mpeg1_vdpau_decoder
+mpeg2_crystalhd_decoder
+msa1_decoder
+msmpeg4_crystalhd_decoder
+msmpeg4v1_decoder
+msmpeg4v2_decoder
+msmpeg4v3_decoder
+msrle_decoder
+mss1_decoder
+mss2_decoder
+msvideo1_decoder
+mszh_decoder
+mts2_decoder
+mvc1_decoder
+mvc2_decoder
+mxpeg_decoder
+nuv_decoder
+paf_video_decoder
+pam_decoder
+pbm_decoder
+pcx_decoder
+pgm_decoder
+pgmyuv_decoder
+pictor_decoder
+png_decoder
+ppm_decoder
+prores_decoder
+prores_lgpl_decoder
+ptx_decoder
+qdraw_decoder
+qpeg_decoder
+qtrle_decoder
+r10k_decoder
+r210_decoder
+rawvideo_decoder
+rl2_decoder
+roq_decoder
+rpza_decoder
+rv10_decoder
+rv20_decoder
+rv30_decoder
+rv40_decoder
+s302m_decoder
+sanm_decoder
+sgi_decoder
+sgirle_decoder
+smacker_decoder
+smc_decoder
+smvjpeg_decoder
+snow_decoder
+sp5x_decoder
+sunrast_decoder
+svq1_decoder
+svq3_decoder
+targa_decoder
+targa_y216_decoder
+theora_decoder
+thp_decoder
+tiertexseqvideo_decoder
+tiff_decoder
+tmv_decoder
+truemotion1_decoder
+truemotion2_decoder
+tscc_decoder
+tscc2_decoder
+txd_decoder
+ulti_decoder
+utvideo_decoder
+v210_decoder
+v210x_decoder
+v308_decoder
+v408_decoder
+v410_decoder
+vb_decoder
+vble_decoder
+vc1_decoder
+vc1_crystalhd_decoder
+vc1_vdpau_decoder
+vc1image_decoder
+vcr1_decoder
+vmdvideo_decoder
+vmnc_decoder
+vp3_decoder
+vp5_decoder
+vp6_decoder
+vp6a_decoder
+vp6f_decoder
+vp7_decoder
+vp8_decoder
+vp9_decoder
+vqa_decoder
+webp_decoder
+wmv1_decoder
+wmv2_decoder
+wmv3_decoder
+wmv3_crystalhd_decoder
+wmv3_vdpau_decoder
+wmv3image_decoder
+wnv1_decoder
+xan_wc3_decoder
+xan_wc4_decoder
+xbm_decoder
+xface_decoder
+xl_decoder
+xwd_decoder
+y41p_decoder
+yop_decoder
+yuv4_decoder
+zero12v_decoder
+zerocodec_decoder
+zlib_decoder
+zmbv_decoder
+aac_decoder
+aac_latm_decoder
+ac3_decoder
+ac3_fixed_decoder
+alac_decoder
+als_decoder
+amrnb_decoder
+amrwb_decoder
+ape_decoder
+atrac1_decoder
+atrac3_decoder
+atrac3p_decoder
+binkaudio_dct_decoder
+binkaudio_rdft_decoder
+bmv_audio_decoder
+cook_decoder
+dca_decoder
+dsd_lsbf_decoder
+dsd_msbf_decoder
+dsd_lsbf_planar_decoder
+dsd_msbf_planar_decoder
+dsicinaudio_decoder
+dss_sp_decoder
+eac3_decoder
+evrc_decoder
+ffwavesynth_decoder
+flac_decoder
+g723_1_decoder
+g729_decoder
+gsm_decoder
+gsm_ms_decoder
+iac_decoder
+imc_decoder
+mace3_decoder
+mace6_decoder
+metasound_decoder
+mlp_decoder
+mp1_decoder
+mp1float_decoder
+mp2_decoder
+mp2float_decoder
+mp3_decoder
+mp3float_decoder
+mp3adu_decoder
+mp3adufloat_decoder
+mp3on4_decoder
+mp3on4float_decoder
+mpc7_decoder
+mpc8_decoder
+nellymoser_decoder
+on2avc_decoder
+opus_decoder
+paf_audio_decoder
+qcelp_decoder
+qdm2_decoder
+ra_144_decoder
+ra_288_decoder
+ralf_decoder
+shorten_decoder
+sipr_decoder
+smackaud_decoder
+sonic_decoder
+tak_decoder
+truehd_decoder
+truespeech_decoder
+tta_decoder
+twinvq_decoder
+vmdaudio_decoder
+vorbis_decoder
+wavpack_decoder
+wmalossless_decoder
+wmapro_decoder
+wmav1_decoder
+wmav2_decoder
+wmavoice_decoder
+ws_snd1_decoder
+pcm_alaw_decoder
+pcm_bluray_decoder
+pcm_dvd_decoder
+pcm_f32be_decoder
+pcm_f32le_decoder
+pcm_f64be_decoder
+pcm_f64le_decoder
+pcm_lxf_decoder
+pcm_mulaw_decoder
+pcm_s8_decoder
+pcm_s8_planar_decoder
+pcm_s16be_decoder
+pcm_s16be_planar_decoder
+pcm_s16le_decoder
+pcm_s16le_planar_decoder
+pcm_s24be_decoder
+pcm_s24daud_decoder
+pcm_s24le_decoder
+pcm_s24le_planar_decoder
+pcm_s32be_decoder
+pcm_s32le_decoder
+pcm_s32le_planar_decoder
+pcm_u8_decoder
+pcm_u16be_decoder
+pcm_u16le_decoder
+pcm_u24be_decoder
+pcm_u24le_decoder
+pcm_u32be_decoder
+pcm_u32le_decoder
+pcm_zork_decoder
+interplay_dpcm_decoder
+roq_dpcm_decoder
+sol_dpcm_decoder
+xan_dpcm_decoder
+adpcm_4xm_decoder
+adpcm_adx_decoder
+adpcm_afc_decoder
+adpcm_ct_decoder
+adpcm_dtk_decoder
+adpcm_ea_decoder
+adpcm_ea_maxis_xa_decoder
+adpcm_ea_r1_decoder
+adpcm_ea_r2_decoder
+adpcm_ea_r3_decoder
+adpcm_ea_xas_decoder
+adpcm_g722_decoder
+adpcm_g726_decoder
+adpcm_g726le_decoder
+adpcm_ima_amv_decoder
+adpcm_ima_apc_decoder
+adpcm_ima_dk3_decoder
+adpcm_ima_dk4_decoder
+adpcm_ima_ea_eacs_decoder
+adpcm_ima_ea_sead_decoder
+adpcm_ima_iss_decoder
+adpcm_ima_oki_decoder
+adpcm_ima_qt_decoder
+adpcm_ima_rad_decoder
+adpcm_ima_smjpeg_decoder
+adpcm_ima_wav_decoder
+adpcm_ima_ws_decoder
+adpcm_ms_decoder
+adpcm_sbpro_2_decoder
+adpcm_sbpro_3_decoder
+adpcm_sbpro_4_decoder
+adpcm_swf_decoder
+adpcm_thp_decoder
+adpcm_vima_decoder
+adpcm_xa_decoder
+adpcm_yamaha_decoder
+vima_decoder
+ssa_decoder
+ass_decoder
+ccaption_decoder
+dvbsub_decoder
+dvdsub_decoder
+jacosub_decoder
+microdvd_decoder
+movtext_decoder
+mpl2_decoder
+pgssub_decoder
+pjs_decoder
+realtext_decoder
+sami_decoder
+srt_decoder
+stl_decoder
+subrip_decoder
+subviewer_decoder
+subviewer1_decoder
+text_decoder
+vplayer_decoder
+webvtt_decoder
+xsub_decoder
+libcelt_decoder
+libfdk_aac_decoder
+libgsm_decoder
+libgsm_ms_decoder
+libilbc_decoder
+libopencore_amrnb_decoder
+libopencore_amrwb_decoder
+libopenjpeg_decoder
+libopus_decoder
+libschroedinger_decoder
+libspeex_decoder
+libstagefright_h264_decoder
+libutvideo_decoder
+libvorbis_decoder
+libvpx_vp8_decoder
+libvpx_vp9_decoder
+libzvbi_teletext_decoder
+bintext_decoder
+xbin_decoder
+idf_decoder'
+DEMUXER_LIST='aac_demuxer
+ac3_demuxer
+act_demuxer
+adf_demuxer
+adp_demuxer
+adx_demuxer
+aea_demuxer
+afc_demuxer
+aiff_demuxer
+amr_demuxer
+anm_demuxer
+apc_demuxer
+ape_demuxer
+apng_demuxer
+aqtitle_demuxer
+asf_demuxer
+ass_demuxer
+ast_demuxer
+au_demuxer
+avi_demuxer
+avisynth_demuxer
+avr_demuxer
+avs_demuxer
+bethsoftvid_demuxer
+bfi_demuxer
+bintext_demuxer
+bink_demuxer
+bit_demuxer
+bmv_demuxer
+brstm_demuxer
+boa_demuxer
+c93_demuxer
+caf_demuxer
+cavsvideo_demuxer
+cdg_demuxer
+cdxl_demuxer
+cine_demuxer
+concat_demuxer
+data_demuxer
+daud_demuxer
+dfa_demuxer
+dirac_demuxer
+dnxhd_demuxer
+dsf_demuxer
+dsicin_demuxer
+dss_demuxer
+dts_demuxer
+dtshd_demuxer
+dv_demuxer
+dvbsub_demuxer
+dxa_demuxer
+ea_demuxer
+ea_cdata_demuxer
+eac3_demuxer
+epaf_demuxer
+ffm_demuxer
+ffmetadata_demuxer
+filmstrip_demuxer
+flac_demuxer
+flic_demuxer
+flv_demuxer
+live_flv_demuxer
+fourxm_demuxer
+frm_demuxer
+g722_demuxer
+g723_1_demuxer
+g729_demuxer
+gif_demuxer
+gsm_demuxer
+gxf_demuxer
+h261_demuxer
+h263_demuxer
+h264_demuxer
+hevc_demuxer
+hls_demuxer
+hnm_demuxer
+ico_demuxer
+idcin_demuxer
+idf_demuxer
+iff_demuxer
+ilbc_demuxer
+image2_demuxer
+image2pipe_demuxer
+image2_alias_pix_demuxer
+image2_brender_pix_demuxer
+ingenient_demuxer
+ipmovie_demuxer
+ircam_demuxer
+iss_demuxer
+iv8_demuxer
+ivf_demuxer
+jacosub_demuxer
+jv_demuxer
+latm_demuxer
+lmlm4_demuxer
+loas_demuxer
+lrc_demuxer
+lvf_demuxer
+lxf_demuxer
+m4v_demuxer
+matroska_demuxer
+mgsts_demuxer
+microdvd_demuxer
+mjpeg_demuxer
+mlp_demuxer
+mlv_demuxer
+mm_demuxer
+mmf_demuxer
+mov_demuxer
+mp3_demuxer
+mpc_demuxer
+mpc8_demuxer
+mpegps_demuxer
+mpegts_demuxer
+mpegtsraw_demuxer
+mpegvideo_demuxer
+mpl2_demuxer
+mpsub_demuxer
+msnwc_tcp_demuxer
+mtv_demuxer
+mv_demuxer
+mvi_demuxer
+mxf_demuxer
+mxg_demuxer
+nc_demuxer
+nistsphere_demuxer
+nsv_demuxer
+nut_demuxer
+nuv_demuxer
+ogg_demuxer
+oma_demuxer
+paf_demuxer
+pcm_alaw_demuxer
+pcm_mulaw_demuxer
+pcm_f64be_demuxer
+pcm_f64le_demuxer
+pcm_f32be_demuxer
+pcm_f32le_demuxer
+pcm_s32be_demuxer
+pcm_s32le_demuxer
+pcm_s24be_demuxer
+pcm_s24le_demuxer
+pcm_s16be_demuxer
+pcm_s16le_demuxer
+pcm_s8_demuxer
+pcm_u32be_demuxer
+pcm_u32le_demuxer
+pcm_u24be_demuxer
+pcm_u24le_demuxer
+pcm_u16be_demuxer
+pcm_u16le_demuxer
+pcm_u8_demuxer
+pjs_demuxer
+pmp_demuxer
+pva_demuxer
+pvf_demuxer
+qcp_demuxer
+r3d_demuxer
+rawvideo_demuxer
+realtext_demuxer
+redspark_demuxer
+rl2_demuxer
+rm_demuxer
+roq_demuxer
+rpl_demuxer
+rsd_demuxer
+rso_demuxer
+rtp_demuxer
+rtsp_demuxer
+sami_demuxer
+sap_demuxer
+sbg_demuxer
+sdp_demuxer
+sdr2_demuxer
+segafilm_demuxer
+shorten_demuxer
+siff_demuxer
+sln_demuxer
+smacker_demuxer
+smjpeg_demuxer
+smush_demuxer
+sol_demuxer
+sox_demuxer
+spdif_demuxer
+srt_demuxer
+str_demuxer
+stl_demuxer
+subviewer1_demuxer
+subviewer_demuxer
+sup_demuxer
+swf_demuxer
+tak_demuxer
+tedcaptions_demuxer
+thp_demuxer
+tiertexseq_demuxer
+tmv_demuxer
+truehd_demuxer
+tta_demuxer
+txd_demuxer
+tty_demuxer
+vc1_demuxer
+vc1t_demuxer
+vivo_demuxer
+vmd_demuxer
+vobsub_demuxer
+voc_demuxer
+vplayer_demuxer
+vqf_demuxer
+w64_demuxer
+wav_demuxer
+wc3_demuxer
+webm_dash_manifest_demuxer
+webvtt_demuxer
+wsaud_demuxer
+wsvqa_demuxer
+wtv_demuxer
+wv_demuxer
+xa_demuxer
+xbin_demuxer
+xmv_demuxer
+xwma_demuxer
+yop_demuxer
+yuv4mpegpipe_demuxer
+image_bmp_pipe_demuxer
+image_dpx_pipe_demuxer
+image_exr_pipe_demuxer
+image_j2k_pipe_demuxer
+image_jpeg_pipe_demuxer
+image_jpegls_pipe_demuxer
+image_pictor_pipe_demuxer
+image_png_pipe_demuxer
+image_sgi_pipe_demuxer
+image_sunrast_pipe_demuxer
+image_tiff_pipe_demuxer
+image_webp_pipe_demuxer
+libgme_demuxer
+libmodplug_demuxer
+libnut_demuxer
+libquvi_demuxer'
+DEPCMD='$(DEP$(1)) $(DEP$(1)FLAGS) $($(1)DEP_FLAGS) $< | sed -e "/^\#.*/d" -e "s,^[[:space:]]*$(*F)\\.o,$(@D)/$(*F).o," > $(@:.o=.d)'
+DEPFLAGS=-MM
+DIRSTACK=()
+DISPLAY=/private/tmp/com.apple.launchd.1bqgDtxiwW/org.macosforge.xquartz:0
+DOCUMENT_LIST='
+    doc
+    htmlpages
+    manpages
+    podpages
+    txtpages
+'
+E1=0
+E2=1
+ENCODER_LIST='a64multi_encoder
+a64multi5_encoder
+alias_pix_encoder
+amv_encoder
+asv1_encoder
+asv2_encoder
+avrp_encoder
+avui_encoder
+ayuv_encoder
+bmp_encoder
+cinepak_encoder
+cljr_encoder
+comfortnoise_encoder
+dnxhd_encoder
+dpx_encoder
+dvvideo_encoder
+ffv1_encoder
+ffvhuff_encoder
+flashsv_encoder
+flashsv2_encoder
+flv_encoder
+gif_encoder
+h261_encoder
+h263_encoder
+h263p_encoder
+huffyuv_encoder
+jpeg2000_encoder
+jpegls_encoder
+ljpeg_encoder
+mjpeg_encoder
+mpeg1video_encoder
+mpeg2video_encoder
+mpeg4_encoder
+msmpeg4v2_encoder
+msmpeg4v3_encoder
+msvideo1_encoder
+nvenc_encoder
+pam_encoder
+pbm_encoder
+pcx_encoder
+pgm_encoder
+pgmyuv_encoder
+png_encoder
+ppm_encoder
+prores_encoder
+prores_aw_encoder
+prores_ks_encoder
+qtrle_encoder
+r10k_encoder
+r210_encoder
+rawvideo_encoder
+roq_encoder
+rv10_encoder
+rv20_encoder
+s302m_encoder
+sgi_encoder
+snow_encoder
+sunrast_encoder
+svq1_encoder
+targa_encoder
+tiff_encoder
+utvideo_encoder
+v210_encoder
+v308_encoder
+v408_encoder
+v410_encoder
+wmv1_encoder
+wmv2_encoder
+xbm_encoder
+xface_encoder
+xwd_encoder
+y41p_encoder
+yuv4_encoder
+zlib_encoder
+zmbv_encoder
+aac_encoder
+ac3_encoder
+ac3_fixed_encoder
+alac_encoder
+dca_encoder
+eac3_encoder
+flac_encoder
+g723_1_encoder
+mp2_encoder
+mp2fixed_encoder
+nellymoser_encoder
+ra_144_encoder
+sonic_encoder
+sonic_ls_encoder
+tta_encoder
+vorbis_encoder
+wavpack_encoder
+wmav1_encoder
+wmav2_encoder
+pcm_alaw_encoder
+pcm_f32be_encoder
+pcm_f32le_encoder
+pcm_f64be_encoder
+pcm_f64le_encoder
+pcm_mulaw_encoder
+pcm_s8_encoder
+pcm_s8_planar_encoder
+pcm_s16be_encoder
+pcm_s16be_planar_encoder
+pcm_s16le_encoder
+pcm_s16le_planar_encoder
+pcm_s24be_encoder
+pcm_s24daud_encoder
+pcm_s24le_encoder
+pcm_s24le_planar_encoder
+pcm_s32be_encoder
+pcm_s32le_encoder
+pcm_s32le_planar_encoder
+pcm_u8_encoder
+pcm_u16be_encoder
+pcm_u16le_encoder
+pcm_u24be_encoder
+pcm_u24le_encoder
+pcm_u32be_encoder
+pcm_u32le_encoder
+roq_dpcm_encoder
+adpcm_adx_encoder
+adpcm_g722_encoder
+adpcm_g726_encoder
+adpcm_ima_qt_encoder
+adpcm_ima_wav_encoder
+adpcm_ms_encoder
+adpcm_swf_encoder
+adpcm_yamaha_encoder
+ssa_encoder
+ass_encoder
+dvbsub_encoder
+dvdsub_encoder
+movtext_encoder
+srt_encoder
+subrip_encoder
+webvtt_encoder
+xsub_encoder
+libfaac_encoder
+libfdk_aac_encoder
+libgsm_encoder
+libgsm_ms_encoder
+libilbc_encoder
+libmp3lame_encoder
+libopencore_amrnb_encoder
+libopenjpeg_encoder
+libopus_encoder
+libschroedinger_encoder
+libshine_encoder
+libspeex_encoder
+libtheora_encoder
+libtwolame_encoder
+libutvideo_encoder
+libvo_aacenc_encoder
+libvo_amrwbenc_encoder
+libvorbis_encoder
+libvpx_vp8_encoder
+libvpx_vp9_encoder
+libwavpack_encoder
+libwebp_encoder
+libx264_encoder
+libx264rgb_encoder
+libx265_encoder
+libxavs_encoder
+libxvid_encoder
+libaacplus_encoder
+libopenh264_encoder'
+EUID=908243515
+EXAMPLE_LIST='
+    avio_reading_example
+    decoding_encoding_example
+    demuxing_decoding_example
+    extract_mvs_example
+    filter_audio_example
+    filtering_audio_example
+    filtering_video_example
+    metadata_example
+    muxing_example
+    qsvdec_example
+    remuxing_example
+    resampling_audio_example
+    scaling_video_example
+    transcode_aac_example
+    transcoding_example
+'
+EXTERNAL_LIBRARY_LIST='
+    avisynth
+    bzlib
+    crystalhd
+    decklink
+    frei0r
+    gnutls
+    iconv
+    ladspa
+    libaacplus
+    libass
+    libbluray
+    libbs2b
+    libcaca
+    libcdio
+    libcelt
+    libdc1394
+    libfaac
+    libfdk_aac
+    libflite
+    libfontconfig
+    libfreetype
+    libfribidi
+    libgme
+    libgsm
+    libiec61883
+    libilbc
+    libmfx
+    libmodplug
+    libmp3lame
+    libnut
+    libopencore_amrnb
+    libopencore_amrwb
+    libopencv
+    libopenh264
+    libopenjpeg
+    libopus
+    libpulse
+    libquvi
+    librtmp
+    libschroedinger
+    libshine
+    libsmbclient
+    libsoxr
+    libspeex
+    libssh
+    libstagefright_h264
+    libtheora
+    libtwolame
+    libutvideo
+    libv4l2
+    libvidstab
+    libvo_aacenc
+    libvo_amrwbenc
+    libvorbis
+    libvpx
+    libwavpack
+    libwebp
+    libx264
+    libx265
+    libxavs
+    libxcb
+    libxcb_shm
+    libxcb_shape
+    libxcb_xfixes
+    libxvid
+    libzmq
+    libzvbi
+    lzma
+    nvenc
+    openal
+    opencl
+    opengl
+    openssl
+    sdl
+    x11grab
+    xlib
+    zlib
+'
+FEATURE_LIST='
+    ftrapv
+    gray
+    hardcoded_tables
+    runtime_cpudetect
+    safe_bitstream_reader
+    shared
+    small
+    static
+    swscale_alpha
+'
+FFMPEG_CONFIGURATION=' --enable-libopencore-amrnb'
+FILTER_LIST='adelay_filter
+aecho_filter
+aeval_filter
+afade_filter
+aformat_filter
+ainterleave_filter
+allpass_filter
+amerge_filter
+amix_filter
+anull_filter
+apad_filter
+aperms_filter
+aphaser_filter
+aresample_filter
+aselect_filter
+asendcmd_filter
+asetnsamples_filter
+asetpts_filter
+asetrate_filter
+asettb_filter
+ashowinfo_filter
+asplit_filter
+astats_filter
+astreamsync_filter
+asyncts_filter
+atempo_filter
+atrim_filter
+azmq_filter
+bandpass_filter
+bandreject_filter
+bass_filter
+biquad_filter
+bs2b_filter
+channelmap_filter
+channelsplit_filter
+compand_filter
+dcshift_filter
+earwax_filter
+ebur128_filter
+equalizer_filter
+flanger_filter
+highpass_filter
+join_filter
+ladspa_filter
+lowpass_filter
+pan_filter
+replaygain_filter
+resample_filter
+silencedetect_filter
+silenceremove_filter
+treble_filter
+volume_filter
+volumedetect_filter
+aevalsrc_filter
+anullsrc_filter
+flite_filter
+sine_filter
+anullsink_filter
+alphaextract_filter
+alphamerge_filter
+ass_filter
+bbox_filter
+blackdetect_filter
+blackframe_filter
+blend_filter
+boxblur_filter
+codecview_filter
+colorbalance_filter
+colorchannelmixer_filter
+colorlevels_filter
+colormatrix_filter
+copy_filter
+crop_filter
+cropdetect_filter
+curves_filter
+dctdnoiz_filter
+decimate_filter
+dejudder_filter
+delogo_filter
+deshake_filter
+drawbox_filter
+drawgrid_filter
+drawtext_filter
+edgedetect_filter
+elbg_filter
+eq_filter
+extractplanes_filter
+fade_filter
+field_filter
+fieldmatch_filter
+fieldorder_filter
+format_filter
+fps_filter
+framepack_filter
+framestep_filter
+frei0r_filter
+fspp_filter
+geq_filter
+gradfun_filter
+haldclut_filter
+hflip_filter
+histeq_filter
+histogram_filter
+hqdn3d_filter
+hqx_filter
+hue_filter
+idet_filter
+il_filter
+interlace_filter
+interleave_filter
+kerndeint_filter
+lenscorrection_filter
+lut3d_filter
+lut_filter
+lutrgb_filter
+lutyuv_filter
+mcdeint_filter
+mergeplanes_filter
+mpdecimate_filter
+negate_filter
+noformat_filter
+noise_filter
+null_filter
+ocv_filter
+overlay_filter
+owdenoise_filter
+pad_filter
+palettegen_filter
+paletteuse_filter
+perms_filter
+perspective_filter
+phase_filter
+pixdesctest_filter
+pp_filter
+pp7_filter
+psnr_filter
+pullup_filter
+qp_filter
+removelogo_filter
+repeatfields_filter
+rotate_filter
+sab_filter
+scale_filter
+select_filter
+sendcmd_filter
+separatefields_filter
+setdar_filter
+setfield_filter
+setpts_filter
+setsar_filter
+settb_filter
+showinfo_filter
+showpalette_filter
+shuffleplanes_filter
+signalstats_filter
+smartblur_filter
+split_filter
+spp_filter
+stereo3d_filter
+subtitles_filter
+super2xsai_filter
+swapuv_filter
+tblend_filter
+telecine_filter
+thumbnail_filter
+tile_filter
+tinterlace_filter
+transpose_filter
+trim_filter
+unsharp_filter
+uspp_filter
+vflip_filter
+vidstabdetect_filter
+vidstabtransform_filter
+vignette_filter
+w3fdif_filter
+xbr_filter
+yadif_filter
+zmq_filter
+zoompan_filter
+cellauto_filter
+color_filter
+frei0r_src_filter
+haldclutsrc_filter
+life_filter
+mandelbrot_filter
+mptestsrc_filter
+nullsrc_filter
+rgbtestsrc_filter
+smptebars_filter
+smptehdbars_filter
+testsrc_filter
+nullsink_filter
+avectorscope_filter
+concat_filter
+showcqt_filter
+showspectrum_filter
+showwaves_filter
+amovie_filter
+movie_filter'
+FULLNAME='$(NAME)$(BUILDSUF)'
+GEM_HOME=/Users/drugeond/.rvm/gems/ruby-1.9.3-p448
+GEM_PATH=/Users/drugeond/.rvm/gems/ruby-1.9.3-p448:/Users/drugeond/.rvm/gems/ruby-1.9.3-p448@global
+GOPATH=/Users/drugeond/dev/go
+GROUPS=()
+HAVE_LIST='
+    
+    
+    armv5te
+    armv6
+    armv6t2
+    armv8
+    neon
+    vfp
+    vfpv3
+    setend
+
+    
+    altivec
+    dcbzl
+    ldbrx
+    ppc4xx
+    vsx
+
+    
+    
+    amd3dnow
+    amd3dnowext
+    avx
+    avx2
+    fma3
+    fma4
+    mmx
+    mmxext
+    sse
+    sse2
+    sse3
+    sse4
+    sse42
+    ssse3
+    xop
+
+    cpunop
+    i686
+
+    
+    mipsfpu
+    mips32r2
+    mipsdspr1
+    mipsdspr2
+
+    loongson
+
+    armv5te_external
+armv6_external
+armv6t2_external
+armv8_external
+neon_external
+vfp_external
+vfpv3_external
+setend_external
+altivec_external
+dcbzl_external
+ldbrx_external
+ppc4xx_external
+vsx_external
+amd3dnow_external
+amd3dnowext_external
+avx_external
+avx2_external
+fma3_external
+fma4_external
+mmx_external
+mmxext_external
+sse_external
+sse2_external
+sse3_external
+sse4_external
+sse42_external
+ssse3_external
+xop_external
+cpunop_external
+i686_external
+mipsfpu_external
+mips32r2_external
+mipsdspr1_external
+mipsdspr2_external
+loongson_external
+    armv5te_inline
+armv6_inline
+armv6t2_inline
+armv8_inline
+neon_inline
+vfp_inline
+vfpv3_inline
+setend_inline
+altivec_inline
+dcbzl_inline
+ldbrx_inline
+ppc4xx_inline
+vsx_inline
+amd3dnow_inline
+amd3dnowext_inline
+avx_inline
+avx2_inline
+fma3_inline
+fma4_inline
+mmx_inline
+mmxext_inline
+sse_inline
+sse2_inline
+sse3_inline
+sse4_inline
+sse42_inline
+ssse3_inline
+xop_inline
+cpunop_inline
+i686_inline
+mipsfpu_inline
+mips32r2_inline
+mipsdspr1_inline
+mipsdspr2_inline
+loongson_inline
+    
+    aligned_stack
+    fast_64bit
+    fast_clz
+    fast_cmov
+    local_aligned_8
+    local_aligned_16
+    local_aligned_32
+    simd_align_16
+
+    
+    atomics_gcc
+    atomics_suncc
+    atomics_win32
+
+    
+    atomic_cas_ptr
+    atomic_compare_exchange
+    machine_rw_barrier
+    MemoryBarrier
+    mm_empty
+    rdtsc
+    sarestart
+    sync_val_compare_and_swap
+
+    
+    inline_asm
+    symver
+    yasm
+
+    
+    bigendian
+    fast_unaligned
+    incompatible_libav_abi
+
+    
+    alsa_asoundlib_h
+    altivec_h
+    arpa_inet_h
+    asm_types_h
+    cdio_paranoia_h
+    cdio_paranoia_paranoia_h
+    dev_bktr_ioctl_bt848_h
+    dev_bktr_ioctl_meteor_h
+    dev_ic_bt8xx_h
+    dev_video_bktr_ioctl_bt848_h
+    dev_video_meteor_ioctl_meteor_h
+    direct_h
+    dlfcn_h
+    dxva_h
+    ES2_gl_h
+    gsm_h
+    io_h
+    mach_mach_time_h
+    machine_ioctl_bt848_h
+    machine_ioctl_meteor_h
+    malloc_h
+    openjpeg_1_5_openjpeg_h
+    OpenGL_gl3_h
+    poll_h
+    sndio_h
+    soundcard_h
+    sys_mman_h
+    sys_param_h
+    sys_resource_h
+    sys_select_h
+    sys_soundcard_h
+    sys_time_h
+    sys_un_h
+    sys_videoio_h
+    termios_h
+    udplite_h
+    unistd_h
+    windows_h
+    winsock2_h
+
+    
+    intrinsics_neon
+
+    
+    atanf
+    atan2f
+    cbrt
+    cbrtf
+    cosf
+    exp2
+    exp2f
+    expf
+    isinf
+    isnan
+    ldexpf
+    llrint
+    llrintf
+    log2
+    log2f
+    log10f
+    lrint
+    lrintf
+    powf
+    rint
+    round
+    roundf
+    sinf
+    trunc
+    truncf
+
+    
+    access
+    aligned_malloc
+    clock_gettime
+    closesocket
+    CommandLineToArgvW
+    CoTaskMemFree
+    CryptGenRandom
+    dlopen
+    fcntl
+    flt_lim
+    fork
+    getaddrinfo
+    gethrtime
+    getopt
+    GetProcessAffinityMask
+    GetProcessMemoryInfo
+    GetProcessTimes
+    getrusage
+    getservbyport
+    GetSystemTimeAsFileTime
+    gettimeofday
+    glob
+    glXGetProcAddress
+    gmtime_r
+    inet_aton
+    isatty
+    jack_port_get_latency_range
+    kbhit
+    localtime_r
+    lzo1x_999_compress
+    mach_absolute_time
+    MapViewOfFile
+    memalign
+    mkstemp
+    mmap
+    mprotect
+    nanosleep
+    PeekNamedPipe
+    posix_memalign
+    pthread_cancel
+    sched_getaffinity
+    SetConsoleTextAttribute
+    setmode
+    setrlimit
+    Sleep
+    strerror_r
+    sysconf
+    sysctl
+    usleep
+    VirtualAlloc
+    wglGetProcAddress
+
+    
+    pthreads
+    os2threads
+    w32threads
+
+    
+    as_dn_directive
+    as_func
+    asm_mod_q
+    attribute_may_alias
+    attribute_packed
+    ebp_available
+    ebx_available
+    gnu_as
+    gnu_windres
+    ibm_asm
+    inline_asm_labels
+    inline_asm_nonlocal_labels
+    inline_asm_direct_symbol_refs
+    pragma_deprecated
+    rsync_contimeout
+    symver_asm_label
+    symver_gnu_asm
+    vfp_args
+    xform_asm
+    xmm_clobbers
+
+    
+    CONDITION_VARIABLE_Ptr
+    DXVA_PicParams_HEVC
+    socklen_t
+    struct_addrinfo
+    struct_group_source_req
+    struct_ip_mreq_source
+    struct_ipv6_mreq
+    struct_pollfd
+    struct_rusage_ru_maxrss
+    struct_sctp_event_subscribe
+    struct_sockaddr_in6
+    struct_sockaddr_sa_len
+    struct_sockaddr_storage
+    struct_stat_st_mtim_tv_nsec
+    struct_v4l2_frmivalenum_discrete
+
+    atomics_native
+    dos_paths
+    dxva2api_cobj
+    dxva2_lib
+    libc_msvcrt
+    libdc1394_1
+    libdc1394_2
+    makeinfo
+    makeinfo_html
+    perl
+    pod2man
+    sdl
+    section_data_rel_ro
+    texi2html
+    threads
+    vaapi_x11
+    vdpau_x11
+    xlib
+'
+HAVE_LIST_CMDLINE='
+    inline_asm
+    symver
+    yasm
+'
+HAVE_LIST_PUB='
+    bigendian
+    fast_unaligned
+    incompatible_libav_abi
+'
+HEADERS_LIST='
+    alsa_asoundlib_h
+    altivec_h
+    arpa_inet_h
+    asm_types_h
+    cdio_paranoia_h
+    cdio_paranoia_paranoia_h
+    dev_bktr_ioctl_bt848_h
+    dev_bktr_ioctl_meteor_h
+    dev_ic_bt8xx_h
+    dev_video_bktr_ioctl_bt848_h
+    dev_video_meteor_ioctl_meteor_h
+    direct_h
+    dlfcn_h
+    dxva_h
+    ES2_gl_h
+    gsm_h
+    io_h
+    mach_mach_time_h
+    machine_ioctl_bt848_h
+    machine_ioctl_meteor_h
+    malloc_h
+    openjpeg_1_5_openjpeg_h
+    OpenGL_gl3_h
+    poll_h
+    sndio_h
+    soundcard_h
+    sys_mman_h
+    sys_param_h
+    sys_resource_h
+    sys_select_h
+    sys_soundcard_h
+    sys_time_h
+    sys_un_h
+    sys_videoio_h
+    termios_h
+    udplite_h
+    unistd_h
+    windows_h
+    winsock2_h
+'
+HOME=/Users/drugeond
+HOSTCC_C=-c
+HOSTCC_E='-E -o $@'
+HOSTCC_O='-o $@'
+HOSTLD_O='-o $@'
+HOSTNAME=RENNLMCRDP0015.local
+HOSTTYPE=x86_64
+HWACCEL_LIST='h263_vaapi_hwaccel
+h263_vdpau_hwaccel
+h264_dxva2_hwaccel
+h264_qsv_hwaccel
+h264_vaapi_hwaccel
+h264_vda_hwaccel
+h264_vda_old_hwaccel
+h264_vdpau_hwaccel
+hevc_dxva2_hwaccel
+mpeg1_xvmc_hwaccel
+mpeg1_vdpau_hwaccel
+mpeg2_xvmc_hwaccel
+mpeg2_dxva2_hwaccel
+mpeg2_vaapi_hwaccel
+mpeg2_vdpau_hwaccel
+mpeg4_vaapi_hwaccel
+mpeg4_vdpau_hwaccel
+vc1_dxva2_hwaccel
+vc1_vaapi_hwaccel
+vc1_vdpau_hwaccel
+wmv3_dxva2_hwaccel
+wmv3_vaapi_hwaccel
+wmv3_vdpau_hwaccel'
+IFS=' 	
+'
+INDEV_LIST='alsa_indev
+avfoundation_indev
+bktr_indev
+decklink_indev
+dshow_indev
+dv1394_indev
+fbdev_indev
+gdigrab_indev
+iec61883_indev
+jack_indev
+lavfi_indev
+openal_indev
+oss_indev
+pulse_indev
+qtkit_indev
+sndio_indev
+v4l2_indev
+vfwcap_indev
+x11grab_indev
+x11grab_xcb_indev
+libcdio_indev
+libdc1394_indev'
+INTRINSICS_LIST='
+    intrinsics_neon
+'
+IRBRC=/Users/drugeond/.rvm/rubies/ruby-1.9.3-p448/.irbrc
+ITERM_PROFILE=Default
+ITERM_SESSION_ID=w0t0p0
+LANG=fr_FR.UTF-8
+LC_ALL=C
+LD_LIB=-l%
+LD_O='-o $@'
+LD_PATH=-L
+LIBNAME='$(LIBPREF)$(FULLNAME)$(LIBSUF)'
+LIBPREF=lib
+LIBRARY_LIST='
+    avcodec
+    avdevice
+    avfilter
+    avformat
+    avresample
+    avutil
+    postproc
+    swresample
+    swscale
+'
+LIBSUF=.a
+LIB_INSTALL_EXTRA_CMD='$$(RANLIB) "$(LIBDIR)/$(LIBNAME)"'
+LICENSE_LIST='
+    gpl
+    nonfree
+    version3
+'
+LOGNAME=drugeond
+MACHTYPE=x86_64-apple-darwin14
+MATH_FUNCS='
+    atanf
+    atan2f
+    cbrt
+    cbrtf
+    cosf
+    exp2
+    exp2f
+    expf
+    isinf
+    isnan
+    ldexpf
+    llrint
+    llrintf
+    log2
+    log2f
+    log10f
+    lrint
+    lrintf
+    powf
+    rint
+    round
+    roundf
+    sinf
+    trunc
+    truncf
+'
+MUXER_LIST='a64_muxer
+ac3_muxer
+adts_muxer
+adx_muxer
+aiff_muxer
+amr_muxer
+asf_muxer
+ass_muxer
+ast_muxer
+asf_stream_muxer
+au_muxer
+avi_muxer
+avm2_muxer
+bit_muxer
+caf_muxer
+cavsvideo_muxer
+crc_muxer
+dash_muxer
+data_muxer
+daud_muxer
+dirac_muxer
+dnxhd_muxer
+dts_muxer
+dv_muxer
+eac3_muxer
+f4v_muxer
+ffm_muxer
+ffmetadata_muxer
+filmstrip_muxer
+flac_muxer
+flv_muxer
+framecrc_muxer
+framemd5_muxer
+g722_muxer
+g723_1_muxer
+gif_muxer
+gxf_muxer
+h261_muxer
+h263_muxer
+h264_muxer
+hds_muxer
+hevc_muxer
+hls_muxer
+ico_muxer
+ilbc_muxer
+image2_muxer
+image2pipe_muxer
+ipod_muxer
+ircam_muxer
+ismv_muxer
+ivf_muxer
+jacosub_muxer
+latm_muxer
+lrc_muxer
+m4v_muxer
+md5_muxer
+matroska_muxer
+matroska_audio_muxer
+microdvd_muxer
+mjpeg_muxer
+mlp_muxer
+mmf_muxer
+mov_muxer
+mp2_muxer
+mp3_muxer
+mp4_muxer
+mpeg1system_muxer
+mpeg1vcd_muxer
+mpeg1video_muxer
+mpeg2dvd_muxer
+mpeg2svcd_muxer
+mpeg2video_muxer
+mpeg2vob_muxer
+mpegts_muxer
+mpjpeg_muxer
+mxf_muxer
+mxf_d10_muxer
+mxf_opatom_muxer
+null_muxer
+nut_muxer
+oga_muxer
+ogg_muxer
+oma_muxer
+opus_muxer
+pcm_alaw_muxer
+pcm_mulaw_muxer
+pcm_f64be_muxer
+pcm_f64le_muxer
+pcm_f32be_muxer
+pcm_f32le_muxer
+pcm_s32be_muxer
+pcm_s32le_muxer
+pcm_s24be_muxer
+pcm_s24le_muxer
+pcm_s16be_muxer
+pcm_s16le_muxer
+pcm_s8_muxer
+pcm_u32be_muxer
+pcm_u32le_muxer
+pcm_u24be_muxer
+pcm_u24le_muxer
+pcm_u16be_muxer
+pcm_u16le_muxer
+pcm_u8_muxer
+psp_muxer
+rawvideo_muxer
+rm_muxer
+roq_muxer
+rso_muxer
+rtp_muxer
+rtp_mpegts_muxer
+rtsp_muxer
+sap_muxer
+segment_muxer
+stream_segment_muxer
+smjpeg_muxer
+smoothstreaming_muxer
+sox_muxer
+spx_muxer
+spdif_muxer
+srt_muxer
+swf_muxer
+tee_muxer
+tg2_muxer
+tgp_muxer
+mkvtimestamp_v2_muxer
+truehd_muxer
+uncodedframecrc_muxer
+vc1_muxer
+vc1t_muxer
+voc_muxer
+w64_muxer
+wav_muxer
+webm_muxer
+webm_dash_manifest_muxer
+webp_muxer
+webvtt_muxer
+wtv_muxer
+wv_muxer
+yuv4mpegpipe_muxer
+libnut_muxer'
+MY_RUBY_HOME=/Users/drugeond/.rvm/rubies/ruby-1.9.3-p448
+OPTERR=1
+OPTIND=1
+OSTYPE=darwin14
+OUTDEV_LIST='alsa_outdev
+caca_outdev
+decklink_outdev
+fbdev_outdev
+opengl_outdev
+oss_outdev
+pulse_outdev
+sdl_outdev
+sndio_outdev
+v4l2_outdev
+xv_outdev'
+PARSER_LIST='aac_parser
+aac_latm_parser
+ac3_parser
+adx_parser
+bmp_parser
+cavsvideo_parser
+cook_parser
+dca_parser
+dirac_parser
+dnxhd_parser
+dpx_parser
+dvbsub_parser
+dvdsub_parser
+dvd_nav_parser
+flac_parser
+gsm_parser
+h261_parser
+h263_parser
+h264_parser
+hevc_parser
+mjpeg_parser
+mlp_parser
+mpeg4video_parser
+mpegaudio_parser
+mpegvideo_parser
+opus_parser
+png_parser
+pnm_parser
+rv30_parser
+rv40_parser
+tak_parser
+vc1_parser
+vorbis_parser
+vp3_parser
+vp8_parser
+vp9_parser'
+PATH=/usr/local/bin:/Users/drugeond/.rvm/gems/ruby-1.9.3-p448/bin:/Users/drugeond/.rvm/gems/ruby-1.9.3-p448@global/bin:/Users/drugeond/.rvm/rubies/ruby-1.9.3-p448/bin:/Users/drugeond/.rvm/bin:/Users/drugeond/dev/go/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/X11/bin:/Users/drugeond/.rvm/bin
+PATHS_LIST='
+    bindir
+    datadir
+    docdir
+    incdir
+    libdir
+    mandir
+    prefix
+    shlibdir
+'
+PIPESTATUS=([0]="0")
+POSIXLY_CORRECT=y
+PPID=366
+PROGRAM_LIST='
+    ffplay
+    ffprobe
+    ffserver
+    ffmpeg
+'
+PROTOCOL_LIST='bluray_protocol
+cache_protocol
+concat_protocol
+crypto_protocol
+data_protocol
+ffrtmpcrypt_protocol
+ffrtmphttp_protocol
+file_protocol
+ftp_protocol
+gopher_protocol
+hls_protocol
+http_protocol
+httpproxy_protocol
+https_protocol
+icecast_protocol
+mmsh_protocol
+mmst_protocol
+md5_protocol
+pipe_protocol
+rtmp_protocol
+rtmpe_protocol
+rtmps_protocol
+rtmpt_protocol
+rtmpte_protocol
+rtmpts_protocol
+rtp_protocol
+sctp_protocol
+srtp_protocol
+subfile_protocol
+tcp_protocol
+tls_protocol
+udp_protocol
+udplite_protocol
+unix_protocol
+librtmp_protocol
+librtmpe_protocol
+librtmps_protocol
+librtmpt_protocol
+librtmpte_protocol
+libssh_protocol
+libsmbclient_protocol'
+PS4='+ '
+PWD=/Users/drugeond/dev/FFmpeg-iOS-build-script/ffmpeg-2.6
+RUBY_VERSION=ruby-1.9.3-p448
+SECURITYSESSIONID=186a5
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHFLAGS='-shared -Wl,-soname,$$(@F)'
+SHLVL=2
+SLIBNAME='$(SLIBPREF)$(FULLNAME)$(SLIBSUF)'
+SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
+SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
+SLIBPREF=lib
+SLIBSUF=.so
+SLIB_INSTALL_LINKS='$(SLIBNAME_WITH_MAJOR) $(SLIBNAME)'
+SLIB_INSTALL_NAME='$(SLIBNAME_WITH_VERSION)'
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.ssEVCGN9su/Listeners
+SUBSYSTEM_LIST='
+    dct
+    dwt
+    error_resilience
+    faan
+    fast_unaligned
+    fft
+    lsp
+    lzo
+    mdct
+    pixelutils
+    network
+    qsv
+    rdft
+'
+SYSTEM_FUNCS='
+    access
+    aligned_malloc
+    clock_gettime
+    closesocket
+    CommandLineToArgvW
+    CoTaskMemFree
+    CryptGenRandom
+    dlopen
+    fcntl
+    flt_lim
+    fork
+    getaddrinfo
+    gethrtime
+    getopt
+    GetProcessAffinityMask
+    GetProcessMemoryInfo
+    GetProcessTimes
+    getrusage
+    getservbyport
+    GetSystemTimeAsFileTime
+    gettimeofday
+    glob
+    glXGetProcAddress
+    gmtime_r
+    inet_aton
+    isatty
+    jack_port_get_latency_range
+    kbhit
+    localtime_r
+    lzo1x_999_compress
+    mach_absolute_time
+    MapViewOfFile
+    memalign
+    mkstemp
+    mmap
+    mprotect
+    nanosleep
+    PeekNamedPipe
+    posix_memalign
+    pthread_cancel
+    sched_getaffinity
+    SetConsoleTextAttribute
+    setmode
+    setrlimit
+    Sleep
+    strerror_r
+    sysconf
+    sysctl
+    usleep
+    VirtualAlloc
+    wglGetProcAddress
+'
+TERM=xterm
+TERM_PROGRAM=iTerm.app
+THREADS_LIST='
+    pthreads
+    os2threads
+    w32threads
+'
+TMPDIR=/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T/
+TOOLCHAIN_FEATURES='
+    as_dn_directive
+    as_func
+    asm_mod_q
+    attribute_may_alias
+    attribute_packed
+    ebp_available
+    ebx_available
+    gnu_as
+    gnu_windres
+    ibm_asm
+    inline_asm_labels
+    inline_asm_nonlocal_labels
+    inline_asm_direct_symbol_refs
+    pragma_deprecated
+    rsync_contimeout
+    symver_asm_label
+    symver_gnu_asm
+    vfp_args
+    xform_asm
+    xmm_clobbers
+'
+TYPES_LIST='
+    CONDITION_VARIABLE_Ptr
+    DXVA_PicParams_HEVC
+    socklen_t
+    struct_addrinfo
+    struct_group_source_req
+    struct_ip_mreq_source
+    struct_ipv6_mreq
+    struct_pollfd
+    struct_rusage_ru_maxrss
+    struct_sctp_event_subscribe
+    struct_sockaddr_in6
+    struct_sockaddr_sa_len
+    struct_sockaddr_storage
+    struct_stat_st_mtim_tv_nsec
+    struct_v4l2_frmivalenum_discrete
+'
+UID=908243515
+USER=drugeond
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+_='# ./configure  --enable-libopencore-amrnb'
+__CF_USER_TEXT_ENCODING=0x3622B23B:0x0:0x1
+_system_arch=x86_64
+_system_name=OSX
+_system_type=Darwin
+_system_version=10.10
+a64_muxer=yes
+a64multi5_encoder=yes
+a64multi_encoder=yes
+aac_adtstoasc_bsf=yes
+aac_decoder=yes
+aac_decoder_select='imdct15 mdct sinewin'
+aac_demuxer=yes
+aac_encoder=yes
+aac_encoder_select='audio_frame_queue iirfilter mdct sinewin'
+aac_latm_decoder=yes
+aac_latm_decoder_select='aac_decoder aac_latm_parser'
+aac_latm_parser=yes
+aac_parser=yes
+aasc_decoder=yes
+ac3_decoder=yes
+ac3_decoder_select='ac3_parser ac3dsp bswapdsp fmtconvert mdct'
+ac3_demuxer=yes
+ac3_demuxer_select=ac3_parser
+ac3_encoder=yes
+ac3_encoder_select='ac3dsp audiodsp mdct me_cmp'
+ac3_fixed_decoder=yes
+ac3_fixed_decoder_select='ac3_parser ac3dsp bswapdsp mdct'
+ac3_fixed_encoder=yes
+ac3_fixed_encoder_select='ac3dsp audiodsp mdct me_cmp'
+ac3_muxer=yes
+ac3_parser=yes
+act_demuxer=yes
+action=enable
+adelay_filter=yes
+adf_demuxer=yes
+adp_demuxer=yes
+adpcm_4xm_decoder=yes
+adpcm_adx_decoder=yes
+adpcm_adx_encoder=yes
+adpcm_afc_decoder=yes
+adpcm_ct_decoder=yes
+adpcm_dtk_decoder=yes
+adpcm_ea_decoder=yes
+adpcm_ea_maxis_xa_decoder=yes
+adpcm_ea_r1_decoder=yes
+adpcm_ea_r2_decoder=yes
+adpcm_ea_r3_decoder=yes
+adpcm_ea_xas_decoder=yes
+adpcm_g722_decoder=yes
+adpcm_g722_encoder=yes
+adpcm_g726_decoder=yes
+adpcm_g726_encoder=yes
+adpcm_g726le_decoder=yes
+adpcm_ima_amv_decoder=yes
+adpcm_ima_apc_decoder=yes
+adpcm_ima_dk3_decoder=yes
+adpcm_ima_dk4_decoder=yes
+adpcm_ima_ea_eacs_decoder=yes
+adpcm_ima_ea_sead_decoder=yes
+adpcm_ima_iss_decoder=yes
+adpcm_ima_oki_decoder=yes
+adpcm_ima_qt_decoder=yes
+adpcm_ima_qt_encoder=yes
+adpcm_ima_rad_decoder=yes
+adpcm_ima_smjpeg_decoder=yes
+adpcm_ima_wav_decoder=yes
+adpcm_ima_wav_encoder=yes
+adpcm_ima_ws_decoder=yes
+adpcm_ms_decoder=yes
+adpcm_ms_encoder=yes
+adpcm_sbpro_2_decoder=yes
+adpcm_sbpro_3_decoder=yes
+adpcm_sbpro_4_decoder=yes
+adpcm_swf_decoder=yes
+adpcm_swf_encoder=yes
+adpcm_thp_decoder=yes
+adpcm_vima_decoder=yes
+adpcm_xa_decoder=yes
+adpcm_yamaha_decoder=yes
+adpcm_yamaha_encoder=yes
+adts_muxer=yes
+adx_demuxer=yes
+adx_muxer=yes
+adx_parser=yes
+aea_demuxer=yes
+aecho_filter=yes
+aeval_filter=yes
+aevalsrc_filter=yes
+afade_filter=yes
+afc_demuxer=yes
+aformat_filter=yes
+aic_decoder=yes
+aic_decoder_select='golomb idctdsp'
+aiff_demuxer=yes
+aiff_muxer=yes
+ainterleave_filter=yes
+alac_decoder=yes
+alac_encoder=yes
+alac_encoder_select=lpc
+alias_pix_decoder=yes
+alias_pix_encoder=yes
+aligned_stack_if_any='aarch64 ppc x86'
+allpass_filter=yes
+alphaextract_filter=yes
+alphamerge_filter=yes
+als_decoder=yes
+als_decoder_select=bswapdsp
+alsa_indev=yes
+alsa_indev_deps='alsa_asoundlib_h snd_pcm_htimestamp'
+alsa_outdev=yes
+alsa_outdev_deps=alsa_asoundlib_h
+altivec=yes
+altivec_deps=ppc
+amd3dnow=yes
+amd3dnow_deps=mmx
+amd3dnow_external_deps=mmx_external
+amd3dnow_inline_deps=mmx_inline
+amd3dnow_suggest='amd3dnow_external amd3dnow_inline'
+amd3dnowext=yes
+amd3dnowext_deps=amd3dnow
+amd3dnowext_external_deps=amd3dnow_external
+amd3dnowext_inline_deps=amd3dnow_inline
+amd3dnowext_suggest='amd3dnowext_external amd3dnowext_inline'
+amerge_filter=yes
+amix_filter=yes
+amovie_filter=yes
+amovie_filter_deps='avcodec avformat'
+amr_demuxer=yes
+amr_muxer=yes
+amrnb_decoder=yes
+amrnb_decoder_select=lsp
+amrwb_decoder=yes
+amrwb_decoder_select=lsp
+amv_decoder=yes
+amv_decoder_select='sp5x_decoder exif'
+amv_encoder=yes
+amv_encoder_select='aandcttables mpegvideoenc'
+anm_decoder=yes
+anm_demuxer=yes
+ansi_decoder=yes
+anull_filter=yes
+anullsink_filter=yes
+anullsrc_filter=yes
+apad_filter=yes
+apc_demuxer=yes
+ape_decoder=yes
+ape_decoder_select='bswapdsp llauddsp'
+ape_demuxer=yes
+aperms_filter=yes
+aphaser_filter=yes
+apng_decoder=yes
+apng_decoder_select=zlib
+apng_demuxer=yes
+aqtitle_demuxer=yes
+ar_default=ar
+arch_default=x86_64
+aresample_filter=yes
+aresample_filter_deps=swresample
+armv5te=yes
+armv5te_deps=arm
+armv5te_inline_deps=inline_asm
+armv6=yes
+armv6_deps=arm
+armv6_inline_deps=inline_asm
+armv6t2=yes
+armv6t2_deps=arm
+armv6t2_inline_deps=inline_asm
+armv8=yes
+armv8_deps=aarch64
+armv8_inline_deps=inline_asm
+aselect_filter=yes
+asendcmd_filter=yes
+asetnsamples_filter=yes
+asetpts_filter=yes
+asetrate_filter=yes
+asettb_filter=yes
+asf_demuxer=yes
+asf_demuxer_select=riffdec
+asf_muxer=yes
+asf_muxer_select=riffenc
+asf_stream_muxer=yes
+asf_stream_muxer_select=asf_muxer
+asflags_filter=echo
+ashowinfo_filter=yes
+asm=yes
+asplit_filter=yes
+ass_decoder=yes
+ass_demuxer=yes
+ass_encoder=yes
+ass_filter=yes
+ass_filter_deps=libass
+ass_muxer=yes
+ast_demuxer=yes
+ast_muxer=yes
+astats_filter=yes
+astreamsync_filter=yes
+asv1_decoder=yes
+asv1_decoder_select='blockdsp bswapdsp idctdsp'
+asv1_encoder=yes
+asv1_encoder_select='bswapdsp fdctdsp pixblockdsp'
+asv2_decoder=yes
+asv2_decoder_select='blockdsp bswapdsp idctdsp'
+asv2_encoder=yes
+asv2_encoder_select='bswapdsp fdctdsp pixblockdsp'
+asyncts_filter=yes
+asyncts_filter_deps=avresample
+atempo_filter=yes
+atempo_filter_deps=avcodec
+atempo_filter_select=rdft
+atomics_gcc_if_any='sync_val_compare_and_swap atomic_compare_exchange'
+atomics_native_if_any='
+    atomics_gcc
+    atomics_suncc
+    atomics_win32
+'
+atomics_suncc_if='atomic_cas_ptr machine_rw_barrier'
+atomics_win32_if=MemoryBarrier
+atrac1_decoder=yes
+atrac1_decoder_select='mdct sinewin'
+atrac3_decoder=yes
+atrac3_decoder_select=mdct
+atrac3p_decoder=yes
+atrac3p_decoder_select='mdct sinewin'
+atrim_filter=yes
+au_demuxer=yes
+au_muxer=yes
+aura2_decoder=yes
+aura_decoder=yes
+avcodec=yes
+avcodec_deps=avutil
+avcodec_example_deps='avcodec avutil'
+avdevice=yes
+avdevice_deps='avformat avcodec avutil'
+avectorscope_filter=yes
+avfilter=yes
+avfilter_deps=avutil
+avformat=yes
+avformat_deps='avcodec avutil'
+avfoundation_indev=yes
+avfoundation_indev_extralibs='-framework CoreVideo -framework Foundation -framework AVFoundation -framework CoreMedia'
+avfoundation_indev_select=avfoundation
+avi_demuxer=yes
+avi_demuxer_select='riffdec exif'
+avi_muxer=yes
+avi_muxer_select=riffenc
+avio_reading='avformat avcodec avutil'
+avio_reading_example=yes
+avisynth_demuxer=yes
+avisynth_demuxer_deps=avisynth
+avisynth_demuxer_select=riffdec
+avm2_muxer=yes
+avr_demuxer=yes
+avresample_deps=avutil
+avrn_decoder=yes
+avrn_decoder_select=exif
+avrp_decoder=yes
+avrp_encoder=yes
+avs_decoder=yes
+avs_demuxer=yes
+avui_decoder=yes
+avui_encoder=yes
+avutil=yes
+avx=yes
+avx2=yes
+avx2_deps=avx
+avx2_external_deps=avx_external
+avx2_inline_deps=avx_inline
+avx2_suggest='avx2_external avx2_inline'
+avx_deps=sse42
+avx_external_deps=sse42_external
+avx_inline_deps=sse42_inline
+avx_suggest='avx_external avx_inline'
+ayuv_decoder=yes
+ayuv_encoder=yes
+azmq_filter=yes
+azmq_filter_deps=libzmq
+bandpass_filter=yes
+bandreject_filter=yes
+bass_filter=yes
+bbox_filter=yes
+bethsoftvid_decoder=yes
+bethsoftvid_demuxer=yes
+bfi_decoder=yes
+bfi_demuxer=yes
+bindir_default='${prefix}/bin'
+bink_decoder=yes
+bink_decoder_select='blockdsp hpeldsp'
+bink_demuxer=yes
+binkaudio_dct_decoder=yes
+binkaudio_dct_decoder_select='mdct rdft dct sinewin wma_freqs'
+binkaudio_rdft_decoder=yes
+binkaudio_rdft_decoder_select='mdct rdft sinewin wma_freqs'
+bintext_decoder=yes
+bintext_demuxer=yes
+biquad_filter=yes
+bit_demuxer=yes
+bit_muxer=yes
+bktr_indev=yes
+bktr_indev_deps_any='dev_bktr_ioctl_bt848_h machine_ioctl_bt848_h dev_video_bktr_ioctl_bt848_h dev_ic_bt8xx_h'
+blackdetect_filter=yes
+blackframe_filter=yes
+blackframe_filter_deps=gpl
+blend_filter=yes
+bluray_protocol=yes
+bluray_protocol_deps=libbluray
+bmp_decoder=yes
+bmp_encoder=yes
+bmp_parser=yes
+bmv_audio_decoder=yes
+bmv_demuxer=yes
+bmv_video_decoder=yes
+boa_demuxer=yes
+boxblur_filter=yes
+boxblur_filter_deps=gpl
+brender_pix_decoder=yes
+brstm_demuxer=yes
+bs2b_filter=yes
+bs2b_filter_deps=libbs2b
+bsfs_if_any='aac_adtstoasc_bsf
+chomp_bsf
+dump_extradata_bsf
+h264_mp4toannexb_bsf
+imx_dump_header_bsf
+mjpeg2jpeg_bsf
+mjpega_dump_header_bsf
+mp3_header_decompress_bsf
+mov2textsub_bsf
+noise_bsf
+remove_extradata_bsf
+text2movsub_bsf'
+c93_decoder=yes
+c93_demuxer=yes
+caca_outdev=yes
+caca_outdev_deps=libcaca
+cache_protocol=yes
+caf_demuxer=yes
+caf_demuxer_select=riffdec
+caf_muxer=yes
+cavs_decoder=yes
+cavs_decoder_select='blockdsp golomb h264chroma idctdsp qpeldsp videodsp'
+cavsvideo_demuxer=yes
+cavsvideo_muxer=yes
+cavsvideo_parser=yes
+cc_default=gcc
+ccaption_decoder=yes
+cdg_demuxer=yes
+cdgraphics_decoder=yes
+cdxl_decoder=yes
+cdxl_demuxer=yes
+cellauto_filter=yes
+cflags_filter=echo
+channelmap_filter=yes
+channelsplit_filter=yes
+chomp_bsf=yes
+cine_demuxer=yes
+cinepak_decoder=yes
+cinepak_encoder=yes
+cljr_decoder=yes
+cljr_encoder=yes
+cllc_decoder=yes
+cllc_decoder_select=bswapdsp
+codecview_filter=yes
+color_filter=yes
+colorbalance_filter=yes
+colorchannelmixer_filter=yes
+colorlevels_filter=yes
+colormatrix_filter=yes
+colormatrix_filter_deps=gpl
+comfortnoise_decoder=yes
+comfortnoise_encoder=yes
+comfortnoise_encoder_select=lpc
+compand_filter=yes
+concat_demuxer=yes
+concat_filter=yes
+concat_protocol=yes
+cook_decoder=yes
+cook_decoder_select='audiodsp mdct sinewin'
+cook_parser=yes
+copy_filter=yes
+cp_f='cp -f'
+cpia_decoder=yes
+cpu=generic
+cpunop=yes
+cpunop_deps=i686
+crc_muxer=yes
+crop_filter=yes
+cropdetect_filter=yes
+cropdetect_filter_deps=gpl
+crypto_protocol=yes
+crystalhd_deps=libcrystalhd_libcrystalhd_if_h
+cscd_decoder=yes
+cscd_decoder_select=lzo
+cscd_decoder_suggest=zlib
+curves_filter=yes
+cxx_default=g++
+cyuv_decoder=yes
+dash_muxer=yes
+dash_muxer_select=mp4_muxer
+data_demuxer=yes
+data_muxer=yes
+data_protocol=yes
+datadir_default='${prefix}/share/ffmpeg'
+daud_demuxer=yes
+daud_muxer=yes
+dca_decoder=yes
+dca_decoder_select='fmtconvert mdct'
+dca_encoder=yes
+dca_parser=yes
+dcbzl=yes
+dcshift_filter=yes
+dct_select=rdft
+dctdnoiz_filter=yes
+debug=yes
+decimate_filter=yes
+decklink_indev=yes
+decklink_indev_deps='decklink pthreads'
+decklink_indev_extralibs=-lstdc++
+decklink_outdev=yes
+decklink_outdev_deps='decklink pthreads'
+decklink_outdev_extralibs=-lstdc++
+decoders_if_any='aasc_decoder
+aic_decoder
+alias_pix_decoder
+amv_decoder
+anm_decoder
+ansi_decoder
+apng_decoder
+asv1_decoder
+asv2_decoder
+aura_decoder
+aura2_decoder
+avrp_decoder
+avrn_decoder
+avs_decoder
+avui_decoder
+ayuv_decoder
+bethsoftvid_decoder
+bfi_decoder
+bink_decoder
+bmp_decoder
+bmv_video_decoder
+brender_pix_decoder
+c93_decoder
+cavs_decoder
+cdgraphics_decoder
+cdxl_decoder
+cinepak_decoder
+cljr_decoder
+cllc_decoder
+comfortnoise_decoder
+cpia_decoder
+cscd_decoder
+cyuv_decoder
+dfa_decoder
+dirac_decoder
+dnxhd_decoder
+dpx_decoder
+dsicinvideo_decoder
+dvvideo_decoder
+dxa_decoder
+dxtory_decoder
+eacmv_decoder
+eamad_decoder
+eatgq_decoder
+eatgv_decoder
+eatqi_decoder
+eightbps_decoder
+eightsvx_exp_decoder
+eightsvx_fib_decoder
+escape124_decoder
+escape130_decoder
+exr_decoder
+ffv1_decoder
+ffvhuff_decoder
+fic_decoder
+flashsv_decoder
+flashsv2_decoder
+flic_decoder
+flv_decoder
+fourxm_decoder
+fraps_decoder
+frwu_decoder
+g2m_decoder
+gif_decoder
+h261_decoder
+h263_decoder
+h263i_decoder
+h263p_decoder
+h264_decoder
+h264_crystalhd_decoder
+h264_qsv_decoder
+h264_vda_decoder
+h264_vdpau_decoder
+hevc_decoder
+hnm4_video_decoder
+hqx_decoder
+huffyuv_decoder
+idcin_decoder
+iff_byterun1_decoder
+iff_ilbm_decoder
+indeo2_decoder
+indeo3_decoder
+indeo4_decoder
+indeo5_decoder
+interplay_video_decoder
+jpeg2000_decoder
+jpegls_decoder
+jv_decoder
+kgv1_decoder
+kmvc_decoder
+lagarith_decoder
+loco_decoder
+mdec_decoder
+mimic_decoder
+mjpeg_decoder
+mjpegb_decoder
+mmvideo_decoder
+motionpixels_decoder
+mpeg_xvmc_decoder
+mpeg1video_decoder
+mpeg2video_decoder
+mpeg4_decoder
+mpeg4_crystalhd_decoder
+mpeg4_vdpau_decoder
+mpegvideo_decoder
+mpeg_vdpau_decoder
+mpeg1_vdpau_decoder
+mpeg2_crystalhd_decoder
+msa1_decoder
+msmpeg4_crystalhd_decoder
+msmpeg4v1_decoder
+msmpeg4v2_decoder
+msmpeg4v3_decoder
+msrle_decoder
+mss1_decoder
+mss2_decoder
+msvideo1_decoder
+mszh_decoder
+mts2_decoder
+mvc1_decoder
+mvc2_decoder
+mxpeg_decoder
+nuv_decoder
+paf_video_decoder
+pam_decoder
+pbm_decoder
+pcx_decoder
+pgm_decoder
+pgmyuv_decoder
+pictor_decoder
+png_decoder
+ppm_decoder
+prores_decoder
+prores_lgpl_decoder
+ptx_decoder
+qdraw_decoder
+qpeg_decoder
+qtrle_decoder
+r10k_decoder
+r210_decoder
+rawvideo_decoder
+rl2_decoder
+roq_decoder
+rpza_decoder
+rv10_decoder
+rv20_decoder
+rv30_decoder
+rv40_decoder
+s302m_decoder
+sanm_decoder
+sgi_decoder
+sgirle_decoder
+smacker_decoder
+smc_decoder
+smvjpeg_decoder
+snow_decoder
+sp5x_decoder
+sunrast_decoder
+svq1_decoder
+svq3_decoder
+targa_decoder
+targa_y216_decoder
+theora_decoder
+thp_decoder
+tiertexseqvideo_decoder
+tiff_decoder
+tmv_decoder
+truemotion1_decoder
+truemotion2_decoder
+tscc_decoder
+tscc2_decoder
+txd_decoder
+ulti_decoder
+utvideo_decoder
+v210_decoder
+v210x_decoder
+v308_decoder
+v408_decoder
+v410_decoder
+vb_decoder
+vble_decoder
+vc1_decoder
+vc1_crystalhd_decoder
+vc1_vdpau_decoder
+vc1image_decoder
+vcr1_decoder
+vmdvideo_decoder
+vmnc_decoder
+vp3_decoder
+vp5_decoder
+vp6_decoder
+vp6a_decoder
+vp6f_decoder
+vp7_decoder
+vp8_decoder
+vp9_decoder
+vqa_decoder
+webp_decoder
+wmv1_decoder
+wmv2_decoder
+wmv3_decoder
+wmv3_crystalhd_decoder
+wmv3_vdpau_decoder
+wmv3image_decoder
+wnv1_decoder
+xan_wc3_decoder
+xan_wc4_decoder
+xbm_decoder
+xface_decoder
+xl_decoder
+xwd_decoder
+y41p_decoder
+yop_decoder
+yuv4_decoder
+zero12v_decoder
+zerocodec_decoder
+zlib_decoder
+zmbv_decoder
+aac_decoder
+aac_latm_decoder
+ac3_decoder
+ac3_fixed_decoder
+alac_decoder
+als_decoder
+amrnb_decoder
+amrwb_decoder
+ape_decoder
+atrac1_decoder
+atrac3_decoder
+atrac3p_decoder
+binkaudio_dct_decoder
+binkaudio_rdft_decoder
+bmv_audio_decoder
+cook_decoder
+dca_decoder
+dsd_lsbf_decoder
+dsd_msbf_decoder
+dsd_lsbf_planar_decoder
+dsd_msbf_planar_decoder
+dsicinaudio_decoder
+dss_sp_decoder
+eac3_decoder
+evrc_decoder
+ffwavesynth_decoder
+flac_decoder
+g723_1_decoder
+g729_decoder
+gsm_decoder
+gsm_ms_decoder
+iac_decoder
+imc_decoder
+mace3_decoder
+mace6_decoder
+metasound_decoder
+mlp_decoder
+mp1_decoder
+mp1float_decoder
+mp2_decoder
+mp2float_decoder
+mp3_decoder
+mp3float_decoder
+mp3adu_decoder
+mp3adufloat_decoder
+mp3on4_decoder
+mp3on4float_decoder
+mpc7_decoder
+mpc8_decoder
+nellymoser_decoder
+on2avc_decoder
+opus_decoder
+paf_audio_decoder
+qcelp_decoder
+qdm2_decoder
+ra_144_decoder
+ra_288_decoder
+ralf_decoder
+shorten_decoder
+sipr_decoder
+smackaud_decoder
+sonic_decoder
+tak_decoder
+truehd_decoder
+truespeech_decoder
+tta_decoder
+twinvq_decoder
+vmdaudio_decoder
+vorbis_decoder
+wavpack_decoder
+wmalossless_decoder
+wmapro_decoder
+wmav1_decoder
+wmav2_decoder
+wmavoice_decoder
+ws_snd1_decoder
+pcm_alaw_decoder
+pcm_bluray_decoder
+pcm_dvd_decoder
+pcm_f32be_decoder
+pcm_f32le_decoder
+pcm_f64be_decoder
+pcm_f64le_decoder
+pcm_lxf_decoder
+pcm_mulaw_decoder
+pcm_s8_decoder
+pcm_s8_planar_decoder
+pcm_s16be_decoder
+pcm_s16be_planar_decoder
+pcm_s16le_decoder
+pcm_s16le_planar_decoder
+pcm_s24be_decoder
+pcm_s24daud_decoder
+pcm_s24le_decoder
+pcm_s24le_planar_decoder
+pcm_s32be_decoder
+pcm_s32le_decoder
+pcm_s32le_planar_decoder
+pcm_u8_decoder
+pcm_u16be_decoder
+pcm_u16le_decoder
+pcm_u24be_decoder
+pcm_u24le_decoder
+pcm_u32be_decoder
+pcm_u32le_decoder
+pcm_zork_decoder
+interplay_dpcm_decoder
+roq_dpcm_decoder
+sol_dpcm_decoder
+xan_dpcm_decoder
+adpcm_4xm_decoder
+adpcm_adx_decoder
+adpcm_afc_decoder
+adpcm_ct_decoder
+adpcm_dtk_decoder
+adpcm_ea_decoder
+adpcm_ea_maxis_xa_decoder
+adpcm_ea_r1_decoder
+adpcm_ea_r2_decoder
+adpcm_ea_r3_decoder
+adpcm_ea_xas_decoder
+adpcm_g722_decoder
+adpcm_g726_decoder
+adpcm_g726le_decoder
+adpcm_ima_amv_decoder
+adpcm_ima_apc_decoder
+adpcm_ima_dk3_decoder
+adpcm_ima_dk4_decoder
+adpcm_ima_ea_eacs_decoder
+adpcm_ima_ea_sead_decoder
+adpcm_ima_iss_decoder
+adpcm_ima_oki_decoder
+adpcm_ima_qt_decoder
+adpcm_ima_rad_decoder
+adpcm_ima_smjpeg_decoder
+adpcm_ima_wav_decoder
+adpcm_ima_ws_decoder
+adpcm_ms_decoder
+adpcm_sbpro_2_decoder
+adpcm_sbpro_3_decoder
+adpcm_sbpro_4_decoder
+adpcm_swf_decoder
+adpcm_thp_decoder
+adpcm_vima_decoder
+adpcm_xa_decoder
+adpcm_yamaha_decoder
+vima_decoder
+ssa_decoder
+ass_decoder
+ccaption_decoder
+dvbsub_decoder
+dvdsub_decoder
+jacosub_decoder
+microdvd_decoder
+movtext_decoder
+mpl2_decoder
+pgssub_decoder
+pjs_decoder
+realtext_decoder
+sami_decoder
+srt_decoder
+stl_decoder
+subrip_decoder
+subviewer_decoder
+subviewer1_decoder
+text_decoder
+vplayer_decoder
+webvtt_decoder
+xsub_decoder
+libcelt_decoder
+libfdk_aac_decoder
+libgsm_decoder
+libgsm_ms_decoder
+libilbc_decoder
+libopencore_amrnb_decoder
+libopencore_amrwb_decoder
+libopenjpeg_decoder
+libopus_decoder
+libschroedinger_decoder
+libspeex_decoder
+libstagefright_h264_decoder
+libutvideo_decoder
+libvorbis_decoder
+libvpx_vp8_decoder
+libvpx_vp9_decoder
+libzvbi_teletext_decoder
+bintext_decoder
+xbin_decoder
+idf_decoder'
+decoding_encoding_example=yes
+decoding_encoding_example_deps='avcodec avformat avutil'
+dejudder_filter=yes
+delogo_filter=yes
+delogo_filter_deps=gpl
+demuxers_if_any='aac_demuxer
+ac3_demuxer
+act_demuxer
+adf_demuxer
+adp_demuxer
+adx_demuxer
+aea_demuxer
+afc_demuxer
+aiff_demuxer
+amr_demuxer
+anm_demuxer
+apc_demuxer
+ape_demuxer
+apng_demuxer
+aqtitle_demuxer
+asf_demuxer
+ass_demuxer
+ast_demuxer
+au_demuxer
+avi_demuxer
+avisynth_demuxer
+avr_demuxer
+avs_demuxer
+bethsoftvid_demuxer
+bfi_demuxer
+bintext_demuxer
+bink_demuxer
+bit_demuxer
+bmv_demuxer
+brstm_demuxer
+boa_demuxer
+c93_demuxer
+caf_demuxer
+cavsvideo_demuxer
+cdg_demuxer
+cdxl_demuxer
+cine_demuxer
+concat_demuxer
+data_demuxer
+daud_demuxer
+dfa_demuxer
+dirac_demuxer
+dnxhd_demuxer
+dsf_demuxer
+dsicin_demuxer
+dss_demuxer
+dts_demuxer
+dtshd_demuxer
+dv_demuxer
+dvbsub_demuxer
+dxa_demuxer
+ea_demuxer
+ea_cdata_demuxer
+eac3_demuxer
+epaf_demuxer
+ffm_demuxer
+ffmetadata_demuxer
+filmstrip_demuxer
+flac_demuxer
+flic_demuxer
+flv_demuxer
+live_flv_demuxer
+fourxm_demuxer
+frm_demuxer
+g722_demuxer
+g723_1_demuxer
+g729_demuxer
+gif_demuxer
+gsm_demuxer
+gxf_demuxer
+h261_demuxer
+h263_demuxer
+h264_demuxer
+hevc_demuxer
+hls_demuxer
+hnm_demuxer
+ico_demuxer
+idcin_demuxer
+idf_demuxer
+iff_demuxer
+ilbc_demuxer
+image2_demuxer
+image2pipe_demuxer
+image2_alias_pix_demuxer
+image2_brender_pix_demuxer
+ingenient_demuxer
+ipmovie_demuxer
+ircam_demuxer
+iss_demuxer
+iv8_demuxer
+ivf_demuxer
+jacosub_demuxer
+jv_demuxer
+latm_demuxer
+lmlm4_demuxer
+loas_demuxer
+lrc_demuxer
+lvf_demuxer
+lxf_demuxer
+m4v_demuxer
+matroska_demuxer
+mgsts_demuxer
+microdvd_demuxer
+mjpeg_demuxer
+mlp_demuxer
+mlv_demuxer
+mm_demuxer
+mmf_demuxer
+mov_demuxer
+mp3_demuxer
+mpc_demuxer
+mpc8_demuxer
+mpegps_demuxer
+mpegts_demuxer
+mpegtsraw_demuxer
+mpegvideo_demuxer
+mpl2_demuxer
+mpsub_demuxer
+msnwc_tcp_demuxer
+mtv_demuxer
+mv_demuxer
+mvi_demuxer
+mxf_demuxer
+mxg_demuxer
+nc_demuxer
+nistsphere_demuxer
+nsv_demuxer
+nut_demuxer
+nuv_demuxer
+ogg_demuxer
+oma_demuxer
+paf_demuxer
+pcm_alaw_demuxer
+pcm_mulaw_demuxer
+pcm_f64be_demuxer
+pcm_f64le_demuxer
+pcm_f32be_demuxer
+pcm_f32le_demuxer
+pcm_s32be_demuxer
+pcm_s32le_demuxer
+pcm_s24be_demuxer
+pcm_s24le_demuxer
+pcm_s16be_demuxer
+pcm_s16le_demuxer
+pcm_s8_demuxer
+pcm_u32be_demuxer
+pcm_u32le_demuxer
+pcm_u24be_demuxer
+pcm_u24le_demuxer
+pcm_u16be_demuxer
+pcm_u16le_demuxer
+pcm_u8_demuxer
+pjs_demuxer
+pmp_demuxer
+pva_demuxer
+pvf_demuxer
+qcp_demuxer
+r3d_demuxer
+rawvideo_demuxer
+realtext_demuxer
+redspark_demuxer
+rl2_demuxer
+rm_demuxer
+roq_demuxer
+rpl_demuxer
+rsd_demuxer
+rso_demuxer
+rtp_demuxer
+rtsp_demuxer
+sami_demuxer
+sap_demuxer
+sbg_demuxer
+sdp_demuxer
+sdr2_demuxer
+segafilm_demuxer
+shorten_demuxer
+siff_demuxer
+sln_demuxer
+smacker_demuxer
+smjpeg_demuxer
+smush_demuxer
+sol_demuxer
+sox_demuxer
+spdif_demuxer
+srt_demuxer
+str_demuxer
+stl_demuxer
+subviewer1_demuxer
+subviewer_demuxer
+sup_demuxer
+swf_demuxer
+tak_demuxer
+tedcaptions_demuxer
+thp_demuxer
+tiertexseq_demuxer
+tmv_demuxer
+truehd_demuxer
+tta_demuxer
+txd_demuxer
+tty_demuxer
+vc1_demuxer
+vc1t_demuxer
+vivo_demuxer
+vmd_demuxer
+vobsub_demuxer
+voc_demuxer
+vplayer_demuxer
+vqf_demuxer
+w64_demuxer
+wav_demuxer
+wc3_demuxer
+webm_dash_manifest_demuxer
+webvtt_demuxer
+wsaud_demuxer
+wsvqa_demuxer
+wtv_demuxer
+wv_demuxer
+xa_demuxer
+xbin_demuxer
+xmv_demuxer
+xwma_demuxer
+yop_demuxer
+yuv4mpegpipe_demuxer
+image_bmp_pipe_demuxer
+image_dpx_pipe_demuxer
+image_exr_pipe_demuxer
+image_j2k_pipe_demuxer
+image_jpeg_pipe_demuxer
+image_jpegls_pipe_demuxer
+image_pictor_pipe_demuxer
+image_png_pipe_demuxer
+image_sgi_pipe_demuxer
+image_sunrast_pipe_demuxer
+image_tiff_pipe_demuxer
+image_webp_pipe_demuxer
+libgme_demuxer
+libmodplug_demuxer
+libnut_demuxer
+libquvi_demuxer'
+demuxing_decoding_example=yes
+demuxing_decoding_example_deps='avcodec avformat avutil'
+dep=avx
+deshake_filter=yes
+deshake_filter_select=pixelutils
+dfa_decoder=yes
+dfa_demuxer=yes
+dirac_decoder=yes
+dirac_decoder_select='dwt golomb videodsp mpegvideoenc'
+dirac_demuxer=yes
+dirac_demuxer_select=dirac_parser
+dirac_muxer=yes
+dirac_parser=yes
+dnxhd_decoder=yes
+dnxhd_decoder_select='blockdsp idctdsp'
+dnxhd_demuxer=yes
+dnxhd_encoder=yes
+dnxhd_encoder_select='aandcttables blockdsp fdctdsp idctdsp mpegvideoenc pixblockdsp'
+dnxhd_muxer=yes
+dnxhd_parser=yes
+doc=yes
+doc_deps_any='manpages htmlpages podpages txtpages'
+docdir_default='${prefix}/share/doc/ffmpeg'
+doxygen_default=doxygen
+dpx_decoder=yes
+dpx_encoder=yes
+dpx_parser=yes
+drawbox_filter=yes
+drawgrid_filter=yes
+drawtext_filter=yes
+drawtext_filter_deps=libfreetype
+dsd_lsbf_decoder=yes
+dsd_lsbf_planar_decoder=yes
+dsd_msbf_decoder=yes
+dsd_msbf_planar_decoder=yes
+dsf_demuxer=yes
+dshow_indev=yes
+dshow_indev_deps=IBaseFilter
+dshow_indev_extralibs='-lpsapi -lole32 -lstrmiids -luuid -loleaut32'
+dsicin_demuxer=yes
+dsicinaudio_decoder=yes
+dsicinvideo_decoder=yes
+dss_demuxer=yes
+dss_sp_decoder=yes
+dts_demuxer=yes
+dts_demuxer_select=dca_parser
+dts_muxer=yes
+dtshd_demuxer=yes
+dtshd_demuxer_select=dca_parser
+dump_extradata_bsf=yes
+dv1394_indev=yes
+dv1394_indev_deps=dv1394
+dv1394_indev_select=dv_demuxer
+dv_demuxer=yes
+dv_demuxer_select=dvprofile
+dv_muxer=yes
+dv_muxer_select=dvprofile
+dvbsub_decoder=yes
+dvbsub_demuxer=yes
+dvbsub_encoder=yes
+dvbsub_parser=yes
+dvd_nav_parser=yes
+dvdsub_decoder=yes
+dvdsub_encoder=yes
+dvdsub_parser=yes
+dvvideo_decoder=yes
+dvvideo_decoder_select='dvprofile idctdsp'
+dvvideo_encoder=yes
+dvvideo_encoder_select='dvprofile fdctdsp me_cmp pixblockdsp'
+dxa_decoder=yes
+dxa_decoder_select=zlib
+dxa_demuxer=yes
+dxa_demuxer_select=riffdec
+dxtory_decoder=yes
+dxva2=yes
+dxva2_deps=dxva2api_h
+ea_cdata_demuxer=yes
+ea_demuxer=yes
+eac3_decoder=yes
+eac3_decoder_select=ac3_decoder
+eac3_demuxer=yes
+eac3_demuxer_select=ac3_parser
+eac3_encoder=yes
+eac3_encoder_select=ac3_encoder
+eac3_muxer=yes
+eacmv_decoder=yes
+eamad_decoder=yes
+eamad_decoder_select='aandcttables blockdsp bswapdsp idctdsp mpegvideo'
+earwax_filter=yes
+eatgq_decoder=yes
+eatgq_decoder_select=aandcttables
+eatgv_decoder=yes
+eatqi_decoder=yes
+eatqi_decoder_select='aandcttables blockdsp bswapdsp idctdsp mpeg1video_decoder'
+ebur128_filter=yes
+ebur128_filter_deps=gpl
+edgedetect_filter=yes
+eightbps_decoder=yes
+eightsvx_exp_decoder=yes
+eightsvx_fib_decoder=yes
+elbg_filter=yes
+encoders_if_any='a64multi_encoder
+a64multi5_encoder
+alias_pix_encoder
+amv_encoder
+asv1_encoder
+asv2_encoder
+avrp_encoder
+avui_encoder
+ayuv_encoder
+bmp_encoder
+cinepak_encoder
+cljr_encoder
+comfortnoise_encoder
+dnxhd_encoder
+dpx_encoder
+dvvideo_encoder
+ffv1_encoder
+ffvhuff_encoder
+flashsv_encoder
+flashsv2_encoder
+flv_encoder
+gif_encoder
+h261_encoder
+h263_encoder
+h263p_encoder
+huffyuv_encoder
+jpeg2000_encoder
+jpegls_encoder
+ljpeg_encoder
+mjpeg_encoder
+mpeg1video_encoder
+mpeg2video_encoder
+mpeg4_encoder
+msmpeg4v2_encoder
+msmpeg4v3_encoder
+msvideo1_encoder
+nvenc_encoder
+pam_encoder
+pbm_encoder
+pcx_encoder
+pgm_encoder
+pgmyuv_encoder
+png_encoder
+ppm_encoder
+prores_encoder
+prores_aw_encoder
+prores_ks_encoder
+qtrle_encoder
+r10k_encoder
+r210_encoder
+rawvideo_encoder
+roq_encoder
+rv10_encoder
+rv20_encoder
+s302m_encoder
+sgi_encoder
+snow_encoder
+sunrast_encoder
+svq1_encoder
+targa_encoder
+tiff_encoder
+utvideo_encoder
+v210_encoder
+v308_encoder
+v408_encoder
+v410_encoder
+wmv1_encoder
+wmv2_encoder
+xbm_encoder
+xface_encoder
+xwd_encoder
+y41p_encoder
+yuv4_encoder
+zlib_encoder
+zmbv_encoder
+aac_encoder
+ac3_encoder
+ac3_fixed_encoder
+alac_encoder
+dca_encoder
+eac3_encoder
+flac_encoder
+g723_1_encoder
+mp2_encoder
+mp2fixed_encoder
+nellymoser_encoder
+ra_144_encoder
+sonic_encoder
+sonic_ls_encoder
+tta_encoder
+vorbis_encoder
+wavpack_encoder
+wmav1_encoder
+wmav2_encoder
+pcm_alaw_encoder
+pcm_f32be_encoder
+pcm_f32le_encoder
+pcm_f64be_encoder
+pcm_f64le_encoder
+pcm_mulaw_encoder
+pcm_s8_encoder
+pcm_s8_planar_encoder
+pcm_s16be_encoder
+pcm_s16be_planar_encoder
+pcm_s16le_encoder
+pcm_s16le_planar_encoder
+pcm_s24be_encoder
+pcm_s24daud_encoder
+pcm_s24le_encoder
+pcm_s24le_planar_encoder
+pcm_s32be_encoder
+pcm_s32le_encoder
+pcm_s32le_planar_encoder
+pcm_u8_encoder
+pcm_u16be_encoder
+pcm_u16le_encoder
+pcm_u24be_encoder
+pcm_u24le_encoder
+pcm_u32be_encoder
+pcm_u32le_encoder
+roq_dpcm_encoder
+adpcm_adx_encoder
+adpcm_g722_encoder
+adpcm_g726_encoder
+adpcm_ima_qt_encoder
+adpcm_ima_wav_encoder
+adpcm_ms_encoder
+adpcm_swf_encoder
+adpcm_yamaha_encoder
+ssa_encoder
+ass_encoder
+dvbsub_encoder
+dvdsub_encoder
+movtext_encoder
+srt_encoder
+subrip_encoder
+webvtt_encoder
+xsub_encoder
+libfaac_encoder
+libfdk_aac_encoder
+libgsm_encoder
+libgsm_ms_encoder
+libilbc_encoder
+libmp3lame_encoder
+libopencore_amrnb_encoder
+libopenjpeg_encoder
+libopus_encoder
+libschroedinger_encoder
+libshine_encoder
+libspeex_encoder
+libtheora_encoder
+libtwolame_encoder
+libutvideo_encoder
+libvo_aacenc_encoder
+libvo_amrwbenc_encoder
+libvorbis_encoder
+libvpx_vp8_encoder
+libvpx_vp9_encoder
+libwavpack_encoder
+libwebp_encoder
+libx264_encoder
+libx264rgb_encoder
+libx265_encoder
+libxavs_encoder
+libxvid_encoder
+libaacplus_encoder
+libopenh264_encoder'
+epaf_demuxer=yes
+eq_filter=yes
+eq_filter_deps=gpl
+equalizer_filter=yes
+error_resilience_select=me_cmp
+escape124_decoder=yes
+escape130_decoder=yes
+evrc_decoder=yes
+exr_decoder=yes
+exr_decoder_select=zlib
+ext=xop
+extract_mvs_example=yes
+extract_mvs_example_deps='avcodec avformat avutil'
+extractplanes_filter=yes
+f4v_muxer=yes
+f4v_muxer_select=mov_muxer
+faan=yes
+faandct=yes
+faandct_deps='faan fdctdsp'
+faanidct=yes
+faanidct_deps='faan idctdsp'
+fade_filter=yes
+fast_64bit_if_any='aarch64 alpha ia64 mips64 parisc64 ppc64 sparc64 x86_64'
+fast_clz_if_any='aarch64 alpha avr32 mips ppc x86'
+fast_unaligned_if_any='aarch64 ppc x86'
+fbdev_indev=yes
+fbdev_indev_deps=linux_fb_h
+fbdev_outdev=yes
+fbdev_outdev_deps=linux_fb_h
+ffm_demuxer=yes
+ffm_muxer=yes
+ffmetadata_demuxer=yes
+ffmetadata_muxer=yes
+ffmpeg=yes
+ffmpeg_deps='avcodec avfilter avformat swresample'
+ffmpeg_select='aformat_filter anull_filter atrim_filter format_filter
+               null_filter
+               setpts_filter trim_filter'
+ffplay=yes
+ffplay_deps='avcodec avformat swscale swresample sdl'
+ffplay_libs='$sdl_libs'
+ffplay_select='rdft crop_filter transpose_filter hflip_filter vflip_filter rotate_filter'
+ffprobe=yes
+ffprobe_deps='avcodec avformat'
+ffrtmpcrypt_protocol=yes
+ffrtmpcrypt_protocol_deps='!librtmp_protocol'
+ffrtmpcrypt_protocol_deps_any='gcrypt nettle openssl'
+ffrtmpcrypt_protocol_select=tcp_protocol
+ffrtmphttp_protocol=yes
+ffrtmphttp_protocol_deps='!librtmp_protocol'
+ffrtmphttp_protocol_select=http_protocol
+ffserver=yes
+ffserver_deps='avformat fork sarestart'
+ffserver_select='ffm_muxer rtp_protocol rtsp_demuxer'
+ffv1_decoder=yes
+ffv1_decoder_select='golomb rangecoder'
+ffv1_encoder=yes
+ffv1_encoder_select=rangecoder
+ffvhuff_decoder=yes
+ffvhuff_decoder_select=huffyuv_decoder
+ffvhuff_encoder=yes
+ffvhuff_encoder_select=huffyuv_encoder
+ffwavesynth_decoder=yes
+fic_decoder=yes
+fic_decoder_select=golomb
+field_filter=yes
+fieldmatch_filter=yes
+fieldorder_filter=yes
+file_protocol=yes
+filmstrip_demuxer=yes
+filmstrip_muxer=yes
+filter_audio_example=yes
+filter_audio_example_deps='avfilter avutil'
+filtering_audio_example=yes
+filtering_audio_example_deps='avfilter avcodec avformat avutil'
+filtering_video_example=yes
+filtering_video_example_deps='avfilter avcodec avformat avutil'
+filters_if_any='adelay_filter
+aecho_filter
+aeval_filter
+afade_filter
+aformat_filter
+ainterleave_filter
+allpass_filter
+amerge_filter
+amix_filter
+anull_filter
+apad_filter
+aperms_filter
+aphaser_filter
+aresample_filter
+aselect_filter
+asendcmd_filter
+asetnsamples_filter
+asetpts_filter
+asetrate_filter
+asettb_filter
+ashowinfo_filter
+asplit_filter
+astats_filter
+astreamsync_filter
+asyncts_filter
+atempo_filter
+atrim_filter
+azmq_filter
+bandpass_filter
+bandreject_filter
+bass_filter
+biquad_filter
+bs2b_filter
+channelmap_filter
+channelsplit_filter
+compand_filter
+dcshift_filter
+earwax_filter
+ebur128_filter
+equalizer_filter
+flanger_filter
+highpass_filter
+join_filter
+ladspa_filter
+lowpass_filter
+pan_filter
+replaygain_filter
+resample_filter
+silencedetect_filter
+silenceremove_filter
+treble_filter
+volume_filter
+volumedetect_filter
+aevalsrc_filter
+anullsrc_filter
+flite_filter
+sine_filter
+anullsink_filter
+alphaextract_filter
+alphamerge_filter
+ass_filter
+bbox_filter
+blackdetect_filter
+blackframe_filter
+blend_filter
+boxblur_filter
+codecview_filter
+colorbalance_filter
+colorchannelmixer_filter
+colorlevels_filter
+colormatrix_filter
+copy_filter
+crop_filter
+cropdetect_filter
+curves_filter
+dctdnoiz_filter
+decimate_filter
+dejudder_filter
+delogo_filter
+deshake_filter
+drawbox_filter
+drawgrid_filter
+drawtext_filter
+edgedetect_filter
+elbg_filter
+eq_filter
+extractplanes_filter
+fade_filter
+field_filter
+fieldmatch_filter
+fieldorder_filter
+format_filter
+fps_filter
+framepack_filter
+framestep_filter
+frei0r_filter
+fspp_filter
+geq_filter
+gradfun_filter
+haldclut_filter
+hflip_filter
+histeq_filter
+histogram_filter
+hqdn3d_filter
+hqx_filter
+hue_filter
+idet_filter
+il_filter
+interlace_filter
+interleave_filter
+kerndeint_filter
+lenscorrection_filter
+lut3d_filter
+lut_filter
+lutrgb_filter
+lutyuv_filter
+mcdeint_filter
+mergeplanes_filter
+mpdecimate_filter
+negate_filter
+noformat_filter
+noise_filter
+null_filter
+ocv_filter
+overlay_filter
+owdenoise_filter
+pad_filter
+palettegen_filter
+paletteuse_filter
+perms_filter
+perspective_filter
+phase_filter
+pixdesctest_filter
+pp_filter
+pp7_filter
+psnr_filter
+pullup_filter
+qp_filter
+removelogo_filter
+repeatfields_filter
+rotate_filter
+sab_filter
+scale_filter
+select_filter
+sendcmd_filter
+separatefields_filter
+setdar_filter
+setfield_filter
+setpts_filter
+setsar_filter
+settb_filter
+showinfo_filter
+showpalette_filter
+shuffleplanes_filter
+signalstats_filter
+smartblur_filter
+split_filter
+spp_filter
+stereo3d_filter
+subtitles_filter
+super2xsai_filter
+swapuv_filter
+tblend_filter
+telecine_filter
+thumbnail_filter
+tile_filter
+tinterlace_filter
+transpose_filter
+trim_filter
+unsharp_filter
+uspp_filter
+vflip_filter
+vidstabdetect_filter
+vidstabtransform_filter
+vignette_filter
+w3fdif_filter
+xbr_filter
+yadif_filter
+zmq_filter
+zoompan_filter
+cellauto_filter
+color_filter
+frei0r_src_filter
+haldclutsrc_filter
+life_filter
+mandelbrot_filter
+mptestsrc_filter
+nullsrc_filter
+rgbtestsrc_filter
+smptebars_filter
+smptehdbars_filter
+testsrc_filter
+nullsink_filter
+avectorscope_filter
+concat_filter
+showcqt_filter
+showspectrum_filter
+showwaves_filter
+amovie_filter
+movie_filter'
+flac_decoder=yes
+flac_decoder_select=golomb
+flac_demuxer=yes
+flac_demuxer_select=flac_parser
+flac_encoder=yes
+flac_encoder_select='bswapdsp golomb lpc'
+flac_muxer=yes
+flac_parser=yes
+flanger_filter=yes
+flashsv2_decoder=yes
+flashsv2_decoder_select=zlib
+flashsv2_encoder=yes
+flashsv2_encoder_select=zlib
+flashsv_decoder=yes
+flashsv_decoder_select=zlib
+flashsv_encoder=yes
+flashsv_encoder_select=zlib
+flic_decoder=yes
+flic_demuxer=yes
+flite_filter=yes
+flite_filter_deps=libflite
+flv_decoder=yes
+flv_decoder_select=h263_decoder
+flv_demuxer=yes
+flv_encoder=yes
+flv_encoder_select=h263_encoder
+flv_muxer=yes
+fma3=yes
+fma3_deps=avx
+fma3_external_deps=avx_external
+fma3_inline_deps=avx_inline
+fma3_suggest='fma3_external fma3_inline'
+fma4=yes
+fma4_deps=avx
+fma4_external_deps=avx_external
+fma4_inline_deps=avx_inline
+fma4_suggest='fma4_external fma4_inline'
+format_filter=yes
+fourxm_decoder=yes
+fourxm_decoder_select='blockdsp bswapdsp'
+fourxm_demuxer=yes
+fps_filter=yes
+frame_thread_encoder_deps='encoders threads'
+framecrc_muxer=yes
+framemd5_muxer=yes
+framepack_filter=yes
+framestep_filter=yes
+fraps_decoder=yes
+fraps_decoder_select='bswapdsp huffman'
+frei0r_filter=yes
+frei0r_filter_deps='frei0r dlopen'
+frei0r_src_filter=yes
+frei0r_src_filter_deps='frei0r dlopen'
+frm_demuxer=yes
+frwu_decoder=yes
+fspp_filter=yes
+fspp_filter_deps=gpl
+ftp_protocol=yes
+ftp_protocol_select=tcp_protocol
+g2m_decoder=yes
+g2m_decoder_select='blockdsp idctdsp zlib'
+g722_demuxer=yes
+g722_muxer=yes
+g723_1_decoder=yes
+g723_1_demuxer=yes
+g723_1_encoder=yes
+g723_1_muxer=yes
+g729_decoder=yes
+g729_decoder_select=audiodsp
+g729_demuxer=yes
+gdigrab_indev=yes
+gdigrab_indev_deps=CreateDIBSection
+gdigrab_indev_extralibs=-lgdi32
+gdigrab_indev_select=bmp_decoder
+geq_filter=yes
+geq_filter_deps=gpl
+gif_decoder=yes
+gif_demuxer=yes
+gif_encoder=yes
+gif_muxer=yes
+gopher_protocol=yes
+gopher_protocol_select=network
+gradfun_filter=yes
+gsm_decoder=yes
+gsm_demuxer=yes
+gsm_ms_decoder=yes
+gsm_parser=yes
+gxf_demuxer=yes
+gxf_muxer=yes
+h261_decoder=yes
+h261_decoder_select='mpeg_er mpegvideo'
+h261_demuxer=yes
+h261_encoder=yes
+h261_encoder_select='aandcttables mpegvideoenc'
+h261_muxer=yes
+h261_parser=yes
+h263_decoder=yes
+h263_decoder_select='error_resilience h263_parser h263dsp mpeg_er mpegvideo qpeldsp'
+h263_demuxer=yes
+h263_encoder=yes
+h263_encoder_select='aandcttables h263dsp mpegvideoenc'
+h263_muxer=yes
+h263_parser=yes
+h263_vaapi_hwaccel=yes
+h263_vaapi_hwaccel_deps=vaapi
+h263_vaapi_hwaccel_select=h263_decoder
+h263_vdpau_hwaccel=yes
+h263_vdpau_hwaccel_deps=vdpau
+h263_vdpau_hwaccel_select=h263_decoder
+h263i_decoder=yes
+h263i_decoder_select=h263_decoder
+h263p_decoder=yes
+h263p_encoder=yes
+h263p_encoder_select=h263_encoder
+h264_crystalhd_decoder=yes
+h264_crystalhd_decoder_select='crystalhd h264_mp4toannexb_bsf h264_parser'
+h264_decoder=yes
+h264_decoder_select='cabac golomb h264chroma h264dsp h264pred h264qpel startcode videodsp'
+h264_decoder_suggest=error_resilience
+h264_demuxer=yes
+h264_dxva2_hwaccel=yes
+h264_dxva2_hwaccel_deps=dxva2
+h264_dxva2_hwaccel_select=h264_decoder
+h264_mp4toannexb_bsf=yes
+h264_muxer=yes
+h264_parser=yes
+h264_parser_select=h264_decoder
+h264_qsv_decoder=yes
+h264_qsv_decoder_deps=libmfx
+h264_qsv_decoder_select='h264_mp4toannexb_bsf h264_parser qsv h264_qsv_hwaccel'
+h264_qsv_hwaccel=yes
+h264_qsv_hwaccel_deps=libmfx
+h264_vaapi_hwaccel=yes
+h264_vaapi_hwaccel_deps=vaapi
+h264_vaapi_hwaccel_select=h264_decoder
+h264_vda_decoder=yes
+h264_vda_decoder_deps=vda
+h264_vda_decoder_select=h264_decoder
+h264_vda_hwaccel=yes
+h264_vda_hwaccel_deps=vda
+h264_vda_hwaccel_select=h264_decoder
+h264_vda_old_hwaccel=yes
+h264_vda_old_hwaccel_deps=vda
+h264_vda_old_hwaccel_select=h264_decoder
+h264_vdpau_decoder=yes
+h264_vdpau_decoder_deps=vdpau
+h264_vdpau_decoder_select=h264_decoder
+h264_vdpau_hwaccel=yes
+h264_vdpau_hwaccel_deps=vdpau
+h264_vdpau_hwaccel_select=h264_decoder
+haldclut_filter=yes
+haldclutsrc_filter=yes
+hds_muxer=yes
+hds_muxer_select=flv_muxer
+hevc_decoder=yes
+hevc_decoder_select='bswapdsp cabac golomb videodsp'
+hevc_demuxer=yes
+hevc_dxva2_hwaccel=yes
+hevc_dxva2_hwaccel_deps='dxva2 DXVA_PicParams_HEVC'
+hevc_dxva2_hwaccel_select=hevc_decoder
+hevc_muxer=yes
+hevc_parser=yes
+hevc_parser_select=hevc_decoder
+hflip_filter=yes
+highpass_filter=yes
+histeq_filter=yes
+histeq_filter_deps=gpl
+histogram_filter=yes
+hls_demuxer=yes
+hls_muxer=yes
+hls_muxer_select=mpegts_muxer
+hls_protocol=yes
+hnm4_video_decoder=yes
+hnm_demuxer=yes
+host_cc_default=gcc
+host_cflags_filter=echo
+host_ldflags_filter=echo
+host_libs=-lm
+host_os=darwin
+hqdn3d_filter=yes
+hqdn3d_filter_deps=gpl
+hqx_decoder=yes
+hqx_filter=yes
+htmlpages=yes
+htmlpages_deps=perl
+htmlpages_deps_any='makeinfo_html texi2html'
+http_protocol=yes
+http_protocol_select=tcp_protocol
+httpproxy_protocol=yes
+httpproxy_protocol_select=tcp_protocol
+https_protocol=yes
+https_protocol_select=tls_protocol
+hue_filter=yes
+huffyuv_decoder=yes
+huffyuv_decoder_select='bswapdsp huffyuvdsp llviddsp'
+huffyuv_encoder=yes
+huffyuv_encoder_select='bswapdsp huffman huffyuvencdsp llviddsp'
+hwaccels_if_any='h263_vaapi_hwaccel
+h263_vdpau_hwaccel
+h264_dxva2_hwaccel
+h264_qsv_hwaccel
+h264_vaapi_hwaccel
+h264_vda_hwaccel
+h264_vda_old_hwaccel
+h264_vdpau_hwaccel
+hevc_dxva2_hwaccel
+mpeg1_xvmc_hwaccel
+mpeg1_vdpau_hwaccel
+mpeg2_xvmc_hwaccel
+mpeg2_dxva2_hwaccel
+mpeg2_vaapi_hwaccel
+mpeg2_vdpau_hwaccel
+mpeg4_vaapi_hwaccel
+mpeg4_vdpau_hwaccel
+vc1_dxva2_hwaccel
+vc1_vaapi_hwaccel
+vc1_vdpau_hwaccel
+wmv3_dxva2_hwaccel
+wmv3_vaapi_hwaccel
+wmv3_vdpau_hwaccel'
+i686=yes
+i686_deps=x86
+iac_decoder=yes
+iac_decoder_select=imc_decoder
+icecast_protocol=yes
+icecast_protocol_select=http_protocol
+ico_demuxer=yes
+ico_muxer=yes
+idcin_decoder=yes
+idcin_demuxer=yes
+idet_filter=yes
+idf_decoder=yes
+idf_demuxer=yes
+iec61883_indev=yes
+iec61883_indev_deps=libiec61883
+iff_byterun1_decoder=yes
+iff_demuxer=yes
+iff_ilbm_decoder=yes
+il_filter=yes
+ilbc_demuxer=yes
+ilbc_muxer=yes
+image2_alias_pix_demuxer=yes
+image2_alias_pix_demuxer_select=image2_demuxer
+image2_brender_pix_demuxer=yes
+image2_brender_pix_demuxer_select=image2_demuxer
+image2_demuxer=yes
+image2_muxer=yes
+image2pipe_demuxer=yes
+image2pipe_muxer=yes
+image_bmp_pipe_demuxer=yes
+image_dpx_pipe_demuxer=yes
+image_exr_pipe_demuxer=yes
+image_j2k_pipe_demuxer=yes
+image_jpeg_pipe_demuxer=yes
+image_jpegls_pipe_demuxer=yes
+image_pictor_pipe_demuxer=yes
+image_png_pipe_demuxer=yes
+image_sgi_pipe_demuxer=yes
+image_sunrast_pipe_demuxer=yes
+image_tiff_pipe_demuxer=yes
+image_webp_pipe_demuxer=yes
+imc_decoder=yes
+imc_decoder_select='bswapdsp fft mdct sinewin'
+imx_dump_header_bsf=yes
+incdir_default='${prefix}/include'
+indeo2_decoder=yes
+indeo3_decoder=yes
+indeo3_decoder_select=hpeldsp
+indeo4_decoder=yes
+indeo5_decoder=yes
+indevs_if_any='alsa_indev
+avfoundation_indev
+bktr_indev
+decklink_indev
+dshow_indev
+dv1394_indev
+fbdev_indev
+gdigrab_indev
+iec61883_indev
+jack_indev
+lavfi_indev
+openal_indev
+oss_indev
+pulse_indev
+qtkit_indev
+sndio_indev
+v4l2_indev
+vfwcap_indev
+x11grab_indev
+x11grab_xcb_indev
+libcdio_indev
+libdc1394_indev'
+ingenient_demuxer=yes
+install=install
+interlace_filter=yes
+interlace_filter_deps=gpl
+interleave_filter=yes
+interplay_dpcm_decoder=yes
+interplay_video_decoder=yes
+interplay_video_decoder_select=hpeldsp
+intrax8_select=error_resilience
+intrinsics=none
+intrinsics_neon_deps=neon
+ipmovie_demuxer=yes
+ipod_muxer=yes
+ipod_muxer_select=mov_muxer
+ircam_demuxer=yes
+ircam_muxer=yes
+ismv_muxer=yes
+ismv_muxer_select=mov_muxer
+iss_demuxer=yes
+iv8_demuxer=yes
+ivf_demuxer=yes
+ivf_muxer=yes
+jack_indev=yes
+jack_indev_deps='jack_jack_h sem_timedwait'
+jacosub_decoder=yes
+jacosub_demuxer=yes
+jacosub_muxer=yes
+join_filter=yes
+jpeg2000_decoder=yes
+jpeg2000_encoder=yes
+jpegls_decoder=yes
+jpegls_decoder_select='golomb mjpeg_decoder'
+jpegls_encoder=yes
+jpegls_encoder_select=golomb
+jv_decoder=yes
+jv_decoder_select=blockdsp
+jv_demuxer=yes
+kerndeint_filter=yes
+kerndeint_filter_deps=gpl
+kgv1_decoder=yes
+kmvc_decoder=yes
+l=
+ladspa_filter=yes
+ladspa_filter_deps='ladspa dlopen'
+lagarith_decoder=yes
+lagarith_decoder_select=huffyuvdsp
+latm_demuxer=yes
+latm_muxer=yes
+lavfi_indev=yes
+lavfi_indev_deps=avfilter
+ldbrx=yes
+ldflags_filter=echo
+lenscorrection_filter=yes
+libaacplus_encoder=yes
+libaacplus_encoder_deps=libaacplus
+libcdio_indev=yes
+libcdio_indev_deps=libcdio
+libcelt_decoder=yes
+libcelt_decoder_deps=libcelt
+libdc1394_indev=yes
+libdc1394_indev_deps=libdc1394
+libdir_default='${prefix}/lib'
+libfaac_encoder=yes
+libfaac_encoder_deps=libfaac
+libfaac_encoder_select=audio_frame_queue
+libfdk_aac_decoder=yes
+libfdk_aac_decoder_deps=libfdk_aac
+libfdk_aac_encoder=yes
+libfdk_aac_encoder_deps=libfdk_aac
+libfdk_aac_encoder_select=audio_frame_queue
+libgme_demuxer=yes
+libgme_demuxer_deps=libgme
+libgsm_decoder=yes
+libgsm_decoder_deps=libgsm
+libgsm_encoder=yes
+libgsm_encoder_deps=libgsm
+libgsm_ms_decoder=yes
+libgsm_ms_decoder_deps=libgsm
+libgsm_ms_encoder=yes
+libgsm_ms_encoder_deps=libgsm
+libilbc_decoder=yes
+libilbc_decoder_deps=libilbc
+libilbc_encoder=yes
+libilbc_encoder_deps=libilbc
+libmodplug_demuxer=yes
+libmodplug_demuxer_deps=libmodplug
+libmp3lame_encoder=yes
+libmp3lame_encoder_deps=libmp3lame
+libmp3lame_encoder_select=audio_frame_queue
+libnut_demuxer=yes
+libnut_demuxer_deps=libnut
+libnut_muxer=yes
+libnut_muxer_deps=libnut
+libopencore_amrnb=yes
+libopencore_amrnb_decoder=yes
+libopencore_amrnb_decoder_deps=libopencore_amrnb
+libopencore_amrnb_encoder=yes
+libopencore_amrnb_encoder_deps=libopencore_amrnb
+libopencore_amrnb_encoder_select=audio_frame_queue
+libopencore_amrwb_decoder=yes
+libopencore_amrwb_decoder_deps=libopencore_amrwb
+libopenh264_encoder=yes
+libopenh264_encoder_deps=libopenh264
+libopenjpeg_decoder=yes
+libopenjpeg_decoder_deps=libopenjpeg
+libopenjpeg_encoder=yes
+libopenjpeg_encoder_deps=libopenjpeg
+libopus_decoder=yes
+libopus_decoder_deps=libopus
+libopus_encoder=yes
+libopus_encoder_deps=libopus
+libopus_encoder_select=audio_frame_queue
+libquvi_demuxer=yes
+libquvi_demuxer_deps=libquvi
+librtmp_protocol=yes
+librtmp_protocol_deps=librtmp
+librtmpe_protocol=yes
+librtmpe_protocol_deps=librtmp
+librtmps_protocol=yes
+librtmps_protocol_deps=librtmp
+librtmpt_protocol=yes
+librtmpt_protocol_deps=librtmp
+librtmpte_protocol=yes
+librtmpte_protocol_deps=librtmp
+libschroedinger_decoder=yes
+libschroedinger_decoder_deps=libschroedinger
+libschroedinger_encoder=yes
+libschroedinger_encoder_deps=libschroedinger
+libshine_encoder=yes
+libshine_encoder_deps=libshine
+libshine_encoder_select=audio_frame_queue
+libsmbclient_protocol=yes
+libsmbclient_protocol_deps='libsmbclient gplv3'
+libspeex_decoder=yes
+libspeex_decoder_deps=libspeex
+libspeex_encoder=yes
+libspeex_encoder_deps=libspeex
+libspeex_encoder_select=audio_frame_queue
+libssh_protocol=yes
+libssh_protocol_deps=libssh
+libstagefright_h264_decoder=yes
+libstagefright_h264_decoder_deps=libstagefright_h264
+libtheora_encoder=yes
+libtheora_encoder_deps=libtheora
+libtwolame_encoder=yes
+libtwolame_encoder_deps=libtwolame
+libutvideo_decoder=yes
+libutvideo_decoder_deps=libutvideo
+libutvideo_encoder=yes
+libutvideo_encoder_deps=libutvideo
+libv4l2_indev_deps=libv4l2
+libvo_aacenc_encoder=yes
+libvo_aacenc_encoder_deps=libvo_aacenc
+libvo_aacenc_encoder_select=audio_frame_queue
+libvo_amrwbenc_encoder=yes
+libvo_amrwbenc_encoder_deps=libvo_amrwbenc
+libvorbis_decoder=yes
+libvorbis_decoder_deps=libvorbis
+libvorbis_encoder=yes
+libvorbis_encoder_deps=libvorbis
+libvorbis_encoder_select=audio_frame_queue
+libvpx_vp8_decoder=yes
+libvpx_vp8_decoder_deps=libvpx
+libvpx_vp8_encoder=yes
+libvpx_vp8_encoder_deps=libvpx
+libvpx_vp9_decoder=yes
+libvpx_vp9_decoder_deps=libvpx
+libvpx_vp9_encoder=yes
+libvpx_vp9_encoder_deps=libvpx
+libwavpack_encoder=yes
+libwavpack_encoder_deps=libwavpack
+libwebp_encoder=yes
+libwebp_encoder_deps=libwebp
+libx264_encoder=yes
+libx264_encoder_deps=libx264
+libx264rgb_encoder=yes
+libx264rgb_encoder_deps=libx264
+libx264rgb_encoder_select=libx264_encoder
+libx265_encoder=yes
+libx265_encoder_deps=libx265
+libxavs_encoder=yes
+libxavs_encoder_deps=libxavs
+libxvid_encoder=yes
+libxvid_encoder_deps=libxvid
+libzvbi_teletext_decoder=yes
+libzvbi_teletext_decoder_deps=libzvbi
+life_filter=yes
+live_flv_demuxer=yes
+ljpeg_encoder=yes
+ljpeg_encoder_select='aandcttables idctdsp'
+lmlm4_demuxer=yes
+ln_s='ln -s -f'
+loas_demuxer=yes
+loco_decoder=yes
+loco_decoder_select=golomb
+logfile=config.log
+loongson=yes
+lowpass_filter=yes
+lrc_demuxer=yes
+lrc_muxer=yes
+lut3d_filter=yes
+lut_filter=yes
+lutrgb_filter=yes
+lutyuv_filter=yes
+lvf_demuxer=yes
+lxf_demuxer=yes
+m='eval ${v}_inline_deps=inline_asm'
+m4v_demuxer=yes
+m4v_muxer=yes
+mace3_decoder=yes
+mace6_decoder=yes
+mandelbrot_filter=yes
+mandir_default='${prefix}/share/man'
+manpages=yes
+manpages_deps='perl pod2man'
+matroska_audio_muxer=yes
+matroska_audio_muxer_select=matroska_muxer
+matroska_demuxer=yes
+matroska_demuxer_select=riffdec
+matroska_demuxer_suggest='bzlib lzo zlib'
+matroska_muxer=yes
+matroska_muxer_select=riffenc
+mcdeint_filter=yes
+mcdeint_filter_deps='avcodec gpl'
+md5_muxer=yes
+md5_protocol=yes
+mdct_select=fft
+mdec_decoder=yes
+mdec_decoder_select='blockdsp idctdsp mpegvideo'
+me_cmp_select='fdctdsp idctdsp pixblockdsp'
+mergeplanes_filter=yes
+metadata_example=yes
+metadata_example_deps='avformat avutil'
+metasound_decoder=yes
+metasound_decoder_select='lsp mdct sinewin'
+mgsts_demuxer=yes
+microdvd_decoder=yes
+microdvd_demuxer=yes
+microdvd_muxer=yes
+mimic_decoder=yes
+mimic_decoder_select='blockdsp bswapdsp hpeldsp idctdsp'
+mips32r2=yes
+mipsdspr1=yes
+mipsdspr1_deps=mips
+mipsdspr2=yes
+mipsdspr2_deps=mips
+mipsfpu=yes
+mipsfpu_deps=mips
+mjpeg2jpeg_bsf=yes
+mjpeg_decoder=yes
+mjpeg_decoder_select='blockdsp hpeldsp exif idctdsp'
+mjpeg_demuxer=yes
+mjpeg_encoder=yes
+mjpeg_encoder_select='aandcttables mpegvideoenc'
+mjpeg_muxer=yes
+mjpeg_parser=yes
+mjpega_dump_header_bsf=yes
+mjpegb_decoder=yes
+mjpegb_decoder_select=mjpeg_decoder
+mkvtimestamp_v2_muxer=yes
+mlp_decoder=yes
+mlp_decoder_select=mlp_parser
+mlp_demuxer=yes
+mlp_muxer=yes
+mlp_parser=yes
+mlv_demuxer=yes
+mm_demuxer=yes
+mmf_demuxer=yes
+mmf_muxer=yes
+mmf_muxer_select=riffenc
+mmsh_protocol=yes
+mmsh_protocol_select=http_protocol
+mmst_protocol=yes
+mmst_protocol_select=network
+mmvideo_decoder=yes
+mmx=yes
+mmx_deps=x86
+mmx_external_deps=yasm
+mmx_inline_deps=inline_asm
+mmx_suggest='mmx_external mmx_inline'
+mmxext=yes
+mmxext_deps=mmx
+mmxext_external_deps=mmx_external
+mmxext_inline_deps=mmx_inline
+mmxext_suggest='mmxext_external mmxext_inline'
+motionpixels_decoder=yes
+motionpixels_decoder_select=bswapdsp
+mov2textsub_bsf=yes
+mov_demuxer=yes
+mov_demuxer_select=riffdec
+mov_demuxer_suggest=zlib
+mov_muxer=yes
+mov_muxer_select='riffenc rtpenc_chain'
+movie_filter=yes
+movie_filter_deps='avcodec avformat'
+movtext_decoder=yes
+movtext_encoder=yes
+mp1_decoder=yes
+mp1_decoder_select=mpegaudio
+mp1float_decoder=yes
+mp1float_decoder_select=mpegaudio
+mp2_decoder=yes
+mp2_decoder_select=mpegaudio
+mp2_encoder=yes
+mp2_muxer=yes
+mp2fixed_encoder=yes
+mp2float_decoder=yes
+mp2float_decoder_select=mpegaudio
+mp3_decoder=yes
+mp3_decoder_select=mpegaudio
+mp3_demuxer=yes
+mp3_demuxer_select=mpegaudio_parser
+mp3_header_decompress_bsf=yes
+mp3_muxer=yes
+mp3adu_decoder=yes
+mp3adu_decoder_select=mpegaudio
+mp3adufloat_decoder=yes
+mp3adufloat_decoder_select=mpegaudio
+mp3float_decoder=yes
+mp3float_decoder_select=mpegaudio
+mp3on4_decoder=yes
+mp3on4_decoder_select=mpegaudio
+mp3on4float_decoder=yes
+mp3on4float_decoder_select=mpegaudio
+mp4_muxer=yes
+mp4_muxer_select=mov_muxer
+mpc7_decoder=yes
+mpc7_decoder_select='bswapdsp mpegaudiodsp'
+mpc8_decoder=yes
+mpc8_decoder_select=mpegaudiodsp
+mpc8_demuxer=yes
+mpc_demuxer=yes
+mpdecimate_filter=yes
+mpdecimate_filter_deps=gpl
+mpdecimate_filter_select=pixelutils
+mpeg1_vdpau_decoder=yes
+mpeg1_vdpau_decoder_deps=vdpau
+mpeg1_vdpau_decoder_select=mpeg1video_decoder
+mpeg1_vdpau_hwaccel=yes
+mpeg1_vdpau_hwaccel_deps=vdpau
+mpeg1_vdpau_hwaccel_select=mpeg1video_decoder
+mpeg1_xvmc_hwaccel=yes
+mpeg1_xvmc_hwaccel_deps=xvmc
+mpeg1_xvmc_hwaccel_select=mpeg1video_decoder
+mpeg1system_muxer=yes
+mpeg1vcd_muxer=yes
+mpeg1video_decoder=yes
+mpeg1video_decoder_select='error_resilience mpeg_er mpegvideo'
+mpeg1video_encoder=yes
+mpeg1video_encoder_select='aandcttables mpegvideoenc h263dsp'
+mpeg1video_muxer=yes
+mpeg2_crystalhd_decoder=yes
+mpeg2_crystalhd_decoder_select=crystalhd
+mpeg2_dxva2_hwaccel=yes
+mpeg2_dxva2_hwaccel_deps=dxva2
+mpeg2_dxva2_hwaccel_select=mpeg2video_decoder
+mpeg2_vaapi_hwaccel=yes
+mpeg2_vaapi_hwaccel_deps=vaapi
+mpeg2_vaapi_hwaccel_select=mpeg2video_decoder
+mpeg2_vdpau_hwaccel=yes
+mpeg2_vdpau_hwaccel_deps=vdpau
+mpeg2_vdpau_hwaccel_select=mpeg2video_decoder
+mpeg2_xvmc_hwaccel=yes
+mpeg2_xvmc_hwaccel_deps=xvmc
+mpeg2_xvmc_hwaccel_select=mpeg2video_decoder
+mpeg2dvd_muxer=yes
+mpeg2svcd_muxer=yes
+mpeg2video_decoder=yes
+mpeg2video_decoder_select='error_resilience mpeg_er mpegvideo'
+mpeg2video_encoder=yes
+mpeg2video_encoder_select='aandcttables mpegvideoenc h263dsp'
+mpeg2video_muxer=yes
+mpeg2vob_muxer=yes
+mpeg4_crystalhd_decoder=yes
+mpeg4_crystalhd_decoder_select=crystalhd
+mpeg4_decoder=yes
+mpeg4_decoder_select='h263_decoder mpeg4video_parser'
+mpeg4_encoder=yes
+mpeg4_encoder_select=h263_encoder
+mpeg4_vaapi_hwaccel=yes
+mpeg4_vaapi_hwaccel_deps=vaapi
+mpeg4_vaapi_hwaccel_select=mpeg4_decoder
+mpeg4_vdpau_decoder=yes
+mpeg4_vdpau_decoder_deps=vdpau
+mpeg4_vdpau_decoder_select=mpeg4_decoder
+mpeg4_vdpau_hwaccel=yes
+mpeg4_vdpau_hwaccel_deps=vdpau
+mpeg4_vdpau_hwaccel_select=mpeg4_decoder
+mpeg4video_parser=yes
+mpeg4video_parser_select='error_resilience h263dsp mpeg_er mpegvideo qpeldsp'
+mpeg_er_select=error_resilience
+mpeg_vdpau_decoder=yes
+mpeg_vdpau_decoder_deps=vdpau
+mpeg_vdpau_decoder_select=mpeg2video_decoder
+mpeg_xvmc_decoder=yes
+mpeg_xvmc_decoder_deps=X11_extensions_XvMClib_h
+mpeg_xvmc_decoder_select=mpeg2video_decoder
+mpeg_xvmc_hwaccel_deps=xvmc
+mpeg_xvmc_hwaccel_select=mpeg2video_decoder
+mpegaudio_parser=yes
+mpegaudio_select=mpegaudiodsp
+mpegaudiodsp_select=dct
+mpegps_demuxer=yes
+mpegts_demuxer=yes
+mpegts_muxer=yes
+mpegts_muxer_select='adts_muxer latm_muxer'
+mpegtsraw_demuxer=yes
+mpegtsraw_demuxer_select=mpegts_demuxer
+mpegvideo_decoder=yes
+mpegvideo_decoder_select='error_resilience mpeg_er mpegvideo'
+mpegvideo_demuxer=yes
+mpegvideo_parser=yes
+mpegvideo_parser_select=mpegvideo
+mpegvideo_select='blockdsp h264chroma hpeldsp idctdsp me_cmp videodsp'
+mpegvideoenc_select='me_cmp mpegvideo pixblockdsp qpeldsp'
+mpjpeg_muxer=yes
+mpl2_decoder=yes
+mpl2_demuxer=yes
+mpsub_demuxer=yes
+mptestsrc_filter=yes
+mptestsrc_filter_deps=gpl
+msa1_decoder=yes
+msmpeg4_crystalhd_decoder=yes
+msmpeg4_crystalhd_decoder_select=crystalhd
+msmpeg4v1_decoder=yes
+msmpeg4v1_decoder_select=h263_decoder
+msmpeg4v2_decoder=yes
+msmpeg4v2_decoder_select=h263_decoder
+msmpeg4v2_encoder=yes
+msmpeg4v2_encoder_select=h263_encoder
+msmpeg4v3_decoder=yes
+msmpeg4v3_decoder_select=h263_decoder
+msmpeg4v3_encoder=yes
+msmpeg4v3_encoder_select=h263_encoder
+msnwc_tcp_demuxer=yes
+msrle_decoder=yes
+mss1_decoder=yes
+mss2_decoder=yes
+mss2_decoder_select='error_resilience mpeg_er qpeldsp vc1_decoder'
+msvideo1_decoder=yes
+msvideo1_encoder=yes
+mszh_decoder=yes
+mts2_decoder=yes
+mtv_demuxer=yes
+muxers_if_any='a64_muxer
+ac3_muxer
+adts_muxer
+adx_muxer
+aiff_muxer
+amr_muxer
+asf_muxer
+ass_muxer
+ast_muxer
+asf_stream_muxer
+au_muxer
+avi_muxer
+avm2_muxer
+bit_muxer
+caf_muxer
+cavsvideo_muxer
+crc_muxer
+dash_muxer
+data_muxer
+daud_muxer
+dirac_muxer
+dnxhd_muxer
+dts_muxer
+dv_muxer
+eac3_muxer
+f4v_muxer
+ffm_muxer
+ffmetadata_muxer
+filmstrip_muxer
+flac_muxer
+flv_muxer
+framecrc_muxer
+framemd5_muxer
+g722_muxer
+g723_1_muxer
+gif_muxer
+gxf_muxer
+h261_muxer
+h263_muxer
+h264_muxer
+hds_muxer
+hevc_muxer
+hls_muxer
+ico_muxer
+ilbc_muxer
+image2_muxer
+image2pipe_muxer
+ipod_muxer
+ircam_muxer
+ismv_muxer
+ivf_muxer
+jacosub_muxer
+latm_muxer
+lrc_muxer
+m4v_muxer
+md5_muxer
+matroska_muxer
+matroska_audio_muxer
+microdvd_muxer
+mjpeg_muxer
+mlp_muxer
+mmf_muxer
+mov_muxer
+mp2_muxer
+mp3_muxer
+mp4_muxer
+mpeg1system_muxer
+mpeg1vcd_muxer
+mpeg1video_muxer
+mpeg2dvd_muxer
+mpeg2svcd_muxer
+mpeg2video_muxer
+mpeg2vob_muxer
+mpegts_muxer
+mpjpeg_muxer
+mxf_muxer
+mxf_d10_muxer
+mxf_opatom_muxer
+null_muxer
+nut_muxer
+oga_muxer
+ogg_muxer
+oma_muxer
+opus_muxer
+pcm_alaw_muxer
+pcm_mulaw_muxer
+pcm_f64be_muxer
+pcm_f64le_muxer
+pcm_f32be_muxer
+pcm_f32le_muxer
+pcm_s32be_muxer
+pcm_s32le_muxer
+pcm_s24be_muxer
+pcm_s24le_muxer
+pcm_s16be_muxer
+pcm_s16le_muxer
+pcm_s8_muxer
+pcm_u32be_muxer
+pcm_u32le_muxer
+pcm_u24be_muxer
+pcm_u24le_muxer
+pcm_u16be_muxer
+pcm_u16le_muxer
+pcm_u8_muxer
+psp_muxer
+rawvideo_muxer
+rm_muxer
+roq_muxer
+rso_muxer
+rtp_muxer
+rtp_mpegts_muxer
+rtsp_muxer
+sap_muxer
+segment_muxer
+stream_segment_muxer
+smjpeg_muxer
+smoothstreaming_muxer
+sox_muxer
+spx_muxer
+spdif_muxer
+srt_muxer
+swf_muxer
+tee_muxer
+tg2_muxer
+tgp_muxer
+mkvtimestamp_v2_muxer
+truehd_muxer
+uncodedframecrc_muxer
+vc1_muxer
+vc1t_muxer
+voc_muxer
+w64_muxer
+wav_muxer
+webm_muxer
+webm_dash_manifest_muxer
+webp_muxer
+webvtt_muxer
+wtv_muxer
+wv_muxer
+yuv4mpegpipe_muxer
+libnut_muxer'
+muxing_example=yes
+muxing_example_deps='avcodec avformat avutil swscale'
+mv_demuxer=yes
+mvc1_decoder=yes
+mvc2_decoder=yes
+mvi_demuxer=yes
+mxf_d10_muxer=yes
+mxf_d10_muxer_select=mxf_muxer
+mxf_demuxer=yes
+mxf_muxer=yes
+mxf_opatom_muxer=yes
+mxf_opatom_muxer_select=mxf_muxer
+mxg_demuxer=yes
+mxpeg_decoder=yes
+mxpeg_decoder_select=mjpeg_decoder
+n=protocols
+nc_demuxer=yes
+negate_filter=yes
+negate_filter_deps=lut_filter
+nellymoser_decoder=yes
+nellymoser_decoder_select='mdct sinewin'
+nellymoser_encoder=yes
+nellymoser_encoder_select='audio_frame_queue mdct sinewin'
+neon=yes
+neon_deps_any='aarch64 arm'
+neon_inline_deps=inline_asm
+nistsphere_demuxer=yes
+nm_default='nm -g'
+noformat_filter=yes
+noise_bsf=yes
+noise_filter=yes
+nsv_demuxer=yes
+null_filter=yes
+null_muxer=yes
+nullsink_filter=yes
+nullsrc_filter=yes
+nut_demuxer=yes
+nut_muxer=yes
+nut_muxer_select=riffenc
+nuv_decoder=yes
+nuv_decoder_select='idctdsp lzo'
+nuv_demuxer=yes
+nuv_demuxer_select=riffdec
+nvenc_encoder=yes
+nvenc_encoder_deps=nvenc
+objformat=elf
+ocv_filter=yes
+ocv_filter_deps=libopencv
+oga_muxer=yes
+oga_muxer_select=ogg_muxer
+ogg_demuxer=yes
+ogg_demuxer_select=golomb
+ogg_muxer=yes
+oma_demuxer=yes
+oma_muxer=yes
+on2avc_decoder=yes
+on2avc_decoder_select=mdct
+op==
+openal_indev=yes
+openal_indev_deps=openal
+opengl_outdev=yes
+opengl_outdev_deps=opengl
+opt=--enable-libopencore-amrnb
+optimizations=yes
+option=libopencore_amrnb
+optval=--enable-libopencore-amrnb
+opus_decoder=yes
+opus_decoder_deps=swresample
+opus_decoder_select=imdct15
+opus_muxer=yes
+opus_muxer_select=ogg_muxer
+opus_parser=yes
+oss_indev=yes
+oss_indev_deps_any='soundcard_h sys_soundcard_h'
+oss_outdev=yes
+oss_outdev_deps_any='soundcard_h sys_soundcard_h'
+outdevs_if_any='alsa_outdev
+caca_outdev
+decklink_outdev
+fbdev_outdev
+opengl_outdev
+oss_outdev
+pulse_outdev
+sdl_outdev
+sndio_outdev
+v4l2_outdev
+xv_outdev'
+overlay_filter=yes
+owdenoise_filter=yes
+owdenoise_filter_deps=gpl
+pad_filter=yes
+paf_audio_decoder=yes
+paf_demuxer=yes
+paf_video_decoder=yes
+palettegen_filter=yes
+paletteuse_filter=yes
+pam_decoder=yes
+pam_encoder=yes
+pan_filter=yes
+pan_filter_deps=swresample
+parsers_if_any='aac_parser
+aac_latm_parser
+ac3_parser
+adx_parser
+bmp_parser
+cavsvideo_parser
+cook_parser
+dca_parser
+dirac_parser
+dnxhd_parser
+dpx_parser
+dvbsub_parser
+dvdsub_parser
+dvd_nav_parser
+flac_parser
+gsm_parser
+h261_parser
+h263_parser
+h264_parser
+hevc_parser
+mjpeg_parser
+mlp_parser
+mpeg4video_parser
+mpegaudio_parser
+mpegvideo_parser
+opus_parser
+png_parser
+pnm_parser
+rv30_parser
+rv40_parser
+tak_parser
+vc1_parser
+vorbis_parser
+vp3_parser
+vp8_parser
+vp9_parser'
+pbm_decoder=yes
+pbm_encoder=yes
+pcm_alaw_decoder=yes
+pcm_alaw_demuxer=yes
+pcm_alaw_encoder=yes
+pcm_alaw_muxer=yes
+pcm_bluray_decoder=yes
+pcm_dvd_decoder=yes
+pcm_f32be_decoder=yes
+pcm_f32be_demuxer=yes
+pcm_f32be_encoder=yes
+pcm_f32be_muxer=yes
+pcm_f32le_decoder=yes
+pcm_f32le_demuxer=yes
+pcm_f32le_encoder=yes
+pcm_f32le_muxer=yes
+pcm_f64be_decoder=yes
+pcm_f64be_demuxer=yes
+pcm_f64be_encoder=yes
+pcm_f64be_muxer=yes
+pcm_f64le_decoder=yes
+pcm_f64le_demuxer=yes
+pcm_f64le_encoder=yes
+pcm_f64le_muxer=yes
+pcm_lxf_decoder=yes
+pcm_mulaw_decoder=yes
+pcm_mulaw_demuxer=yes
+pcm_mulaw_encoder=yes
+pcm_mulaw_muxer=yes
+pcm_s16be_decoder=yes
+pcm_s16be_demuxer=yes
+pcm_s16be_encoder=yes
+pcm_s16be_muxer=yes
+pcm_s16be_planar_decoder=yes
+pcm_s16be_planar_encoder=yes
+pcm_s16le_decoder=yes
+pcm_s16le_demuxer=yes
+pcm_s16le_encoder=yes
+pcm_s16le_muxer=yes
+pcm_s16le_planar_decoder=yes
+pcm_s16le_planar_encoder=yes
+pcm_s24be_decoder=yes
+pcm_s24be_demuxer=yes
+pcm_s24be_encoder=yes
+pcm_s24be_muxer=yes
+pcm_s24daud_decoder=yes
+pcm_s24daud_encoder=yes
+pcm_s24le_decoder=yes
+pcm_s24le_demuxer=yes
+pcm_s24le_encoder=yes
+pcm_s24le_muxer=yes
+pcm_s24le_planar_decoder=yes
+pcm_s24le_planar_encoder=yes
+pcm_s32be_decoder=yes
+pcm_s32be_demuxer=yes
+pcm_s32be_encoder=yes
+pcm_s32be_muxer=yes
+pcm_s32le_decoder=yes
+pcm_s32le_demuxer=yes
+pcm_s32le_encoder=yes
+pcm_s32le_muxer=yes
+pcm_s32le_planar_decoder=yes
+pcm_s32le_planar_encoder=yes
+pcm_s8_decoder=yes
+pcm_s8_demuxer=yes
+pcm_s8_encoder=yes
+pcm_s8_muxer=yes
+pcm_s8_planar_decoder=yes
+pcm_s8_planar_encoder=yes
+pcm_u16be_decoder=yes
+pcm_u16be_demuxer=yes
+pcm_u16be_encoder=yes
+pcm_u16be_muxer=yes
+pcm_u16le_decoder=yes
+pcm_u16le_demuxer=yes
+pcm_u16le_encoder=yes
+pcm_u16le_muxer=yes
+pcm_u24be_decoder=yes
+pcm_u24be_demuxer=yes
+pcm_u24be_encoder=yes
+pcm_u24be_muxer=yes
+pcm_u24le_decoder=yes
+pcm_u24le_demuxer=yes
+pcm_u24le_encoder=yes
+pcm_u24le_muxer=yes
+pcm_u32be_decoder=yes
+pcm_u32be_demuxer=yes
+pcm_u32be_encoder=yes
+pcm_u32be_muxer=yes
+pcm_u32le_decoder=yes
+pcm_u32le_demuxer=yes
+pcm_u32le_encoder=yes
+pcm_u32le_muxer=yes
+pcm_u8_decoder=yes
+pcm_u8_demuxer=yes
+pcm_u8_encoder=yes
+pcm_u8_muxer=yes
+pcm_zork_decoder=yes
+pcx_decoder=yes
+pcx_encoder=yes
+perms_filter=yes
+perspective_filter=yes
+perspective_filter_deps=gpl
+pgm_decoder=yes
+pgm_encoder=yes
+pgmyuv_decoder=yes
+pgmyuv_encoder=yes
+pgssub_decoder=yes
+phase_filter=yes
+phase_filter_deps=gpl
+pictor_decoder=yes
+pipe_protocol=yes
+pixdesctest_filter=yes
+pixfmts_super2xsai_test_deps=super2xsai_filter
+pjs_decoder=yes
+pjs_demuxer=yes
+pkg_config_default=pkg-config
+pmp_demuxer=yes
+png_decoder=yes
+png_decoder_select=zlib
+png_encoder=yes
+png_encoder_select='huffyuvencdsp zlib'
+png_parser=yes
+pnm_parser=yes
+podpages=yes
+podpages_deps=perl
+postproc=yes
+postproc_deps='avutil gpl'
+pp7_filter=yes
+pp7_filter_deps=gpl
+pp_filter=yes
+pp_filter_deps='gpl postproc'
+ppc4xx=yes
+ppc4xx_deps=ppc
+ppm_decoder=yes
+ppm_encoder=yes
+prefix_default=/usr/local
+prores_aw_encoder=yes
+prores_decoder=yes
+prores_decoder_select='blockdsp idctdsp'
+prores_encoder=yes
+prores_encoder_select=fdctdsp
+prores_ks_encoder=yes
+prores_lgpl_decoder=yes
+protocols_if_any='bluray_protocol
+cache_protocol
+concat_protocol
+crypto_protocol
+data_protocol
+ffrtmpcrypt_protocol
+ffrtmphttp_protocol
+file_protocol
+ftp_protocol
+gopher_protocol
+hls_protocol
+http_protocol
+httpproxy_protocol
+https_protocol
+icecast_protocol
+mmsh_protocol
+mmst_protocol
+md5_protocol
+pipe_protocol
+rtmp_protocol
+rtmpe_protocol
+rtmps_protocol
+rtmpt_protocol
+rtmpte_protocol
+rtmpts_protocol
+rtp_protocol
+sctp_protocol
+srtp_protocol
+subfile_protocol
+tcp_protocol
+tls_protocol
+udp_protocol
+udplite_protocol
+unix_protocol
+librtmp_protocol
+librtmpe_protocol
+librtmps_protocol
+librtmpt_protocol
+librtmpte_protocol
+libssh_protocol
+libsmbclient_protocol'
+psnr_filter=yes
+psp_muxer=yes
+psp_muxer_select=mov_muxer
+ptx_decoder=yes
+pullup_filter=yes
+pullup_filter_deps=gpl
+pulse_indev=yes
+pulse_indev_deps=libpulse
+pulse_outdev=yes
+pulse_outdev_deps=libpulse
+pva_demuxer=yes
+pvf_demuxer=yes
+qcelp_decoder=yes
+qcelp_decoder_select=lsp
+qcp_demuxer=yes
+qdm2_decoder=yes
+qdm2_decoder_select='mdct rdft mpegaudiodsp'
+qdraw_decoder=yes
+qp_filter=yes
+qpeg_decoder=yes
+qsvdec_example=yes
+qsvdec_example_deps='avcodec avutil libmfx h264_qsv_decoder vaapi_x11'
+qtkit_indev=yes
+qtkit_indev_extralibs='-framework QTKit -framework Foundation -framework QuartzCore'
+qtkit_indev_select=qtkit
+qtrle_decoder=yes
+qtrle_encoder=yes
+quotes='""'
+r=--enable-libopencore-amrnb
+r10k_decoder=yes
+r10k_encoder=yes
+r210_decoder=yes
+r210_encoder=yes
+r3d_demuxer=yes
+ra_144_decoder=yes
+ra_144_decoder_select=audiodsp
+ra_144_encoder=yes
+ra_144_encoder_select='audio_frame_queue lpc audiodsp'
+ra_288_decoder=yes
+ralf_decoder=yes
+ralf_decoder_select=golomb
+ranlib_default=ranlib
+rawvideo_decoder=yes
+rawvideo_decoder_select=bswapdsp
+rawvideo_demuxer=yes
+rawvideo_encoder=yes
+rawvideo_muxer=yes
+rdft_select=fft
+realtext_decoder=yes
+realtext_demuxer=yes
+redspark_demuxer=yes
+remove_extradata_bsf=yes
+removelogo_filter=yes
+removelogo_filter_deps='avcodec avformat swscale'
+remuxing_example=yes
+remuxing_example_deps='avcodec avformat avutil'
+repeatfields_filter=yes
+repeatfields_filter_deps=gpl
+replaygain_filter=yes
+resample_filter=yes
+resample_filter_deps=avresample
+resampling_audio_example=yes
+resampling_audio_example_deps='avutil swresample'
+rgbtestsrc_filter=yes
+rl2_decoder=yes
+rl2_demuxer=yes
+rm_demuxer=yes
+rm_muxer=yes
+roq_decoder=yes
+roq_demuxer=yes
+roq_dpcm_decoder=yes
+roq_dpcm_encoder=yes
+roq_encoder=yes
+roq_muxer=yes
+rotate_filter=yes
+rpl_demuxer=yes
+rpza_decoder=yes
+rsd_demuxer=yes
+rso_demuxer=yes
+rso_muxer=yes
+rtjpeg_decoder_select=me_cmp
+rtmp_protocol=yes
+rtmp_protocol_deps='!librtmp_protocol'
+rtmp_protocol_select=tcp_protocol
+rtmpe_protocol=yes
+rtmpe_protocol_select=ffrtmpcrypt_protocol
+rtmps_protocol=yes
+rtmps_protocol_deps='!librtmp_protocol'
+rtmps_protocol_select=tls_protocol
+rtmpt_protocol=yes
+rtmpt_protocol_select=ffrtmphttp_protocol
+rtmpte_protocol=yes
+rtmpte_protocol_select='ffrtmpcrypt_protocol ffrtmphttp_protocol'
+rtmpts_protocol=yes
+rtmpts_protocol_select='ffrtmphttp_protocol https_protocol'
+rtp_demuxer=yes
+rtp_demuxer_select=sdp_demuxer
+rtp_mpegts_muxer=yes
+rtp_muxer=yes
+rtp_protocol=yes
+rtp_protocol_select=udp_protocol
+rtpdec_select='asf_demuxer rm_demuxer rtp_protocol mpegts_demuxer mov_demuxer'
+rtsp_demuxer=yes
+rtsp_demuxer_select='http_protocol rtpdec'
+rtsp_muxer=yes
+rtsp_muxer_select='rtp_muxer http_protocol rtp_protocol rtpenc_chain'
+runtime_cpudetect=yes
+rv10_decoder=yes
+rv10_decoder_select='error_resilience h263_decoder h263dsp mpeg_er'
+rv10_encoder=yes
+rv10_encoder_select=h263_encoder
+rv20_decoder=yes
+rv20_decoder_select='error_resilience h263_decoder h263dsp mpeg_er'
+rv20_encoder=yes
+rv20_encoder_select=h263_encoder
+rv30_decoder=yes
+rv30_decoder_select='error_resilience golomb h264chroma h264pred h264qpel mpeg_er mpegvideo videodsp'
+rv30_parser=yes
+rv40_decoder=yes
+rv40_decoder_select='error_resilience golomb h264chroma h264pred h264qpel mpeg_er mpegvideo videodsp'
+rv40_parser=yes
+rvm_bin_path=/Users/drugeond/.rvm/bin
+rvm_path=/Users/drugeond/.rvm
+rvm_prefix=/Users/drugeond
+rvm_version='1.26.3 (latest)'
+s302m_decoder=yes
+s302m_encoder=yes
+sab_filter=yes
+sab_filter_deps='gpl swscale'
+safe_bitstream_reader=yes
+sami_decoder=yes
+sami_demuxer=yes
+sanm_decoder=yes
+sap_demuxer=yes
+sap_demuxer_select=sdp_demuxer
+sap_muxer=yes
+sap_muxer_select='rtp_muxer rtp_protocol rtpenc_chain'
+sbg_demuxer=yes
+scale_filter=yes
+scale_filter_deps=swscale
+scaling_video_example=yes
+scaling_video_example_deps='avutil swscale'
+sctp_protocol=yes
+sctp_protocol_deps=struct_sctp_event_subscribe
+sctp_protocol_select=network
+sdl_outdev=yes
+sdl_outdev_deps=sdl
+sdp_demuxer=yes
+sdp_demuxer_select=rtpdec
+sdr2_demuxer=yes
+segafilm_demuxer=yes
+segment_muxer=yes
+select_filter=yes
+select_filter_select=pixelutils
+sendcmd_filter=yes
+separatefields_filter=yes
+setdar_filter=yes
+setend=yes
+setend_deps=arm
+setend_inline_deps=inline_asm
+setfield_filter=yes
+setpts_filter=yes
+setsar_filter=yes
+settb_filter=yes
+sgi_decoder=yes
+sgi_encoder=yes
+sgirle_decoder=yes
+shorten_decoder=yes
+shorten_decoder_select=golomb
+shorten_demuxer=yes
+showcqt_filter=yes
+showinfo_filter=yes
+showpalette_filter=yes
+showspectrum_filter=yes
+showspectrum_filter_deps=avcodec
+showspectrum_filter_select=rdft
+showwaves_filter=yes
+shuffleplanes_filter=yes
+siff_demuxer=yes
+signalstats_filter=yes
+silencedetect_filter=yes
+silenceremove_filter=yes
+simd_align_16_if_any='altivec neon sse'
+sine_filter=yes
+sipr_decoder=yes
+sipr_decoder_select=lsp
+sln_demuxer=yes
+smackaud_decoder=yes
+smacker_decoder=yes
+smacker_demuxer=yes
+smartblur_filter=yes
+smartblur_filter_deps='gpl swscale'
+smc_decoder=yes
+smjpeg_demuxer=yes
+smjpeg_muxer=yes
+smoothstreaming_muxer=yes
+smoothstreaming_muxer_select=ismv_muxer
+smptebars_filter=yes
+smptehdbars_filter=yes
+smush_demuxer=yes
+smvjpeg_decoder=yes
+sndio_indev=yes
+sndio_indev_deps=sndio_h
+sndio_outdev=yes
+sndio_outdev_deps=sndio_h
+snow_decoder=yes
+snow_decoder_select='dwt h264qpel hpeldsp me_cmp rangecoder videodsp'
+snow_encoder=yes
+snow_encoder_select='aandcttables dwt h264qpel hpeldsp me_cmp mpegvideoenc rangecoder'
+sol_demuxer=yes
+sol_dpcm_decoder=yes
+sonic_decoder=yes
+sonic_decoder_select='golomb rangecoder'
+sonic_encoder=yes
+sonic_encoder_select='golomb rangecoder'
+sonic_ls_encoder=yes
+sonic_ls_encoder_select='golomb rangecoder'
+source_path=.
+sox_demuxer=yes
+sox_muxer=yes
+sp5x_decoder=yes
+sp5x_decoder_select=mjpeg_decoder
+spdif_demuxer=yes
+spdif_muxer=yes
+spdif_muxer_select=aac_parser
+split_filter=yes
+spp_filter=yes
+spp_filter_deps='gpl avcodec'
+spp_filter_select='fft idctdsp fdctdsp me_cmp pixblockdsp'
+spx_muxer=yes
+spx_muxer_select=ogg_muxer
+srt_decoder=yes
+srt_demuxer=yes
+srt_encoder=yes
+srt_muxer=yes
+srtp_protocol=yes
+srtp_protocol_select=rtp_protocol
+ssa_decoder=yes
+ssa_encoder=yes
+sse=yes
+sse2=yes
+sse2_deps=sse
+sse2_external_deps=sse_external
+sse2_inline_deps=sse_inline
+sse2_suggest='sse2_external sse2_inline'
+sse3=yes
+sse3_deps=sse2
+sse3_external_deps=sse2_external
+sse3_inline_deps=sse2_inline
+sse3_suggest='sse3_external sse3_inline'
+sse4=yes
+sse42=yes
+sse42_deps=sse4
+sse42_external_deps=sse4_external
+sse42_inline_deps=sse4_inline
+sse42_suggest='sse42_external sse42_inline'
+sse4_deps=ssse3
+sse4_external_deps=ssse3_external
+sse4_inline_deps=ssse3_inline
+sse4_suggest='sse4_external sse4_inline'
+sse_deps=mmxext
+sse_external_deps=mmxext_external
+sse_inline_deps=mmxext_inline
+sse_suggest='sse_external sse_inline'
+ssse3=yes
+ssse3_deps=sse3
+ssse3_external_deps=sse3_external
+ssse3_inline_deps=sse3_inline
+ssse3_suggest='ssse3_external ssse3_inline'
+static=yes
+stereo3d_filter=yes
+stereo3d_filter_deps=gpl
+stl_decoder=yes
+stl_demuxer=yes
+str_demuxer=yes
+stream_segment_muxer=yes
+strip_default=strip
+stripping=yes
+subfile_protocol=yes
+subrip_decoder=yes
+subrip_encoder=yes
+subtitles_filter=yes
+subtitles_filter_deps='avformat avcodec libass'
+subviewer1_decoder=yes
+subviewer1_demuxer=yes
+subviewer_decoder=yes
+subviewer_demuxer=yes
+sunrast_decoder=yes
+sunrast_encoder=yes
+sup_demuxer=yes
+super2xsai_filter=yes
+super2xsai_filter_deps=gpl
+svq1_decoder=yes
+svq1_decoder_select=hpeldsp
+svq1_encoder=yes
+svq1_encoder_select='aandcttables hpeldsp me_cmp mpegvideoenc'
+svq3_decoder=yes
+svq3_decoder_select='h264_decoder hpeldsp tpeldsp'
+svq3_decoder_suggest=zlib
+swapuv_filter=yes
+swf_demuxer=yes
+swf_muxer=yes
+swresample=yes
+swresample_deps=avutil
+sws_max_filter_size=256
+sws_max_filter_size_default=256
+swscale=yes
+swscale_alpha=yes
+swscale_deps=avutil
+symver_if_any='symver_asm_label symver_gnu_asm'
+tak_decoder=yes
+tak_decoder_select=audiodsp
+tak_demuxer=yes
+tak_demuxer_select=tak_parser
+tak_parser=yes
+targa_decoder=yes
+targa_encoder=yes
+targa_y216_decoder=yes
+target_os_default=darwin
+target_path='$(CURDIR)'
+tblend_filter=yes
+tcp_protocol=yes
+tcp_protocol_select=network
+tedcaptions_demuxer=yes
+tee_muxer=yes
+telecine_filter=yes
+testsrc_filter=yes
+text2movsub_bsf=yes
+text_decoder=yes
+tg2_muxer=yes
+tg2_muxer_select=mov_muxer
+tgp_muxer=yes
+tgp_muxer_select=mov_muxer
+theora_decoder=yes
+theora_decoder_select=vp3_decoder
+thp_decoder=yes
+thp_decoder_select=mjpeg_decoder
+thp_demuxer=yes
+threads_if_any='
+    pthreads
+    os2threads
+    w32threads
+'
+thumbnail_filter=yes
+tiertexseq_demuxer=yes
+tiertexseqvideo_decoder=yes
+tiff_decoder=yes
+tiff_decoder_suggest='zlib lzma'
+tiff_encoder=yes
+tiff_encoder_suggest=zlib
+tile_filter=yes
+tinterlace_filter=yes
+tinterlace_filter_deps=gpl
+tinterlace_merge_test_deps=tinterlace_filter
+tinterlace_pad_test_deps=tinterlace_filter
+tls_protocol=yes
+tls_protocol_deps_any='openssl gnutls'
+tls_protocol_select=tcp_protocol
+tmv_decoder=yes
+tmv_demuxer=yes
+transcode_aac_example=yes
+transcode_aac_example_deps='avcodec avformat swresample'
+transcoding_example=yes
+transcoding_example_deps='avfilter avcodec avformat avutil'
+transpose_filter=yes
+treble_filter=yes
+trim_filter=yes
+truehd_decoder=yes
+truehd_decoder_select=mlp_parser
+truehd_demuxer=yes
+truehd_muxer=yes
+truemotion1_decoder=yes
+truemotion2_decoder=yes
+truemotion2_decoder_select=bswapdsp
+truespeech_decoder=yes
+truespeech_decoder_select=bswapdsp
+tscc2_decoder=yes
+tscc_decoder=yes
+tscc_decoder_select=zlib
+tta_decoder=yes
+tta_demuxer=yes
+tta_encoder=yes
+tty_demuxer=yes
+twinvq_decoder=yes
+twinvq_decoder_select='mdct lsp sinewin'
+txd_decoder=yes
+txd_demuxer=yes
+txtpages=yes
+txtpages_deps='perl makeinfo'
+udp_protocol=yes
+udp_protocol_select=network
+udplite_protocol=yes
+udplite_protocol_select=network
+ulti_decoder=yes
+uncodedframecrc_muxer=yes
+unix_protocol=yes
+unix_protocol_deps=sys_un_h
+unix_protocol_select=network
+unsharp_filter=yes
+uspp_filter=yes
+uspp_filter_deps='gpl avcodec'
+utvideo_decoder=yes
+utvideo_decoder_select=bswapdsp
+utvideo_encoder=yes
+utvideo_encoder_select='bswapdsp huffman huffyuvencdsp'
+v=PROTOCOL_LIST
+v210_decoder=yes
+v210_encoder=yes
+v210x_decoder=yes
+v308_decoder=yes
+v308_encoder=yes
+v408_decoder=yes
+v408_encoder=yes
+v410_decoder=yes
+v410_encoder=yes
+v4l2_indev=yes
+v4l2_indev_deps_any='linux_videodev2_h sys_videoio_h'
+v4l2_outdev=yes
+v4l2_outdev_deps_any='linux_videodev2_h sys_videoio_h'
+v4l_indev_deps=linux_videodev_h
+vaapi=yes
+vaapi_deps=va_va_h
+value=yes
+var=libopencore_amrnb
+vb_decoder=yes
+vble_decoder=yes
+vble_decoder_select=huffyuvdsp
+vc1_crystalhd_decoder=yes
+vc1_crystalhd_decoder_select=crystalhd
+vc1_decoder=yes
+vc1_decoder_select='blockdsp error_resilience h263_decoder h264chroma h264qpel intrax8 mpeg_er qpeldsp startcode'
+vc1_demuxer=yes
+vc1_dxva2_hwaccel=yes
+vc1_dxva2_hwaccel_deps=dxva2
+vc1_dxva2_hwaccel_select=vc1_decoder
+vc1_muxer=yes
+vc1_parser=yes
+vc1_parser_select='mpegvideo startcode vc1_decoder'
+vc1_vaapi_hwaccel=yes
+vc1_vaapi_hwaccel_deps=vaapi
+vc1_vaapi_hwaccel_select=vc1_decoder
+vc1_vdpau_decoder=yes
+vc1_vdpau_decoder_deps=vdpau
+vc1_vdpau_decoder_select=vc1_decoder
+vc1_vdpau_hwaccel=yes
+vc1_vdpau_hwaccel_deps=vdpau
+vc1_vdpau_hwaccel_select=vc1_decoder
+vc1image_decoder=yes
+vc1image_decoder_select=vc1_decoder
+vc1t_demuxer=yes
+vc1t_muxer=yes
+vcr1_decoder=yes
+vda=yes
+vda_deps='VideoDecodeAcceleration_VDADecoder_h pthreads'
+vda_extralibs='-framework CoreFoundation -framework VideoDecodeAcceleration -framework QuartzCore'
+vdpau=yes
+vdpau_deps='vdpau_vdpau_h vdpau_vdpau_x11_h'
+vflip_filter=yes
+vfp=yes
+vfp_deps_any='aarch64 arm'
+vfp_inline_deps=inline_asm
+vfpv3=yes
+vfpv3_deps=vfp
+vfpv3_inline_deps=inline_asm
+vfwcap_indev=yes
+vfwcap_indev_deps='capCreateCaptureWindow vfwcap_defines'
+vfwcap_indev_extralibs=-lavicap32
+vidstabdetect_filter=yes
+vidstabdetect_filter_deps=libvidstab
+vidstabtransform_filter=yes
+vidstabtransform_filter_deps=libvidstab
+vignette_filter=yes
+vima_decoder=yes
+vivo_demuxer=yes
+vmd_demuxer=yes
+vmdaudio_decoder=yes
+vmdvideo_decoder=yes
+vmnc_decoder=yes
+vobsub_demuxer=yes
+vobsub_demuxer_select=mpegps_demuxer
+voc_demuxer=yes
+voc_muxer=yes
+volume_filter=yes
+volumedetect_filter=yes
+vorbis_decoder=yes
+vorbis_decoder_select=mdct
+vorbis_encoder=yes
+vorbis_encoder_select=mdct
+vorbis_parser=yes
+vp3_decoder=yes
+vp3_decoder_select='hpeldsp vp3dsp videodsp'
+vp3_parser=yes
+vp5_decoder=yes
+vp5_decoder_select='h264chroma hpeldsp videodsp vp3dsp'
+vp6_decoder=yes
+vp6_decoder_select='h264chroma hpeldsp huffman videodsp vp3dsp'
+vp6a_decoder=yes
+vp6a_decoder_select=vp6_decoder
+vp6f_decoder=yes
+vp6f_decoder_select=vp6_decoder
+vp7_decoder=yes
+vp7_decoder_select='h264pred videodsp'
+vp8_decoder=yes
+vp8_decoder_select='h264pred videodsp'
+vp8_parser=yes
+vp9_decoder=yes
+vp9_decoder_select='videodsp vp9_parser'
+vp9_parser=yes
+vplayer_decoder=yes
+vplayer_demuxer=yes
+vqa_decoder=yes
+vqf_demuxer=yes
+vsx=yes
+vsx_deps=ppc
+w32threads_deps=atomics_native
+w3fdif_filter=yes
+w64_demuxer=yes
+w64_demuxer_select=wav_demuxer
+w64_muxer=yes
+w64_muxer_select=wav_muxer
+wav_demuxer=yes
+wav_demuxer_select=riffdec
+wav_muxer=yes
+wav_muxer_select=riffenc
+wavpack_decoder=yes
+wavpack_encoder=yes
+wc3_demuxer=yes
+webm_dash_manifest_demuxer=yes
+webm_dash_manifest_muxer=yes
+webm_muxer=yes
+webm_muxer_select=riffenc
+webp_decoder=yes
+webp_decoder_select=vp8_decoder
+webp_muxer=yes
+webvtt_decoder=yes
+webvtt_demuxer=yes
+webvtt_encoder=yes
+webvtt_muxer=yes
+windres_default=windres
+wmalossless_decoder=yes
+wmalossless_decoder_select=llauddsp
+wmapro_decoder=yes
+wmapro_decoder_select='mdct sinewin wma_freqs'
+wmav1_decoder=yes
+wmav1_decoder_select='mdct sinewin wma_freqs'
+wmav1_encoder=yes
+wmav1_encoder_select='mdct sinewin wma_freqs'
+wmav2_decoder=yes
+wmav2_decoder_select='mdct sinewin wma_freqs'
+wmav2_encoder=yes
+wmav2_encoder_select='mdct sinewin wma_freqs'
+wmavoice_decoder=yes
+wmavoice_decoder_select='lsp rdft dct mdct sinewin'
+wmv1_decoder=yes
+wmv1_decoder_select=h263_decoder
+wmv1_encoder=yes
+wmv1_encoder_select=h263_encoder
+wmv2_decoder=yes
+wmv2_decoder_select='blockdsp h263_decoder idctdsp intrax8 videodsp'
+wmv2_encoder=yes
+wmv2_encoder_select=h263_encoder
+wmv3_crystalhd_decoder=yes
+wmv3_crystalhd_decoder_select=crystalhd
+wmv3_decoder=yes
+wmv3_decoder_select=vc1_decoder
+wmv3_dxva2_hwaccel=yes
+wmv3_dxva2_hwaccel_select=vc1_dxva2_hwaccel
+wmv3_vaapi_hwaccel=yes
+wmv3_vaapi_hwaccel_select=vc1_vaapi_hwaccel
+wmv3_vdpau_decoder=yes
+wmv3_vdpau_decoder_select=vc1_vdpau_decoder
+wmv3_vdpau_hwaccel=yes
+wmv3_vdpau_hwaccel_select=vc1_vdpau_hwaccel
+wmv3image_decoder=yes
+wmv3image_decoder_select=wmv3_decoder
+wnv1_decoder=yes
+ws_snd1_decoder=yes
+wsaud_demuxer=yes
+wsvqa_demuxer=yes
+wtv_demuxer=yes
+wtv_demuxer_select=riffdec
+wtv_muxer=yes
+wtv_muxer_select=riffenc
+wv_demuxer=yes
+wv_muxer=yes
+x11grab_indev=yes
+x11grab_indev_deps=x11grab
+x11grab_xcb_indev=yes
+x11grab_xcb_indev_deps=libxcb
+x86_64_select=i686
+x86_64_suggest=fast_cmov
+xa_demuxer=yes
+xan_dpcm_decoder=yes
+xan_wc3_decoder=yes
+xan_wc4_decoder=yes
+xbin_decoder=yes
+xbin_demuxer=yes
+xbm_decoder=yes
+xbm_encoder=yes
+xbr_filter=yes
+xface_decoder=yes
+xface_encoder=yes
+xl_decoder=yes
+xlib=yes
+xmv_demuxer=yes
+xmv_demuxer_select=riffdec
+xop=yes
+xop_deps=avx
+xop_external_deps=avx_external
+xop_inline_deps=avx_inline
+xop_suggest='xop_external xop_inline'
+xsub_decoder=yes
+xsub_encoder=yes
+xv_outdev=yes
+xv_outdev_deps='X11_extensions_Xvlib_h XvGetPortAttribute'
+xv_outdev_extralibs='-lXv -lX11 -lXext'
+xvmc=yes
+xvmc_deps=X11_extensions_XvMClib_h
+xwd_decoder=yes
+xwd_encoder=yes
+xwma_demuxer=yes
+xwma_demuxer_select=riffdec
+y41p_decoder=yes
+y41p_encoder=yes
+yadif_filter=yes
+yasmexe_default=yasm
+yop_decoder=yes
+yop_demuxer=yes
+yuv4_decoder=yes
+yuv4_encoder=yes
+yuv4mpegpipe_demuxer=yes
+yuv4mpegpipe_muxer=yes
+zero12v_decoder=yes
+zerocodec_decoder=yes
+zerocodec_decoder_select=zlib
+zlib_decoder=yes
+zlib_decoder_select=zlib
+zlib_encoder=yes
+zlib_encoder_select=zlib
+zmbv_decoder=yes
+zmbv_decoder_select=zlib
+zmbv_encoder=yes
+zmbv_encoder_select=zlib
+zmq_filter=yes
+zmq_filter_deps=libzmq
+zoompan_filter=yes
+zoompan_filter_deps=swscale
+WARNING: pkg-config not found, library detection may fail.
+mktemp -u XXXXXX
+0PA8CV
+check_ld cc
+check_cc
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	int main(void){ return 0; }
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.7tOtcw6F /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o
+check_cflags -std=c99
+test_cflags -std=c99
+check_cc -std=c99
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	int x;
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_cc -D_FILE_OFFSET_BITS=64
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <stdlib.h>
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -D_FILE_OFFSET_BITS=64 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_cc -D_LARGEFILE_SOURCE
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <stdlib.h>
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -D_LARGEFILE_SOURCE -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_host_cflags -std=c99
+check_host_cc -std=c99
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	int x;
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -std=c99 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_host_cflags -Wall
+check_host_cc -Wall
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	int x;
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -std=c99 -Wall -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_host_cflags -O3
+check_host_cc -O3
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	int x;
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -std=c99 -Wall -O3 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_code cc  int test[2*(sizeof(void *) > 4) - 1]
+check_cc
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	int main(void) { int test[2*(sizeof(void *) > 4) - 1]; return 0; }
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_cpp_condition features.h defined __UCLIBC__
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <features.h>
+    2	#if !(defined __UCLIBC__)
+    3	#error "unsatisfied condition: defined __UCLIBC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'features.h' file not found
+#include <features.h>
+         ^
+1 error generated.
+check_cpp_condition features.h defined __GLIBC__
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <features.h>
+    2	#if !(defined __GLIBC__)
+    3	#error "unsatisfied condition: defined __GLIBC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'features.h' file not found
+#include <features.h>
+         ^
+1 error generated.
+check_cpp_condition newlib.h defined _NEWLIB_VERSION
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <newlib.h>
+    2	#if !(defined _NEWLIB_VERSION)
+    3	#error "unsatisfied condition: defined _NEWLIB_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'newlib.h' file not found
+#include <newlib.h>
+         ^
+1 error generated.
+check_cpp_condition _mingw.h defined __MINGW64_VERSION_MAJOR
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <_mingw.h>
+    2	#if !(defined __MINGW64_VERSION_MAJOR)
+    3	#error "unsatisfied condition: defined __MINGW64_VERSION_MAJOR"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: '_mingw.h' file not found
+#include <_mingw.h>
+         ^
+1 error generated.
+check_cpp_condition _mingw.h defined __MINGW_VERSION
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <_mingw.h>
+    2	#if !(defined __MINGW_VERSION)
+    3	#error "unsatisfied condition: defined __MINGW_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: '_mingw.h' file not found
+#include <_mingw.h>
+         ^
+1 error generated.
+check_cpp_condition _mingw.h defined __MINGW32_VERSION
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <_mingw.h>
+    2	#if !(defined __MINGW32_VERSION)
+    3	#error "unsatisfied condition: defined __MINGW32_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: '_mingw.h' file not found
+#include <_mingw.h>
+         ^
+1 error generated.
+check_cpp_condition crtversion.h defined _VC_CRT_MAJOR_VERSION
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <crtversion.h>
+    2	#if !(defined _VC_CRT_MAJOR_VERSION)
+    3	#error "unsatisfied condition: defined _VC_CRT_MAJOR_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'crtversion.h' file not found
+#include <crtversion.h>
+         ^
+1 error generated.
+check_cpp_condition stddef.h defined __KLIBC__
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <stddef.h>
+    2	#if !(defined __KLIBC__)
+    3	#error "unsatisfied condition: defined __KLIBC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:3:2: error: "unsatisfied condition: defined __KLIBC__"
+#error "unsatisfied condition: defined __KLIBC__"
+ ^
+1 error generated.
+check_cpp_condition sys/cdefs.h defined __BIONIC__
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <sys/cdefs.h>
+    2	#if !(defined __BIONIC__)
+    3	#error "unsatisfied condition: defined __BIONIC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:3:2: error: "unsatisfied condition: defined __BIONIC__"
+#error "unsatisfied condition: defined __BIONIC__"
+ ^
+1 error generated.
+check_cpp_condition sys/brand.h defined LABELED_BRAND_NAME
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <sys/brand.h>
+    2	#if !(defined LABELED_BRAND_NAME)
+    3	#error "unsatisfied condition: defined LABELED_BRAND_NAME"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'sys/brand.h' file not found
+#include <sys/brand.h>
+         ^
+1 error generated.
+check_cc
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <time.h>
+    2	void *v = localtime_r;
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_host_cpp_condition features.h defined __UCLIBC__
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <features.h>
+    2	#if !(defined __UCLIBC__)
+    3	#error "unsatisfied condition: defined __UCLIBC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'features.h' file not found
+#include <features.h>
+         ^
+1 error generated.
+check_host_cpp_condition features.h defined __GLIBC__
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <features.h>
+    2	#if !(defined __GLIBC__)
+    3	#error "unsatisfied condition: defined __GLIBC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'features.h' file not found
+#include <features.h>
+         ^
+1 error generated.
+check_host_cpp_condition newlib.h defined _NEWLIB_VERSION
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <newlib.h>
+    2	#if !(defined _NEWLIB_VERSION)
+    3	#error "unsatisfied condition: defined _NEWLIB_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'newlib.h' file not found
+#include <newlib.h>
+         ^
+1 error generated.
+check_host_cpp_condition _mingw.h defined __MINGW64_VERSION_MAJOR
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <_mingw.h>
+    2	#if !(defined __MINGW64_VERSION_MAJOR)
+    3	#error "unsatisfied condition: defined __MINGW64_VERSION_MAJOR"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: '_mingw.h' file not found
+#include <_mingw.h>
+         ^
+1 error generated.
+check_host_cpp_condition _mingw.h defined __MINGW_VERSION
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <_mingw.h>
+    2	#if !(defined __MINGW_VERSION)
+    3	#error "unsatisfied condition: defined __MINGW_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: '_mingw.h' file not found
+#include <_mingw.h>
+         ^
+1 error generated.
+check_host_cpp_condition _mingw.h defined __MINGW32_VERSION
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <_mingw.h>
+    2	#if !(defined __MINGW32_VERSION)
+    3	#error "unsatisfied condition: defined __MINGW32_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: '_mingw.h' file not found
+#include <_mingw.h>
+         ^
+1 error generated.
+check_host_cpp_condition crtversion.h defined _VC_CRT_MAJOR_VERSION
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <crtversion.h>
+    2	#if !(defined _VC_CRT_MAJOR_VERSION)
+    3	#error "unsatisfied condition: defined _VC_CRT_MAJOR_VERSION"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'crtversion.h' file not found
+#include <crtversion.h>
+         ^
+1 error generated.
+check_host_cpp_condition stddef.h defined __KLIBC__
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <stddef.h>
+    2	#if !(defined __KLIBC__)
+    3	#error "unsatisfied condition: defined __KLIBC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:3:2: error: "unsatisfied condition: defined __KLIBC__"
+#error "unsatisfied condition: defined __KLIBC__"
+ ^
+1 error generated.
+check_host_cpp_condition sys/cdefs.h defined __BIONIC__
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <sys/cdefs.h>
+    2	#if !(defined __BIONIC__)
+    3	#error "unsatisfied condition: defined __BIONIC__"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:3:2: error: "unsatisfied condition: defined __BIONIC__"
+#error "unsatisfied condition: defined __BIONIC__"
+ ^
+1 error generated.
+check_host_cpp_condition sys/brand.h defined LABELED_BRAND_NAME
+check_host_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <sys/brand.h>
+    2	#if !(defined LABELED_BRAND_NAME)
+    3	#error "unsatisfied condition: defined LABELED_BRAND_NAME"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -std=c99 -Wall -O3 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+/var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c:1:10: fatal error: 'sys/brand.h' file not found
+#include <sys/brand.h>
+         ^
+1 error generated.
+check_host_cc
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <time.h>
+    2	void *v = localtime_r;
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -std=c99 -Wall -O3 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_compile_assert flt_lim float.h limits.h DBL_MAX == (double)DBL_MAX
+check_code cc float.h limits.h char c[2 * !!(DBL_MAX == (double)DBL_MAX) - 1]
+check_cc
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <float.h>
+    2	#include <limits.h>
+    3	int main(void) { char c[2 * !!(DBL_MAX == (double)DBL_MAX) - 1]; return 0; }
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -c -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+check_cpp_condition stdlib.h defined(__PIC__) || defined(__pic__) || defined(PIC)
+check_cpp
+BEGIN /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+    1	#include <stdlib.h>
+    2	#if !(defined(__PIC__) || defined(__pic__) || defined(PIC))
+    3	#error "unsatisfied condition: defined(__PIC__) || defined(__pic__) || defined(PIC)"
+    4	#endif
+END /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+gcc -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c99 -E -o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.RuEe4oSC.o /var/folders/pr/jb4fzn8d16zccqpvmq75dgbrv25cjv/T//ffconf.tTWBDdAN.c
+libopencore_amrnb is version3 and --enable-version3 is not specified.
