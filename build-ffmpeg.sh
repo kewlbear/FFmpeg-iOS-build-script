@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-2.7"
+SOURCE="ffmpeg-2.7.1"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
@@ -60,7 +60,7 @@ then
 		if [ ! `which brew` ]
 		then
 			echo 'Homebrew not found. Trying to install...'
-			ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" \
+                        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" \
 				|| exit 1
 		fi
 		echo 'Trying to install Yasm...'
