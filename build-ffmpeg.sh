@@ -96,7 +96,12 @@ then
 		    CFLAGS="$CFLAGS -mios-simulator-version-min=$DEPLOYMENT_TARGET"
 		else
 		    PLATFORM="iPhoneOS"
-		    CFLAGS="$CFLAGS -mios-version-min=$DEPLOYMENT_TARGET -fembed-bitcode"
+		    CFLAGS="$CFLAGS -mios-version-min=$DEPLOYMENT_TARGET"
+                    xcodebuild -version | set -
+                    if [ "$2" = "7.0" -o "$2" \> "7.0" ]
+                    then
+		        CFLAGS="$CFLAGS -fembed-bitcode"
+                    fi
 		    if [ "$ARCH" = "arm64" ]
 		    then
 		        EXPORT="GASPP_FIX_XCODE5=1"
