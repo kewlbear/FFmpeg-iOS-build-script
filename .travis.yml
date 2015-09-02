@@ -14,3 +14,5 @@ after_success:
     - scp -i id_sf -o 'StrictHostKeyChecking no' $TARBALL koolbear@frs.sourceforge.net:/home/frs/project/ffmpeg-ios
 
 after_failure: cat .stderr
+
+osx_image: xcode7
