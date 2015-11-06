@@ -3,12 +3,12 @@
 [![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.svg?branch=master)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=kewlbear&url=https://flattr.com/submit/auto?user_id=kewlbear&url=https%3A%2F%2Fgithub.com%2Fkewlbear%2FFFmpeg-iOS-build-script)
 
-This is a shell script to build FFmpeg libraries for iOS apps.
+This is a shell script to build FFmpeg libraries for iOS and tvOS apps.
 
 Tested with:
 
 * FFmpeg 2.8.1
-* Xcode 7.1 beta 3
+* Xcode 7.1
 
 ## Requirements
 
@@ -16,6 +16,8 @@ Tested with:
 * yasm 1.2.0
 
 ## Usage
+
+Use build-ffmpeg-tvos.sh for tvOS.
 
 * To build everything:
 
