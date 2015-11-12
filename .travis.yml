@@ -16,3 +16,5 @@ after_success:
 after_failure: cat .stderr
 
 osx_image: xcode7
+
+sudo: false
