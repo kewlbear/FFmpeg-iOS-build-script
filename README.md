@@ -1,16 +1,23 @@
 # FFmpeg iOS build script
 
-[![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.png?branch=master)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
+[![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.svg?branch=master)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=kewlbear&url=https://flattr.com/submit/auto?user_id=kewlbear&url=https%3A%2F%2Fgithub.com%2Fkewlbear%2FFFmpeg-iOS-build-script)
 
-This is a shell script to build FFmpeg libraries for iOS apps.
+This is a shell script to build FFmpeg libraries for iOS and tvOS apps.
 
 Tested with:
 
-* FFmpeg http://git.videolan.org/?p=ffmpeg.git;a=commit;h=f29cdbe1b59a0d997733b507041e15ec68cef00c
-* Xcode 5.0.2
-* https://github.com/libav/gas-preprocessor (support arm64)
+* FFmpeg 3.1.1
+* Xcode 7.3
+
+## Requirements
+
+* https://github.com/libav/gas-preprocessor
+* yasm 1.2.0
 
 ## Usage
+
+Use build-ffmpeg-tvos.sh for tvOS.
 
 * To build everything:
 
@@ -30,9 +37,15 @@ Tested with:
 
 ## Download
 
-https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios.tar.bz2
+You can download a binary for FFmpeg 3.1.1 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
 
-Currently, arm64 architecture is not included in the download.
+## External libraries
+
+You should link your app with
+
+* libz.dylib
+* libbz2.dylib
+* libiconv.dylib
 
 ## Influences
 

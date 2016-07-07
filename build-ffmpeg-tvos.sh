@@ -2,19 +2,19 @@
 
 # directories
 SOURCE="ffmpeg-3.1.1"
-FAT="FFmpeg-iOS"
+FAT="FFmpeg-tvOS"
 
-SCRATCH="scratch"
+SCRATCH="scratch-tvos"
 # must be an absolute path
-THIN=`pwd`/"thin"
+THIN=`pwd`/"thin-tvos"
 
 # absolute path to x264 library
-#X264=`pwd`/fat-x264
+#X264=`pwd`/../x264-ios/x264-iOS
 
-#FDK_AAC=`pwd`/../fdk-aac-build-script-for-iOS/fdk-aac-ios
+#FDK_AAC=`pwd`/fdk-aac/fdk-aac-ios
 
 CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
-                 --disable-doc --enable-pic"
+                 --disable-doc --enable-pic --disable-indev=avfoundation"
 
 if [ "$X264" ]
 then
@@ -29,12 +29,12 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
-ARCHS="arm64 armv7 x86_64 i386"
+ARCHS="arm64 x86_64"
 
 COMPILE="y"
 LIPO="y"
 
-DEPLOYMENT_TARGET="6.0"
+DEPLOYMENT_TARGET="9.0"
 
 if [ "$*" ]
 then
@@ -90,13 +90,13 @@ then
 		cd "$SCRATCH/$ARCH"
 
 		CFLAGS="-arch $ARCH"
-		if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
+		if [ "$ARCH" = "x86_64" ]
 		then
-		    PLATFORM="iPhoneSimulator"
-		    CFLAGS="$CFLAGS -mios-simulator-version-min=$DEPLOYMENT_TARGET"
+		    PLATFORM="AppleTVSimulator"
+		    CFLAGS="$CFLAGS -mtvos-simulator-version-min=$DEPLOYMENT_TARGET"
 		else
-		    PLATFORM="iPhoneOS"
-		    CFLAGS="$CFLAGS -mios-version-min=$DEPLOYMENT_TARGET -fembed-bitcode"
+		    PLATFORM="AppleTVOS"
+		    CFLAGS="$CFLAGS -mtvos-version-min=$DEPLOYMENT_TARGET -fembed-bitcode"
 		    if [ "$ARCH" = "arm64" ]
 		    then
 		        EXPORT="GASPP_FIX_XCODE5=1"
@@ -105,6 +105,7 @@ then
 
 		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
 		CC="xcrun -sdk $XCRUN_SDK clang"
+		AR="xcrun -sdk $XCRUN_SDK ar"
 		CXXFLAGS="$CFLAGS"
 		LDFLAGS="$CFLAGS"
 		if [ "$X264" ]
@@ -122,13 +123,14 @@ then
 		    --target-os=darwin \
 		    --arch=$ARCH \
 		    --cc="$CC" \
+		    --ar="$AR" \
 		    $CONFIGURE_FLAGS \
 		    --extra-cflags="$CFLAGS" \
 		    --extra-ldflags="$LDFLAGS" \
-		    --prefix="$THIN/$ARCH" \
+		    --prefix="$THIN/`basename $PWD`" \
 		|| exit 1
 
-		make -j3 install $EXPORT || exit 1
+		xcrun -sdk $XCRUN_SDK make -j3 install $EXPORT || exit 1
 		cd $CWD
 	done
 fi
