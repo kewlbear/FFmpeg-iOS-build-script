@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-3.2"
+SOURCE="ffmpeg-3.3"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
@@ -105,6 +105,15 @@ then
 
 		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
 		CC="xcrun -sdk $XCRUN_SDK clang"
+
+		# force "configure" to use "gas-preprocessor.pl" (FFmpeg 3.3)
+		if [ "$ARCH" = "arm64" ]
+		then
+		    AS="gas-preprocessor.pl -arch aarch64 -- $CC"
+		else
+		    AS="$CC"
+		fi
+
 		CXXFLAGS="$CFLAGS"
 		LDFLAGS="$CFLAGS"
 		if [ "$X264" ]
@@ -122,6 +131,7 @@ then
 		    --target-os=darwin \
 		    --arch=$ARCH \
 		    --cc="$CC" \
+		    --as="$AS" \
 		    $CONFIGURE_FLAGS \
 		    --extra-cflags="$CFLAGS" \
 		    --extra-ldflags="$LDFLAGS" \
