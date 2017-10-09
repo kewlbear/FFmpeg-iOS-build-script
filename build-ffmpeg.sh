@@ -29,6 +29,9 @@ fi
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
+# prefix enum AVMediaType to FFMPEG_AVMediaType
+#PREFIX_AVMEDIATYPE_FLAGS=1
+
 ARCHS="arm64 armv7 x86_64 i386"
 
 COMPILE="y"
@@ -80,6 +83,17 @@ then
 		echo 'FFmpeg source not found. Trying to download...'
 		curl http://www.ffmpeg.org/releases/$SOURCE.tar.bz2 | tar xj \
 			|| exit 1
+		if [ "$PREFIX_AVMEDIATYPE_FLAGS" ]
+		then
+			if [ "$PREFIX_AVMEDIATYPE_FLAGS" -eq 1 ]
+			then
+				echo 'Renaming FFmpeg AVMediaType...'
+				export LC_CTYPE=C 
+				export LANG=C
+				(find ./$SOURCE -type f | xargs sed -i '' 's/enum AVMediaType/enum FFMPEG_AVMediaType/g') \
+				|| exit 1
+			fi
+		fi
 	fi
 
 	CWD=`pwd`
