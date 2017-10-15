@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-3.3"
+SOURCE="ffmpeg-3.4"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
