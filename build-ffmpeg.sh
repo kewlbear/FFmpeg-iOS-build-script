@@ -1,7 +1,11 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-3.4"
+FF_VERSION="3.4"
+if [[ $FFMPEG_VERSION != "" ]]; then
+  FF_VERSION=$FFMPEG_VERSION
+fi
+SOURCE="ffmpeg-$FF_VERSION"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
