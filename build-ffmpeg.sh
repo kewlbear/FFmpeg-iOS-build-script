@@ -27,7 +27,7 @@ fi
 
 if [ "$FDK_AAC" ]
 then
-	CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-libfdk-aac"
+	CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-libfdk-aac --enable-nonfree"
 fi
 
 # avresample
