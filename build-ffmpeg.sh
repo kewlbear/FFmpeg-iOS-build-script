@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-FF_VERSION="3.4"
+FF_VERSION="3.4.2"
 if [[ $FFMPEG_VERSION != "" ]]; then
   FF_VERSION=$FFMPEG_VERSION
 fi
@@ -115,7 +115,7 @@ then
 		then
 		    AS="gas-preprocessor.pl -arch aarch64 -- $CC"
 		else
-		    AS="$CC"
+		    AS="gas-preprocessor.pl -- $CC"
 		fi
 
 		CXXFLAGS="$CFLAGS"
