@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # directories
-FF_VERSION="3.4"
+FF_VERSION="4.0.3"
+#FF_VERSION="snapshot-git"
 if [[ $FFMPEG_VERSION != "" ]]; then
   FF_VERSION=$FFMPEG_VERSION
 fi
@@ -38,7 +39,7 @@ ARCHS="arm64 armv7 x86_64 i386"
 COMPILE="y"
 LIPO="y"
 
-DEPLOYMENT_TARGET="6.0"
+DEPLOYMENT_TARGET="8.0"
 
 if [ "$*" ]
 then
@@ -115,7 +116,8 @@ then
 		then
 		    AS="gas-preprocessor.pl -arch aarch64 -- $CC"
 		else
-		    AS="$CC"
+		    #AS="$CC"
+		    AS="gas-preprocessor.pl $CC"
 		fi
 
 		CXXFLAGS="$CFLAGS"

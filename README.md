@@ -6,8 +6,8 @@ This is a shell script to build FFmpeg libraries for iOS and tvOS apps.
 
 Tested with:
 
-* FFmpeg 3.4
-* Xcode 9
+* FFmpeg 4.0.3
+* Xcode 10.1
 
 ## Requirements
 
@@ -36,7 +36,7 @@ Use build-ffmpeg-tvos.sh for tvOS.
 
 ## Download
 
-You can download a binary for FFmpeg 3.4 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
+You can download a binary for FFmpeg 4.0.3 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
 
 ## External libraries
 
@@ -45,7 +45,3 @@ You should link your app with
 * libz.dylib
 * libbz2.dylib
 * libiconv.dylib
-
-## Influences
-
-* https://github.com/bbcallen/ijkplayer/blob/fc70895c64cbbd20f32f1d81d2d48609ed13f597/ios/tools/do-compile-ffmpeg.sh#L7
