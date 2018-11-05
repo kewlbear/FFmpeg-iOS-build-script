@@ -116,8 +116,7 @@ then
 		then
 		    AS="gas-preprocessor.pl -arch aarch64 -- $CC"
 		else
-		    #AS="$CC"
-		    AS="gas-preprocessor.pl $CC"
+		    AS="gas-preprocessor.pl -- $CC"
 		fi
 
 		CXXFLAGS="$CFLAGS"
