@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-FF_VERSION="4.0.3"
+FF_VERSION="4.1"
 #FF_VERSION="snapshot-git"
 if [[ $FFMPEG_VERSION != "" ]]; then
   FF_VERSION=$FFMPEG_VERSION
