@@ -130,5 +130,5 @@ function CreateXCFramework() {
         -output "$XCFRAMEWORK_FILE"
 }
 
-#BuildAll
+BuildAll
 CreateXCFramework

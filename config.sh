@@ -8,7 +8,7 @@ fi
 
 SOURCE="../"
 XCODE_PATH=$(xcode-select -p)
-LIBRARY_NAME="FFMpeg"
+LIBRARY_NAME="FFmpeg"
 LIBRARY_FILE="$LIBRARY_NAME.a"
 
 XCFRAMEWORK_FILE="$LIBRARY_NAME.xcframework"
