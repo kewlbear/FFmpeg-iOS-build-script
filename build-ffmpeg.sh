@@ -92,7 +92,7 @@ then
 	do
 		echo "building $ARCH..."
 		mkdir -p "$SCRATCH/$ARCH"
-		cd "$SCRATCH/$ARCH"
+		pushd "$SCRATCH/$ARCH"
 
 		CFLAGS="-arch $ARCH"
 		if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
@@ -143,8 +143,12 @@ then
 		    --prefix="$THIN/$ARCH" \
 		|| exit 1
 
+		rm Makefile
+		echo "include ${CWD}/ffmpeg-4.2/Makefile" >> Makefile
+		make clean
 		make -j3 install $EXPORT || exit 1
-		cd $CWD
+		popd
+		sleep 3
 	done
 fi
 
