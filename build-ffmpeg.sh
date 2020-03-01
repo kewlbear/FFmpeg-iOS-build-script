@@ -2,7 +2,7 @@
 
 # directories
 FF_VERSION="4.2"
-#FF_VERSION="snapshot-git"
+#FF_VERSION="snapshot"
 if [[ $FFMPEG_VERSION != "" ]]; then
   FF_VERSION=$FFMPEG_VERSION
 fi
@@ -85,6 +85,9 @@ then
 		echo 'FFmpeg source not found. Trying to download...'
 		curl http://www.ffmpeg.org/releases/$SOURCE.tar.bz2 | tar xj \
 			|| exit 1
+		if [[ "${FF_VERSION}" == "snapshot" ]]; then
+		    ln -s ffmpeg $SOURCE
+		fi
 	fi
 
 	CWD=`pwd`
