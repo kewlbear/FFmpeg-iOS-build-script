@@ -1,13 +1,15 @@
 # FFmpeg iOS build script
 
+Swift package: https://github.com/kewlbear/FFmpeg-iOS
+
 [![Build Status](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script.svg?branch=master)](https://travis-ci.org/kewlbear/FFmpeg-iOS-build-script)
 
 This is a shell script to build FFmpeg libraries for iOS and tvOS apps.
 
 Tested with:
 
-* FFmpeg 4.2
-* Xcode 10.1
+* FFmpeg 4.3.1
+* Xcode 12.2
 
 ## Requirements
 
@@ -36,7 +38,7 @@ Use build-ffmpeg-tvos.sh for tvOS.
 
 ## Download
 
-You can download a binary for FFmpeg 4.2 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
+You can download a binary for FFmpeg 4.3.1 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
 
 ## External libraries
 
