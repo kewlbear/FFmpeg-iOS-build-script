@@ -49,3 +49,10 @@ You should link your app with
 * libz.dylib
 * libbz2.dylib
 * libiconv.dylib
+
+如果没有添加gas-preprocessor.pl, 或则gas-preprocessor.pl的版本不对的话,编译过程中会提示,如下错误:
+GNU assembler not found, install/update gas-preprocessor
+
+这是可以已打build-ffmpeg.sh文件gas-preprocessor.pl链接地址, 下载最新版本,或者复制其中内容,添加到本地路径/usr/local/bin即可
+
+* libz.dylib
