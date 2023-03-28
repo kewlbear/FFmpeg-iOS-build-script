@@ -94,7 +94,7 @@ then
 		mkdir -p "$SCRATCH/$ARCH"
 		cd "$SCRATCH/$ARCH"
 
-		CFLAGS="-arch $ARCH"
+		CFLAGS="-arch $ARCH -fno-objc-msgsend-selector-stubs"
 		if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
 		then
 		    PLATFORM="iPhoneSimulator"
@@ -131,7 +131,9 @@ then
 			CFLAGS="$CFLAGS -I$FDK_AAC/include"
 			LDFLAGS="$LDFLAGS -L$FDK_AAC/lib"
 		fi
-
+		
+		OTHER_CFLAGS="-fno-objc-msgsend-selector-stubs"
+		
 		TMPDIR=${TMPDIR/%\/} $CWD/$SOURCE/configure \
 		    --target-os=darwin \
 		    --arch=$ARCH \
